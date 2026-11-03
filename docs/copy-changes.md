@@ -26,7 +26,7 @@ Each row lists the legacy text, the new text, and why it changed. Sources: legac
 |---|---|---|---|
 | 14 | "The purpose of this website is purely to inform about the life and music of the ambient artist Oöphoi (Gianluigi Gasparetti) and does not have any commercial intent." | "This website exists only to share information about the life and music of the ambient artist Oöphoi (Gianluigi Gasparetti). It is unofficial and has no commercial purpose." | Grammar (the original sentence had no subject for "does not have"). |
 | 15 | "Most of the information collected here was taken from Wikipedia, Discogs and other sources including forums, blogs and personal friends (sources linked)." | "Most of the information here comes from Wikipedia, Discogs and other sources, including forums, blogs and personal friends. Sources are linked where they are used." | Clearer wording; the parenthetical became its own sentence. |
-| 16 | "For any question, suggestion or submission please contact: ran@rankirlian.com" | "For questions, suggestions or submissions, please write to ran@rankirlian.com." (mailto link) | Grammar. **Please confirm that this address should be public.** |
+| 16 | "For any question, suggestion or submission please contact: [owner email]" | "For questions, suggestions or submissions, please write to [owner email]." (mailto link) | Grammar. **Please confirm that this address should be public.** |
 
 ## Release data
 
@@ -122,6 +122,6 @@ Sources: legacy `biography.html`, `index.html`, `Umbra.html`, `Penumbra.html`, `
 
 | # | Original (legacy) | New | Reason |
 |---|---|---|---|
-| 69 | Row 16: "For questions, suggestions or submissions, please write to ran@rankirlian.com." | removed | The owner asked not to publish the email address. |
+| 69 | Row 16: "For questions, suggestions or submissions, please write to [owner email]." | removed | The owner asked not to publish the email address. |
 | 70 | "…(sources linked)." | A "Sources" list: Wikipedia, Discogs (`discogs.com/artist/162295-O%C3%B6phoi`), *Deep Listenings* (archived), the Hypnos obituary, the Hypnos tribute broadcast and the Hypnos forum thread (archived). | `archiaro.it` from `sources/` was dropped (unrelated). |
 | 71 | (none) | "Credits: This tribute site was created by Ran Kirlian." (link to `https://www.rankirlian.com/`) | Site author credit, as requested. |
