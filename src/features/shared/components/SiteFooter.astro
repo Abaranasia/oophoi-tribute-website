@@ -1,6 +1,21 @@
+---
+import { labelNavigation } from "@features/shared/config/site";
+---
 <footer class="border-t border-hairline">
-  <div class="page-container flex flex-wrap justify-between gap-6 py-10 text-[13px] text-muted">
+  <div class="page-container flex flex-wrap items-center justify-between gap-6 py-10 text-[13px] text-muted">
     <p>An unofficial, non-commercial tribute.</p>
-    <a href="/about/" class="text-muted hover:text-ink">About</a>
+    <nav aria-label="Footer">
+      <ul class="flex flex-wrap items-center gap-x-6 gap-y-2 p-0">
+        <li class="list-none">Labels:</li>
+        {labelNavigation.map((item) => (
+          <li class="list-none">
+            <a href={item.href} class="inline-flex min-h-11 items-center text-muted hover:text-ink">{item.label}</a>
+          </li>
+        ))}
+        <li class="list-none">
+          <a href="/about/" class="inline-flex min-h-11 items-center text-muted hover:text-ink">About</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </footer>

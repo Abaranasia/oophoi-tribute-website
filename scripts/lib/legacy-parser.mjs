@@ -12,8 +12,11 @@ export const SOURCE_PAGES = [
   { file: "klauswiese.html", layout: "kw" },
 ];
 
-/** Duplicates and leftovers in the legacy folder that must never be migrated. */
-export const IGNORED_PAGES = ["complete.htm", "eps.html", "albums5.html", "Copia de *", "test.htm", "void.htm"];
+/**
+ * Informational only: duplicates and leftovers in the legacy folder, listed in the migration log.
+ * They are never read because `SOURCE_PAGES` is the allowlist; this list filters nothing.
+ */
+export const KNOWN_SKIPPED_PAGES =["complete.htm", "eps.html", "albums5.html", "Copia de *", "test.htm", "void.htm"];
 
 // ---------------------------------------------------------------------------
 // Text decoding
@@ -461,14 +464,13 @@ const RELEASE_KEYS = [
 ];
 
 /**
- * Converts parsed rows into release entries with unique, deterministic slugs
- * (`title`, then `title-year`, then `title-discogsId`) and related-release links.
- * The `thumb` path is kept so the caller can copy the cover.
+ * Pairs each row with a unique, deterministic slug: `title`, then `title-year`
+ * (never for hidden rows), then `title-discogsId`.
  */
-export function buildReleases(rows) {
+function assignSlugs(rows) {
   const used = new Set();
   const yearsByBase = new Map();
-  const releases = rows.map((row) => {
+  return rows.map((row) => {
     const base = slugify(row.title);
     const years = yearsByBase.get(base) ?? new Set();
     const yearSlug = row.hidden || years.has(row.year) ? null : `${base}-${row.year}`;
@@ -479,26 +481,48 @@ export function buildReleases(rows) {
     yearsByBase.set(base, years);
     return { row, slug };
   });
+}
 
-  const slugByRef = new Map();
-  for (const { row, slug } of releases) if (!row.hidden && !slugByRef.has(refKey(row.discogs))) slugByRef.set(refKey(row.discogs), slug);
-  const visibleKwByCatalog = new Map();
-  for (const { row, slug } of releases) {
-    if (row.catalogNo && !row.hidden && !visibleKwByCatalog.has(row.catalogNo)) visibleKwByCatalog.set(row.catalogNo, slug);
+/** Maps `keyOf(row)` to the slug of the first visible row with that key; rows without a key are skipped. */
+function firstVisibleSlugBy(slugged, keyOf) {
+  const slugs = new Map();
+  for (const { row, slug } of slugged) {
+    const key = keyOf(row);
+    if (key && !row.hidden && !slugs.has(key)) slugs.set(key, slug);
   }
+  return slugs;
+}
 
-  // Some label hrefs are damaged beyond repair; reuse the URL seen for the same label elsewhere.
+/** Some label hrefs are damaged beyond repair; reuse the URL seen for the same label elsewhere. */
+function labelUrlRepairer(rows) {
   const labelUrls = new Map();
-  for (const { row } of releases) {
+  for (const row of rows) {
     for (const label of row.labels) if (label.discogsUrl && !labelUrls.has(label.name)) labelUrls.set(label.name, label.discogsUrl);
   }
-  const withLabelUrl = (label) =>
-    label.discogsUrl || !labelUrls.has(label.name) ? label : { ...label, discogsUrl: labelUrls.get(label.name) };
+  return (label) => (label.discogsUrl || !labelUrls.has(label.name) ? label : { ...label, discogsUrl: labelUrls.get(label.name) });
+}
 
-  return releases.map(({ row, slug }) => {
-    const related = new Set(row.linkedRefs.map((ref) => slugByRef.get(refKey(ref))).filter(Boolean));
-    if (row.hidden && row.catalogNo && visibleKwByCatalog.has(row.catalogNo)) related.add(visibleKwByCatalog.get(row.catalogNo));
-    related.delete(slug);
+/** Related slugs: linked Discogs references, plus the visible KW release a hidden version belongs to. */
+function relatedSlugsFor({ row, slug }, slugByRef, visibleKwByCatalog) {
+  const related = new Set(row.linkedRefs.map((ref) => slugByRef.get(refKey(ref))).filter(Boolean));
+  if (row.hidden && row.catalogNo && visibleKwByCatalog.has(row.catalogNo)) related.add(visibleKwByCatalog.get(row.catalogNo));
+  related.delete(slug);
+  return related;
+}
+
+/**
+ * Converts parsed rows into release entries with unique, deterministic slugs
+ * (`title`, then `title-year`, then `title-discogsId`) and related-release links.
+ * The `thumb` path is kept so the caller can copy the cover.
+ */
+export function buildReleases(rows) {
+  const slugged = assignSlugs(rows);
+  const slugByRef = firstVisibleSlugBy(slugged, (row) => refKey(row.discogs));
+  const visibleKwByCatalog = firstVisibleSlugBy(slugged, (row) => row.catalogNo);
+  const withLabelUrl = labelUrlRepairer(rows);
+
+  return slugged.map(({ row, slug }) => {
+    const related = relatedSlugsFor({ row, slug }, slugByRef, visibleKwByCatalog);
     const type = typeFor(row);
     const entry = orderKeys(
       {

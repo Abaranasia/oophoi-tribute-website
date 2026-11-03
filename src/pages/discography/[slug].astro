@@ -3,7 +3,7 @@ import type { GetStaticPaths } from "astro";
 import CoverFrame from "@features/discography/components/CoverFrame.astro";
 import ReleaseGrid from "@features/discography/components/ReleaseGrid.astro";
 import { discogsUrl } from "@features/discography/domain/discogs";
-import { creditLine } from "@features/discography/domain/release-format";
+import { creditLine, releaseDescription } from "@features/discography/domain/release-format";
 import { RELEASE_TYPE_LABELS } from "@features/discography/domain/release-types";
 import { getRelatedReleases, getVisibleReleases, type Release } from "@features/discography/domain/releases";
 import BaseLayout from "@features/shared/layouts/BaseLayout.astro";
@@ -32,7 +32,14 @@ const facts = [
   { term: "Format", value: data.format },
 ].filter((fact): fact is { term: string; value: string } => Boolean(fact.value));
 
-const description = `${data.title} (${data.year}), ${typeLabel.toLowerCase()} by ${credit.replace(/^As /, "Oöphoi as ")}${labels ? ` on ${labels}` : ""}.`;
+const description = releaseDescription({
+  title: data.title,
+  year: data.year,
+  typeLabel,
+  artist: data.artist,
+  credit: data.credit,
+  labels: data.labels.map((label) => label.name),
+});
 ---
 <BaseLayout title={`${data.title} (${data.year})`} description={description} type="music.album" image={data.cover} imageAlt={`Cover of ${data.title}`}>
   <article class="page-container flex flex-col gap-16 py-12 sm:py-20">

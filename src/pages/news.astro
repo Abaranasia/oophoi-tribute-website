@@ -1,0 +1,50 @@
+---
+import { render } from "astro:content";
+import ReleaseGrid from "@features/discography/components/ReleaseGrid.astro";
+import { getReleaseLinks, getReleasesBySlug } from "@features/discography/domain/releases";
+import { getNewsPosts } from "@features/news/domain/news";
+import BaseLayout from "@features/shared/layouts/BaseLayout.astro";
+
+const posts = await Promise.all(
+  (await getNewsPosts()).map(async (post) => {
+    // Fails the build on a release slug without a page.
+    await getReleaseLinks(post.data.releases);
+    return {
+      post,
+      id: post.id.replace(/^\d{4}-\d{2}-/, ""),
+      // The legacy posts give a month only.
+      month: post.data.date.toLocaleDateString("en-GB", { month: "long", year: "numeric", timeZone: "UTC" }),
+      datetime: post.data.date.toISOString().slice(0, 7),
+      releases: await getReleasesBySlug(post.data.releases),
+      Content: (await render(post)).Content,
+    };
+  }),
+);
+---
+<BaseLayout title="News" description="News from the original Oöphoi tribute site, 2013: The Physics of Heaven and the two “I Hear” albums.">
+  <div class="mx-auto flex max-w-narrow flex-col gap-14 px-4 py-20 sm:px-6 sm:py-28">
+    <header class="flex flex-col gap-6">
+      <p class="eyebrow text-accent">2013</p>
+      <h1 class="text-5xl sm:text-6xl">News</h1>
+      <p class="text-[17px] leading-relaxed text-ink-soft">The posts published on the original tribute site.</p>
+    </header>
+
+    {posts.map(({ post, id, month, datetime, releases, Content }) => (
+      <article id={id} aria-labelledby={`${id}-heading`} class="flex scroll-mt-8 flex-col gap-6 border-t border-hairline pt-10">
+        <header class="flex flex-col gap-3">
+          <p class="eyebrow text-muted"><time datetime={datetime}>{month}</time></p>
+          <h2 id={`${id}-heading`} class="text-4xl">{post.data.title}</h2>
+        </header>
+        <div class="prose-text">
+          <Content />
+        </div>
+        {releases.length > 0 && (
+          <section aria-labelledby={`${id}-releases`} class="flex flex-col gap-5 pt-4">
+            <h3 id={`${id}-releases`} class="eyebrow font-sans text-muted">On this site</h3>
+            <ReleaseGrid releases={releases} headingLevel="h4" />
+          </section>
+        )}
+      </article>
+    ))}
+  </div>
+</BaseLayout>

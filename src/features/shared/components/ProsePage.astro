@@ -1,0 +1,22 @@
+---
+// Single-column article for text pages: eyebrow, the page's only h1, an optional lede and figure,
+// then the page sections.
+interface Props {
+  eyebrow: string;
+  title: string;
+}
+
+const { eyebrow, title } = Astro.props;
+const hasFigure = Astro.slots.has("figure");
+---
+<article class="mx-auto flex max-w-narrow flex-col gap-14 px-4 py-20 sm:px-6 sm:py-28">
+  <header class:list={["grid gap-8", hasFigure && "sm:grid-cols-[1fr_auto] sm:items-end"]}>
+    <div class="flex flex-col gap-6">
+      <p class="eyebrow text-accent">{eyebrow}</p>
+      <h1 class="text-5xl sm:text-6xl">{title}</h1>
+      <slot name="lede" />
+    </div>
+    <slot name="figure" />
+  </header>
+  <slot />
+</article>

@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+import logo from "@assets/labels/penumbra-logo.jpg";
+import DiscogsName from "@features/discography/components/DiscogsName.astro";
+import { discogsLabelUrl } from "@features/discography/domain/discogs";
+import { getSelectedReleases } from "@features/discography/domain/releases";
+import LabelReleaseSections from "@features/labels/components/LabelReleaseSections.astro";
+import ProsePage from "@features/shared/components/ProsePage.astro";
+import ProseSection from "@features/shared/components/ProseSection.astro";
+import BaseLayout from "@features/shared/layouts/BaseLayout.astro";
+
+const sections = [
+  {
+    id: "ep-collection",
+    heading: "Penumbra EP Collection",
+    description: "The volumes of the EP Collection in this discography.",
+    releases: await getSelectedReleases({ label: "Penumbra", types: ["album"] }),
+  },
+  {
+    id: "eps",
+    heading: "3\" EPs",
+    description: "Oöphoi's EPs on Penumbra, solo and collaborative.",
+    releases: await getSelectedReleases({ label: "Penumbra", types: ["ep", "minialbum"] }),
+  },
+];
+const logoAlt = "Penumbra logo: the word Penumbra above a white brushstroke circle on a black square";
+---
+<BaseLayout
+  title="Penumbra"
+  description="Penumbra, the Umbra sublabel for EP-length ambient soundscapes on 3-inch CDs, and its EP Collection albums."
+  image={logo}
+  imageAlt={logoAlt}
+>
+  <ProsePage eyebrow="Label" title="Penumbra">
+    <Image slot="figure" src={logo} alt={logoAlt} width={logo.width} class="w-28 rounded-[2px] sm:w-36" />
+
+    <ProseSection id="history" title="History">
+      <p>
+        Penumbra was a sublabel of <a href="/labels/umbra/">Umbra</a> devoted to EP-length soundscapes, typically 20
+        to 25 minutes long. Every EP came out as a 3" CD in very limited quantities and sold out quickly.
+      </p>
+      <p>
+        Most of its music was created by artists who also released on Umbra, such as Oöphoi,
+        <DiscogsName kind="artist" name="Klaus Wiese" />, <DiscogsName kind="artist" name="Tau Ceti" />,
+        <DiscogsName kind="artist" name="L.E.M." />, <DiscogsName kind="artist" name="Netherworld" />,
+        <DiscogsName kind="artist" name="Seren Ffordd" />, Perceptual Defence and Sostrah Tinnitus, among others, in
+        both solo and collaborative work.
+      </p>
+      <p>
+        These EPs were later compiled on full-length albums titled <cite>Penumbra EP Collection</cite>. Ten volumes
+        were released, each collecting three EPs on one CD. These albums were also limited editions and sold out
+        quickly.
+      </p>
+      <p><a href={discogsLabelUrl("Penumbra")} rel="external">The complete list of Penumbra releases on Discogs</a></p>
+    </ProseSection>
+  </ProsePage>
+
+  <LabelReleaseSections sections={sections} />
+</BaseLayout>

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { creditLine, relatedSlugs } from "./release-format";
+import { creditLine, relatedSlugs, releaseDescription } from "./release-format";
 
 describe("creditLine", () => {
   it("credits Oöphoi alone when there are no collaborators", () => {
@@ -23,6 +23,44 @@ describe("creditLine", () => {
   it("names the main artist of releases that are not by Oöphoi", () => {
     expect(creditLine({ artist: "Klaus Wiese", credit: { with: ["Bernhard Jäger"] } })).toBe(
       "Klaus Wiese with Bernhard Jäger",
+    );
+  });
+});
+
+describe("releaseDescription", () => {
+  const base = { title: "Genesis", year: 2002, typeLabel: "Album", labels: ["Stella Maris"] };
+
+  it("names the artist behind an alias", () => {
+    expect(
+      releaseDescription({ ...base, artist: "Oöphoi", credit: { alias: "Nebula", with: ["Klaus Wiese", "Tau Ceti"] } }),
+    ).toBe("Genesis (2002), album by Oöphoi as Nebula, with Klaus Wiese & Tau Ceti on Stella Maris.");
+  });
+
+  it("uses the release's own artist instead of assuming Oöphoi", () => {
+    expect(
+      releaseDescription({
+        title: "Ruh",
+        year: 2004,
+        typeLabel: "Klaus Wiese remaster",
+        labels: [],
+        artist: "Klaus Wiese",
+        credit: { alias: "Ruh Ensemble", with: [] },
+      }),
+    ).toBe("Ruh (2004), Klaus Wiese remaster by Klaus Wiese as Ruh Ensemble.");
+  });
+
+  it("lowercases the type inside the sentence, except acronyms and names", () => {
+    const sentence = (typeLabel: string) => releaseDescription({ ...base, typeLabel, artist: "Oöphoi", credit: { with: [] }, labels: [] });
+    expect(sentence("Compilation appearance")).toBe("Genesis (2002), compilation appearance by Oöphoi.");
+    expect(sentence("EP")).toBe("Genesis (2002), EP by Oöphoi.");
+  });
+
+  it("joins several labels and omits the label part when there is none", () => {
+    expect(
+      releaseDescription({ ...base, artist: "Oöphoi", credit: { with: [] }, labels: ["Aurora", "Umbra"] }),
+    ).toBe("Genesis (2002), album by Oöphoi on Aurora, Umbra.");
+    expect(releaseDescription({ ...base, artist: "Oöphoi", credit: { with: ["Tau Ceti"] }, labels: [] })).toBe(
+      "Genesis (2002), album by Oöphoi with Tau Ceti.",
     );
   });
 });
