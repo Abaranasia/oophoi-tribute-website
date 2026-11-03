@@ -1,0 +1,22 @@
+{
+  "title": "Potala",
+  "slug": "potala",
+  "type": "minialbum",
+  "year": 2008,
+  "labels": [
+    {
+      "name": "Drone Records",
+      "discogsUrl": "https://www.discogs.com/label/Drone+Records"
+    }
+  ],
+  "format": "10\", Ltd, Cle/Minialbum",
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "master",
+    "id": 329408
+  },
+  "cover": "../../assets/covers/potala.jpg",
+  "hidden": false
+}

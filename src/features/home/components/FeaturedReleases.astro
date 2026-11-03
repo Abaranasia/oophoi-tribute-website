@@ -1,0 +1,31 @@
+---
+import ReleaseGrid from "@features/discography/components/ReleaseGrid.astro";
+import { RELEASE_GROUPS } from "@features/discography/domain/release-groups";
+import type { Release } from "@features/discography/domain/releases";
+
+interface Props {
+  releases: Release[];
+  total: number;
+}
+
+const { releases, total } = Astro.props;
+---
+<section aria-labelledby="featured-heading" class="bg-ground-alt">
+  <div class="page-container flex flex-col gap-12 py-24 sm:py-30">
+    <div class="flex flex-wrap items-end justify-between gap-6">
+      <h2 id="featured-heading" class="text-5xl sm:text-[56px]">Discography</h2>
+      <nav aria-label="Browse the discography by type">
+        <ul class="flex flex-wrap gap-2 p-0">
+          <li class="list-none"><a href="/discography/" class="pill pill-solid">All</a></li>
+          {RELEASE_GROUPS.map((group) => (
+            <li class="list-none">
+              <a href={`/discography/#${group.id}`} class="pill pill-outline">{group.label}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
+    <ReleaseGrid releases={releases} />
+    <a href="/discography/" class="self-start text-[15px]">See all {total} releases</a>
+  </div>
+</section>

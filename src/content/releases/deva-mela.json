@@ -1,0 +1,24 @@
+{
+  "title": "Deva Mela",
+  "slug": "deva-mela",
+  "type": "ep",
+  "year": 2006,
+  "labels": [
+    {
+      "name": "Penumbra",
+      "discogsUrl": "https://www.discogs.com/label/Penumbra"
+    }
+  ],
+  "format": "CDr, EP",
+  "credit": {
+    "with": [
+      "Klaus Wiese"
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 1084196
+  },
+  "cover": "../../assets/covers/deva-mela.jpg",
+  "hidden": false
+}

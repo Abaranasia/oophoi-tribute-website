@@ -1,0 +1,23 @@
+{
+  "title": "The Martian Chronicles",
+  "slug": "the-martian-chronicles",
+  "type": "album",
+  "year": 2011,
+  "labels": [
+    {
+      "name": "Hypnos",
+      "discogsUrl": "https://www.discogs.com/label/Hypnos"
+    }
+  ],
+  "credit": {
+    "with": [
+      "Seren Ffordd"
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 3158796
+  },
+  "cover": "../../assets/covers/the-martian-chronicles.jpg",
+  "hidden": false
+}

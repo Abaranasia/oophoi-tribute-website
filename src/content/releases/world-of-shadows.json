@@ -1,0 +1,39 @@
+{
+  "title": "World Of Shadows",
+  "slug": "world-of-shadows",
+  "type": "compilation-appearance",
+  "year": 2004,
+  "labels": [
+    {
+      "name": "Umbra",
+      "discogsUrl": "https://www.discogs.com/label/Umbra"
+    }
+  ],
+  "format": "CDr, Comp, Ltd",
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 460693
+  },
+  "cover": "../../assets/covers/world-of-shadows.jpg",
+  "tracks": [
+    {
+      "title": "Substance Metallique",
+      "duration": "23:12"
+    },
+    {
+      "title": "Hieros Gamos",
+      "duration": "9:56",
+      "with": [
+        "Klaus Wiese"
+      ]
+    }
+  ],
+  "note": "Both tracks Included in Whispers from the Noisy Void (2007)",
+  "relatedTo": [
+    "whispers-from-the-noisy-void"
+  ],
+  "hidden": false
+}

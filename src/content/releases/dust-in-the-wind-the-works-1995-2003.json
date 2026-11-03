@@ -1,0 +1,22 @@
+{
+  "title": "Dust In The Wind - The Works, 1995 - 2003",
+  "slug": "dust-in-the-wind-the-works-1995-2003",
+  "type": "album",
+  "year": 2004,
+  "labels": [
+    {
+      "name": "Umbra",
+      "discogsUrl": "https://www.discogs.com/label/Umbra"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "master",
+    "id": 66154,
+    "versions": 2
+  },
+  "cover": "../../assets/covers/dust-in-the-wind-the-works-1995-2003.jpg",
+  "hidden": false
+}

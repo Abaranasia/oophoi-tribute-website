@@ -1,0 +1,23 @@
+{
+  "title": "Distance To Zero",
+  "slug": "distance-to-zero",
+  "type": "album",
+  "year": 2006,
+  "labels": [
+    {
+      "name": "Hypnos",
+      "discogsUrl": "https://www.discogs.com/label/Hypnos"
+    }
+  ],
+  "credit": {
+    "with": [
+      "Paul Vnuk Jr."
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 744193
+  },
+  "cover": "../../assets/covers/distance-to-zero.jpg",
+  "hidden": false
+}

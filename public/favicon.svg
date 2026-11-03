@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Placeholder mark: an amber candle on the Nocturne ground. -->
+  <rect width="64" height="64" rx="14" fill="#0e0d0b"/>
+  <path d="M32 10c6 9 9 15 9 21a9 9 0 0 1-18 0c0-6 3-12 9-21z" fill="none" stroke="#d9a85b" stroke-width="2.5"/>
+  <rect x="24" y="44" width="16" height="12" fill="none" stroke="#d9a85b" stroke-width="2.5"/>
+</svg>

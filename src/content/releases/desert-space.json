@@ -1,0 +1,29 @@
+{
+  "title": "Desert Space",
+  "slug": "desert-space",
+  "type": "compilation-appearance",
+  "year": 2007,
+  "labels": [
+    {
+      "name": "Umbra",
+      "discogsUrl": "https://www.discogs.com/label/Umbra"
+    }
+  ],
+  "format": "3xCDr, Ltd",
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 959607
+  },
+  "cover": "../../assets/covers/desert-space.jpg",
+  "tracks": [
+    {
+      "title": "Aspidiske",
+      "duration": "10:12"
+    }
+  ],
+  "note": "Previously unreleased",
+  "hidden": false
+}

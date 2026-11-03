@@ -1,0 +1,46 @@
+---
+import type { ImageMetadata } from "astro";
+import { getImage } from "astro:assets";
+import { site } from "@features/shared/config/site";
+
+export interface Props {
+  title: string;
+  description: string;
+  image?: ImageMetadata;
+  imageAlt?: string;
+  type?: "website" | "music.album" | "article" | "profile";
+  noindex?: boolean;
+}
+
+const { title, description, image, imageAlt, type = "website", noindex = false } = Astro.props;
+
+if (!Astro.site) {
+  throw new Error("`site` must be set in astro.config.mjs to build absolute SEO URLs");
+}
+
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const preview = image ? await getImage({ src: image, width: Math.min(image.width, 1200), format: "jpg" }) : undefined;
+const previewUrl = preview ? new URL(preview.src, Astro.site).href : undefined;
+---
+<title>{title}</title>
+<meta name="description" content={description}>
+{noindex ? <meta name="robots" content="noindex"> : <link rel="canonical" href={canonical}>}
+<meta name="theme-color" content={site.themeColor}>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="sitemap" href="/sitemap-index.xml">
+
+<meta property="og:site_name" content={site.title}>
+<meta property="og:locale" content={site.locale}>
+<meta property="og:type" content={type}>
+<meta property="og:title" content={title}>
+<meta property="og:description" content={description}>
+<meta property="og:url" content={canonical}>
+{previewUrl && (
+  <>
+    <meta property="og:image" content={previewUrl}>
+    <meta property="og:image:alt" content={imageAlt ?? title}>
+  </>
+)}
+<meta name="twitter:card" content={previewUrl ? "summary_large_image" : "summary"}>
+<meta name="twitter:title" content={title}>
+<meta name="twitter:description" content={description}>

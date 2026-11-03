@@ -1,0 +1,26 @@
+{
+  "title": "Genesis",
+  "slug": "genesis",
+  "type": "album",
+  "year": 2002,
+  "labels": [
+    {
+      "name": "Stella Maris",
+      "discogsUrl": "https://www.discogs.com/label/Stella+Maris"
+    }
+  ],
+  "credit": {
+    "alias": "Nebula",
+    "with": [
+      "Klaus Wiese",
+      "Mathias Grassow",
+      "Tau Ceti"
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 605881
+  },
+  "cover": "../../assets/covers/genesis.jpg",
+  "hidden": false
+}

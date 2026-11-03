@@ -1,0 +1,32 @@
+{
+  "title": "Cryosphere",
+  "slug": "cryosphere",
+  "type": "compilation-appearance",
+  "year": 2006,
+  "labels": [
+    {
+      "name": "Glacial Movements Records",
+      "discogsUrl": "https://www.discogs.com/label/Glacial+Movements+Records"
+    }
+  ],
+  "format": "CD, Comp, Ltd",
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "master",
+    "id": 589631
+  },
+  "cover": "../../assets/covers/cryosphere.jpg",
+  "tracks": [
+    {
+      "title": "Cold Sun",
+      "duration": "6:50"
+    }
+  ],
+  "note": "Included in Whispers from the Noisy Void (2007)",
+  "relatedTo": [
+    "whispers-from-the-noisy-void"
+  ],
+  "hidden": false
+}

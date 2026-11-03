@@ -1,0 +1,21 @@
+{
+  "title": "Dreams Part Two",
+  "slug": "dreams-part-two",
+  "type": "album",
+  "year": 2006,
+  "labels": [
+    {
+      "name": "Faria Records",
+      "discogsUrl": "https://www.discogs.com/label/Faria+Records"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 971584
+  },
+  "cover": "../../assets/covers/dreams-part-two.jpg",
+  "hidden": false
+}

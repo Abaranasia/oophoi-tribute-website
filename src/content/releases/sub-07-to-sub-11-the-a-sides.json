@@ -1,0 +1,32 @@
+{
+  "title": "SUB-07 To SUB-11 - The A-Sides",
+  "slug": "sub-07-to-sub-11-the-a-sides",
+  "type": "compilation-appearance",
+  "year": 2009,
+  "labels": [
+    {
+      "name": "Drone Records",
+      "discogsUrl": "https://www.discogs.com/label/Drone+Records"
+    }
+  ],
+  "format": "CDr, Promo",
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 1911253
+  },
+  "cover": "../../assets/covers/sub-07-to-sub-11-the-a-sides.jpg",
+  "tracks": [
+    {
+      "title": "Potala Pt.1",
+      "duration": "12:32"
+    }
+  ],
+  "note": "From the minialbum Potala (2008)",
+  "relatedTo": [
+    "potala"
+  ],
+  "hidden": false
+}

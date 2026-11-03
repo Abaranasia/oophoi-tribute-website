@@ -1,0 +1,29 @@
+{
+  "title": "Message From A Subatomic World",
+  "slug": "message-from-a-subatomic-world",
+  "type": "compilation-appearance",
+  "year": 2008,
+  "labels": [
+    {
+      "name": "Hypnos",
+      "discogsUrl": "https://www.discogs.com/label/Hypnos"
+    }
+  ],
+  "format": "CD, Comp",
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 1437887
+  },
+  "cover": "../../assets/covers/message-from-a-subatomic-world.jpg",
+  "tracks": [
+    {
+      "title": "Icelight",
+      "duration": "8:44"
+    }
+  ],
+  "note": "Previously unreleased",
+  "hidden": false
+}

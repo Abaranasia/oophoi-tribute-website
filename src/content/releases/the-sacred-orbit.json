@@ -1,0 +1,23 @@
+{
+  "title": "The Sacred Orbit",
+  "slug": "the-sacred-orbit",
+  "type": "album",
+  "year": 2005,
+  "labels": [
+    {
+      "name": "Umbra",
+      "discogsUrl": "https://www.discogs.com/label/Umbra"
+    }
+  ],
+  "credit": {
+    "with": [
+      "L.E.M."
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 913050
+  },
+  "cover": "../../assets/covers/the-sacred-orbit.jpg",
+  "hidden": false
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Aquos - The Complete Drones",
+  "slug": "aquos-the-complete-drones",
+  "type": "album",
+  "year": 2006,
+  "labels": [
+    {
+      "name": "Umbra",
+      "discogsUrl": "https://www.discogs.com/label/Umbra"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 799379
+  },
+  "cover": "../../assets/covers/aquos-the-complete-drones.jpg",
+  "hidden": false
+}

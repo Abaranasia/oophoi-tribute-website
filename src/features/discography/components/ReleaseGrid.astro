@@ -1,0 +1,14 @@
+---
+import type { Release } from "../domain/releases";
+import ReleaseCard from "./ReleaseCard.astro";
+
+interface Props {
+  releases: Release[];
+  headingLevel?: "h3" | "h4";
+}
+
+const { releases, headingLevel } = Astro.props;
+---
+<ul class="grid grid-cols-2 gap-x-5 gap-y-10 p-0 sm:grid-cols-[repeat(auto-fill,minmax(220px,1fr))] sm:gap-x-10">
+  {releases.map((release) => <ReleaseCard release={release} headingLevel={headingLevel} />)}
+</ul>

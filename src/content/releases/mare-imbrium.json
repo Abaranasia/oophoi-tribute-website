@@ -1,0 +1,22 @@
+{
+  "title": "Mare Imbrium",
+  "slug": "mare-imbrium",
+  "type": "album",
+  "year": 2001,
+  "labels": [
+    {
+      "name": "Due Acque",
+      "discogsUrl": "https://www.discogs.com/label/Due+Acque"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "master",
+    "id": 266579,
+    "versions": 2
+  },
+  "cover": "../../assets/covers/mare-imbrium.jpg",
+  "hidden": false
+}

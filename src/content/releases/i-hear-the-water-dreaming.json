@@ -1,0 +1,23 @@
+{
+  "title": "I Hear The Water Dreaming",
+  "slug": "i-hear-the-water-dreaming",
+  "type": "album",
+  "year": 2005,
+  "labels": [
+    {
+      "name": "Prikosnovénie",
+      "discogsUrl": "https://www.discogs.com/label/Prikosnov%C3%A9nie"
+    }
+  ],
+  "credit": {
+    "with": [
+      "Louisa John-Krol"
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 495927
+  },
+  "cover": "../../assets/covers/i-hear-the-water-dreaming.jpg",
+  "hidden": false
+}

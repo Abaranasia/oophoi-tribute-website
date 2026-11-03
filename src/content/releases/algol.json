@@ -1,0 +1,24 @@
+{
+  "title": "Algol",
+  "slug": "algol",
+  "type": "ep",
+  "year": 2006,
+  "labels": [
+    {
+      "name": "Penumbra",
+      "discogsUrl": "https://www.discogs.com/label/Penumbra"
+    }
+  ],
+  "format": "CDr, EP",
+  "credit": {
+    "with": [
+      "Tau Ceti"
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 775276
+  },
+  "cover": "../../assets/covers/algol.jpg",
+  "hidden": false
+}

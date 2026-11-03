@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+/* "A · Nocturne" design tokens: warm near-black ground, hairline borders, one amber accent. */
+@theme {
+  --color-ground: #0e0d0b;
+  --color-ground-alt: #15130f;
+  --color-frame: #24211c;
+  --color-hairline: #2a2722;
+  --color-hairline-strong: #3a362f;
+  --color-ink: #ece6da;
+  --color-ink-soft: #cfc7b8;
+  --color-muted: #9c9486;
+  --color-accent: #d9a85b;
+  --color-accent-hover: #f0c987;
+
+  --font-display: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+
+  --container-page: 1200px;
+  --container-narrow: 760px;
+}
+
+@layer base {
+  html {
+    @apply bg-ground font-sans text-ink antialiased;
+    color-scheme: dark;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ground;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display font-normal text-ink;
+  }
+
+  a {
+    @apply text-accent underline-offset-4 hover:text-accent-hover;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-4 outline-accent;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+/* Centred page container: 1200px max, 16px gutter on phones, 24px from `sm`. */
+@utility page-container {
+  @apply mx-auto w-full max-w-page px-4 sm:px-6;
+}
+
+/* Uppercase, widely tracked small label. */
+@utility eyebrow {
+  @apply text-[13px] tracking-[0.3em] uppercase;
+}
+
+/* Pill links and buttons: at least 44px tall. */
+@utility pill {
+  @apply inline-flex min-h-11 items-center justify-center rounded-full px-[18px] text-sm no-underline transition-colors;
+}
+
+/* Selected chip. */
+@utility pill-solid {
+  @apply bg-ink text-ground hover:bg-accent-hover hover:text-ground;
+}
+
+/* Unselected chip or secondary action. */
+@utility pill-outline {
+  @apply border border-hairline-strong text-ink-soft hover:border-accent hover:text-ink;
+}
+
+/* Primary call to action from the design: accent outline, larger. */
+@utility pill-accent {
+  @apply min-h-12 border border-accent px-7 text-[15px] text-ink hover:bg-accent hover:text-ground;
+}

@@ -1,0 +1,28 @@
+---
+import { externalLinks } from "@features/shared/config/site";
+import BaseLayout from "@features/shared/layouts/BaseLayout.astro";
+---
+<BaseLayout
+  title="About this site"
+  description="About this unofficial, non-commercial tribute to Oöphoi (Gianluigi Gasparetti): its purpose, sources and contact."
+>
+  <article class="mx-auto flex max-w-narrow flex-col gap-6 px-4 py-20 sm:px-6 sm:py-28">
+    <p class="eyebrow text-accent">About</p>
+    <h1 class="text-5xl sm:text-6xl">About this site</h1>
+    <div class="flex flex-col gap-5 text-[17px] leading-[1.7] text-ink-soft">
+      <p>
+        This website exists only to share information about the life and music of the ambient artist Oöphoi
+        (Gianluigi Gasparetti). It is unofficial and has no commercial purpose.
+      </p>
+      <p>
+        Most of the information here comes from <a href={externalLinks.wikipedia}>Wikipedia</a>,
+        <a href={externalLinks.discogsArtist}>Discogs</a> and other sources, including forums, blogs and personal
+        friends. Sources are linked where they are used.
+      </p>
+      <p>
+        For questions, suggestions or submissions, please write to
+        <a href="mailto:ran@rankirlian.com">ran@rankirlian.com</a>.
+      </p>
+    </div>
+  </article>
+</BaseLayout>

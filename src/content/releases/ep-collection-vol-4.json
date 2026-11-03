@@ -1,0 +1,23 @@
+{
+  "title": "EP Collection Vol.4",
+  "slug": "ep-collection-vol-4",
+  "type": "album",
+  "year": 2006,
+  "labels": [
+    {
+      "name": "Penumbra",
+      "discogsUrl": "https://www.discogs.com/label/Penumbra"
+    }
+  ],
+  "credit": {
+    "with": [
+      "L.E.M."
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 1126264
+  },
+  "cover": "../../assets/covers/ep-collection-vol-4.jpg",
+  "hidden": false
+}

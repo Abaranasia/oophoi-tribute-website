@@ -1,0 +1,22 @@
+{
+  "title": "The Spirals Of Time",
+  "slug": "the-spirals-of-time",
+  "type": "album",
+  "year": 1998,
+  "labels": [
+    {
+      "name": "Aurora",
+      "discogsUrl": "https://www.discogs.com/label/Aurora"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "master",
+    "id": 66159,
+    "versions": 3
+  },
+  "cover": "../../assets/covers/the-spirals-of-time.jpg",
+  "hidden": false
+}

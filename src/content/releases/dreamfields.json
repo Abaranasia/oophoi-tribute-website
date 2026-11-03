@@ -1,0 +1,23 @@
+{
+  "title": "Dreamfields",
+  "slug": "dreamfields",
+  "type": "album",
+  "year": 2011,
+  "labels": [
+    {
+      "name": "Nextera",
+      "discogsUrl": "https://www.discogs.com/label/Nextera"
+    }
+  ],
+  "credit": {
+    "with": [
+      "Paul Vnuk Jr."
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 3283671
+  },
+  "cover": "../../assets/covers/dreamfields.jpg",
+  "hidden": false
+}

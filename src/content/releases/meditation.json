@@ -1,0 +1,25 @@
+{
+  "title": "Meditation",
+  "slug": "meditation",
+  "type": "album",
+  "year": 2003,
+  "labels": [
+    {
+      "name": "Harmonie",
+      "discogsUrl": "https://www.discogs.com/label/Harmonie+(2)"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 772334
+  },
+  "cover": "../../assets/covers/meditation.jpg",
+  "note": "Compilation, mostly Mare Vaporum",
+  "relatedTo": [
+    "mare-vaporum"
+  ],
+  "hidden": false
+}

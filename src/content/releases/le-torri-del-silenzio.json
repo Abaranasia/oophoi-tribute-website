@@ -1,0 +1,24 @@
+{
+  "title": "Le Torri Del Silenzio",
+  "slug": "le-torri-del-silenzio",
+  "type": "ep",
+  "year": 2005,
+  "labels": [
+    {
+      "name": "Penumbra",
+      "discogsUrl": "https://www.discogs.com/label/Penumbra"
+    }
+  ],
+  "format": "CDr, EP",
+  "credit": {
+    "with": [
+      "Tau Ceti"
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 1339394
+  },
+  "cover": "../../assets/covers/le-torri-del-silenzio.jpg",
+  "hidden": false
+}

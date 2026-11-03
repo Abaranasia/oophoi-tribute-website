@@ -1,0 +1,22 @@
+{
+  "title": "Signals From The Great Beyond - The Complete Recordings",
+  "slug": "signals-from-the-great-beyond-the-complete-recordings",
+  "type": "album",
+  "year": 2006,
+  "labels": [
+    {
+      "name": "Umbra",
+      "discogsUrl": "https://www.discogs.com/label/Umbra"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "master",
+    "id": 104516,
+    "versions": 5
+  },
+  "cover": "../../assets/covers/signals-from-the-great-beyond-the-complete-recordings.jpg",
+  "hidden": false
+}

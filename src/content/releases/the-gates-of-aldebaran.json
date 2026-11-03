@@ -1,0 +1,24 @@
+{
+  "title": "The Gates Of Aldebaran",
+  "slug": "the-gates-of-aldebaran",
+  "type": "ep",
+  "year": 2006,
+  "labels": [
+    {
+      "name": "Penumbra",
+      "discogsUrl": "https://www.discogs.com/label/Penumbra"
+    }
+  ],
+  "format": "CDr, EP",
+  "credit": {
+    "with": [
+      "L.E.M."
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 728736
+  },
+  "cover": "../../assets/covers/the-gates-of-aldebaran.jpg",
+  "hidden": false
+}

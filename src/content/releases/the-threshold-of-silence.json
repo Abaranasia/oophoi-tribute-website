@@ -1,0 +1,29 @@
+{
+  "title": "The Threshold Of Silence",
+  "slug": "the-threshold-of-silence",
+  "type": "compilation-appearance",
+  "year": 2007,
+  "labels": [
+    {
+      "name": "Umbra",
+      "discogsUrl": "https://www.discogs.com/label/Umbra"
+    }
+  ],
+  "format": "CDr, Comp",
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 988427
+  },
+  "cover": "../../assets/covers/the-threshold-of-silence.jpg",
+  "tracks": [
+    {
+      "title": "In Deep Waters",
+      "duration": "11:43"
+    }
+  ],
+  "note": "Previously unreleased",
+  "hidden": false
+}

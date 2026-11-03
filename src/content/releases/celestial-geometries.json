@@ -1,0 +1,24 @@
+{
+  "title": "Celestial Geometries",
+  "slug": "celestial-geometries",
+  "type": "album",
+  "year": 2001,
+  "labels": [
+    {
+      "name": "Arya",
+      "discogsUrl": "https://www.discogs.com/label/Arya"
+    }
+  ],
+  "credit": {
+    "with": [
+      "Tau Ceti"
+    ]
+  },
+  "discogs": {
+    "kind": "master",
+    "id": 104536,
+    "versions": 4
+  },
+  "cover": "../../assets/covers/celestial-geometries.jpg",
+  "hidden": false
+}

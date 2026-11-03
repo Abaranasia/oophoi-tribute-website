@@ -1,0 +1,51 @@
+---
+// Without JavaScript the chips are plain anchor links to each section.
+// With JavaScript they filter the page down to the chosen section.
+interface Props {
+  groups: { id: string; label: string; count: number }[];
+}
+
+const { groups } = Astro.props;
+---
+<nav aria-label="Filter releases by type" data-release-filter>
+  <ul class="flex flex-wrap gap-2 p-0">
+    <li class="list-none">
+      <a href="#all" data-filter="all" aria-current="true" class="pill pill-outline aria-[current=true]:pill-solid">All</a>
+    </li>
+    {groups.map((group) => (
+      <li class="list-none">
+        <a href={`#${group.id}`} data-filter={group.id} class="pill pill-outline aria-[current=true]:pill-solid">
+          {group.label}
+          <span class="ml-2 text-xs opacity-75">{group.count}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</nav>
+
+<script>
+  const nav = document.querySelector<HTMLElement>("[data-release-filter]");
+  const chips = [...(nav?.querySelectorAll<HTMLAnchorElement>("a[data-filter]") ?? [])];
+  const sections = [...document.querySelectorAll<HTMLElement>("[data-release-section]")];
+  const ids = new Set(sections.map((section) => section.id));
+
+  const apply = (filter: string) => {
+    const active = ids.has(filter) ? filter : "all";
+    for (const section of sections) section.hidden = active !== "all" && section.id !== active;
+    for (const chip of chips) {
+      if (chip.dataset.filter === active) chip.setAttribute("aria-current", "true");
+      else chip.removeAttribute("aria-current");
+    }
+    return active;
+  };
+
+  for (const chip of chips) {
+    chip.addEventListener("click", (event) => {
+      event.preventDefault();
+      const active = apply(chip.dataset.filter ?? "all");
+      history.replaceState(null, "", active === "all" ? location.pathname : `#${active}`);
+    });
+  }
+
+  apply(location.hash.slice(1));
+</script>

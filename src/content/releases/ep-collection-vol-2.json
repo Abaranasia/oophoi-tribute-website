@@ -1,0 +1,21 @@
+{
+  "title": "EP Collection Vol. 2",
+  "slug": "ep-collection-vol-2",
+  "type": "album",
+  "year": 2006,
+  "labels": [
+    {
+      "name": "Penumbra",
+      "discogsUrl": "https://www.discogs.com/label/Penumbra"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 1084600
+  },
+  "cover": "../../assets/covers/ep-collection-vol-2.jpg",
+  "hidden": false
+}

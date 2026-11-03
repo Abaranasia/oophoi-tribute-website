@@ -1,0 +1,23 @@
+{
+  "title": "Nocturnes",
+  "slug": "nocturnes",
+  "type": "album",
+  "year": 2006,
+  "labels": [
+    {
+      "name": "Umbra",
+      "discogsUrl": "https://www.discogs.com/label/Umbra"
+    }
+  ],
+  "credit": {
+    "with": [
+      "Paradin"
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 732180
+  },
+  "cover": "../../assets/covers/nocturnes.jpg",
+  "hidden": false
+}

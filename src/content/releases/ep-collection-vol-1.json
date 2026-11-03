@@ -1,0 +1,21 @@
+{
+  "title": "EP Collection Vol. 1",
+  "slug": "ep-collection-vol-1",
+  "type": "album",
+  "year": 2006,
+  "labels": [
+    {
+      "name": "Penumbra",
+      "discogsUrl": "https://www.discogs.com/label/Penumbra"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 1084582
+  },
+  "cover": "../../assets/covers/ep-collection-vol-1.jpg",
+  "hidden": false
+}

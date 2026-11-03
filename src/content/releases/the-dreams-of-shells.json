@@ -1,0 +1,22 @@
+{
+  "title": "The Dreams Of Shells",
+  "slug": "the-dreams-of-shells",
+  "type": "album",
+  "year": 2003,
+  "labels": [
+    {
+      "name": "Mystery Sea",
+      "discogsUrl": "https://www.discogs.com/label/Mystery+Sea"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "master",
+    "id": 155734,
+    "versions": 3
+  },
+  "cover": "../../assets/covers/the-dreams-of-shells.jpg",
+  "hidden": false
+}

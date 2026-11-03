@@ -1,0 +1,100 @@
+---
+import type { GetStaticPaths } from "astro";
+import CoverFrame from "@features/discography/components/CoverFrame.astro";
+import ReleaseGrid from "@features/discography/components/ReleaseGrid.astro";
+import { discogsUrl } from "@features/discography/domain/discogs";
+import { creditLine } from "@features/discography/domain/release-format";
+import { RELEASE_TYPE_LABELS } from "@features/discography/domain/release-types";
+import { getRelatedReleases, getVisibleReleases, type Release } from "@features/discography/domain/releases";
+import BaseLayout from "@features/shared/layouts/BaseLayout.astro";
+
+export const getStaticPaths = (async () => {
+  const releases = await getVisibleReleases();
+  return releases.map((release) => ({ params: { slug: release.data.slug }, props: { release } }));
+}) satisfies GetStaticPaths;
+
+interface Props {
+  release: Release;
+}
+
+const { release } = Astro.props;
+const { data } = release;
+const related = await getRelatedReleases(release);
+const typeLabel = RELEASE_TYPE_LABELS[data.type];
+const credit = creditLine(data);
+const labels = data.labels.map((label) => label.name).join(", ");
+
+const facts = [
+  { term: "Year", value: String(data.year) },
+  { term: "Type", value: typeLabel },
+  { term: data.labels.length > 1 ? "Labels" : "Label", value: labels },
+  { term: "Catalogue no.", value: data.catalogNo },
+  { term: "Format", value: data.format },
+].filter((fact): fact is { term: string; value: string } => Boolean(fact.value));
+
+const description = `${data.title} (${data.year}), ${typeLabel.toLowerCase()} by ${credit.replace(/^As /, "Oöphoi as ")}${labels ? ` on ${labels}` : ""}.`;
+---
+<BaseLayout title={`${data.title} (${data.year})`} description={description} type="music.album" image={data.cover} imageAlt={`Cover of ${data.title}`}>
+  <article class="page-container flex flex-col gap-16 py-12 sm:py-20">
+    <a href="/discography/" class="self-start text-[15px]">← All releases</a>
+
+    <div class="grid items-start gap-10 md:grid-cols-[minmax(0,320px)_1fr] md:gap-16">
+      <CoverFrame cover={data.cover} alt={`Cover of ${data.title}`} placeholder={data.catalogNo} size="detail" />
+
+      <div class="flex flex-col gap-8">
+        <header class="flex flex-col gap-4">
+          <p class="eyebrow text-accent">{typeLabel} · {data.year}</p>
+          <h1 class="text-5xl leading-[1.05] sm:text-6xl">{data.title}</h1>
+          <p class="font-display text-2xl text-ink-soft italic">{credit}</p>
+        </header>
+
+        <dl class="grid grid-cols-[max-content_1fr] gap-x-8 gap-y-3 border-t border-hairline pt-6 text-[15px]">
+          {facts.map((fact) => (
+            <>
+              <dt class="text-muted">{fact.term}</dt>
+              <dd class="text-ink">{fact.value}</dd>
+            </>
+          ))}
+        </dl>
+
+        {data.note && <p class="max-w-narrow text-[17px] leading-relaxed text-ink-soft">{data.note}.</p>}
+
+        <div class="flex flex-wrap items-center gap-4">
+          <a href={discogsUrl(data.discogs)} class="pill pill-accent" rel="external">
+            View on Discogs<span class="sr-only"> (opens discogs.com)</span>
+          </a>
+          {data.discogs.versions && (
+            <span class="text-[13px] text-muted">{data.discogs.versions} versions listed</span>
+          )}
+        </div>
+      </div>
+    </div>
+
+    {data.tracks && data.tracks.length > 0 && (
+      <section aria-labelledby="tracks-heading" class="flex max-w-narrow flex-col gap-6">
+        <h2 id="tracks-heading" class="text-4xl">
+          {data.type === "compilation-appearance" ? "Oöphoi tracks" : "Tracks"}
+        </h2>
+        <ol class="flex flex-col divide-y divide-hairline border-y border-hairline p-0">
+          {data.tracks.map((track, index) => (
+            <li class="flex list-none items-baseline gap-4 py-3">
+              <span class="w-6 text-[13px] text-muted tabular-nums">{index + 1}</span>
+              <span class="flex-1">
+                {track.title}
+                {track.with && <span class="text-muted"> with {track.with.join(" & ")}</span>}
+              </span>
+              {track.duration && <span class="text-[13px] text-muted tabular-nums">{track.duration}</span>}
+            </li>
+          ))}
+        </ol>
+      </section>
+    )}
+
+    {related.length > 0 && (
+      <section aria-labelledby="related-heading" class="flex flex-col gap-8 border-t border-hairline pt-12">
+        <h2 id="related-heading" class="text-4xl">Related releases</h2>
+        <ReleaseGrid releases={related} />
+      </section>
+    )}
+  </article>
+</BaseLayout>

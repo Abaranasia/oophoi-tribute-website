@@ -1,0 +1,27 @@
+{
+  "title": "The Path Of White Clouds",
+  "slug": "the-path-of-white-clouds",
+  "type": "album",
+  "year": 2003,
+  "labels": [
+    {
+      "name": "Stella Maris",
+      "discogsUrl": "https://www.discogs.com/label/Stella+Maris"
+    }
+  ],
+  "credit": {
+    "alias": "Nebula",
+    "with": [
+      "Klaus Wiese",
+      "Mathias Grassow",
+      "Tau Ceti"
+    ]
+  },
+  "discogs": {
+    "kind": "master",
+    "id": 331461,
+    "versions": 2
+  },
+  "cover": "../../assets/covers/the-path-of-white-clouds.jpg",
+  "hidden": false
+}

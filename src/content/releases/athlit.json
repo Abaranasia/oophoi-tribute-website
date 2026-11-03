@@ -1,0 +1,21 @@
+{
+  "title": "Athlit",
+  "slug": "athlit",
+  "type": "album",
+  "year": 2002,
+  "labels": [
+    {
+      "name": "Hypnos",
+      "discogsUrl": "https://www.discogs.com/label/Hypnos"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 221375
+  },
+  "cover": "../../assets/covers/athlit.jpg",
+  "hidden": false
+}

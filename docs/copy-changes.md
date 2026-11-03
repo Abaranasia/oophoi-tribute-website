@@ -1,0 +1,33 @@
+# Copy changes for owner review
+
+Each row lists the legacy text, the new text, and why it changed. Sources: legacy `index.html` (home) and `disclaimer.html` (About). No new facts were added.
+
+## Home page (from `index.html`)
+
+| # | Original (legacy) | New | Reason |
+|---|---|---|---|
+| 1 | "Welcome to the Oöphoi Tribute website" (h1) | "Oöphoi" (h1), eyebrow "Gianluigi Gasparetti · 1958 – 2013" | Follows the approved Nocturne hero layout. |
+| 2 | "This website is a tribute to Gianluigi Gasparetti (1958–2013), the italian ambient composer best known by the pseudonym Oöphoi." | "Gianluigi Gasparetti (1958–2013) was the Italian ambient composer best known as Oöphoi." | Capitalised "Italian"; tighter wording. The "tribute" framing moved to the memorial note and footer. |
+| 3 | "He was perhaps best known for his role as the editor of Deep Listenings, an Italian magazine dedicated to ambient and deep atmospheric music, where he featured interviews with many famous ambient artists including Steve Roach and Michael Stearns." | "He was also the editor of *Deep Listenings*, an Italian magazine devoted to ambient and deep atmospheric music, where he published interviews with many renowned ambient artists, including Steve Roach and Michael Stearns." | "best known" was used twice in a row; "featured interviews" → "published interviews"; magazine title in italics. Link now points to the Wayback Machine copy (the original is offline). |
+| 4 | "Oöphoi music can be characterized as being static, organic and minimalistic. It has an overall solid and monolithic feel to it, often integrated in a meditative and spiritual context. Created by using synths, singing bowls, flutes, and processed voices, his recordings have relatively slight harmonic variations." | "His music is static, organic and minimal, with a solid, monolithic feel, often set in a meditative and spiritual context. Built from synths, singing bowls, flutes and processed voices, his recordings unfold through slight harmonic variations." | Grammar ("Oöphoi music" → "His music"; "integrated in" → "set in"); fewer filler words. |
+| 5 | `<p>&nbsp;</p>` spacer paragraphs | removed | Layout spacing is handled by CSS. |
+| 6 | "An avid music collector since his childhood Gianluigi started his own music experiments in 1995, with a basic instrumentation, trying to explore the shores of deep space-ambient." | "A music collector since childhood, Gianluigi began his own experiments in 1995 with basic equipment, exploring the shores of deep space ambient." | Missing comma; "a basic instrumentation" → "basic equipment"; "trying to explore" → "exploring". "avid" dropped for brevity; restore it if you prefer. |
+| 7 | 'His first album "Three Lights At The End Of The World", composed in 1995, was released in 1996 by italian ambient artist Alio Die's own label, Hic Sunt Leones.' | "His first album, *Three Lights at the End of the World*, composed in 1995, was released in 1996 on Hic Sunt Leones, the label of the Italian ambient artist Alio Die." | Capitalised "Italian"; title case; "released by … label" → "released on". The Discogs label link was removed (old name-based Discogs URL). |
+| 8 | "Oophoi used traditional instruments as synths and sampling machines, but also singing bowls, flutes, percussion (woodchimes, stones, shells, crystal chimes) and processed voices;" | "He played instruments such as synths and samplers, as well as singing bowls, flutes, percussion (wood chimes, stones, shells and crystal chimes) and processed voices." | "as" → "such as" (brief); "Oophoi" spelling; "woodchimes" → "wood chimes"; "traditional" dropped because synths are not traditional instruments. |
+| 9 | "all his music is recorded using analog-only devices in The Kiva, his studio, which used to be a stall in a XV Century stone country house in the hills of central Italy." | "All of his music was recorded with analog-only equipment in The Kiva, his studio, a former stable in a fifteenth-century stone country house in the hills of central Italy." | Past tense; "stall" → "stable" (brief); "XV Century" → "fifteenth-century". |
+| 10 | "Gianluigi Gasparetti passed away in 2013 after a long illness." (link to hypnos.com) | "Gianluigi Gasparetti passed away in 2013 after a long illness. This site is an unofficial tribute to his life and music." + link "Read the Hypnos obituary (archived)" | Same fact. The link now points to the Wayback Machine copy, and the tribute framing from item 2 moved here. |
+| 11 | (none) | Hero lede: "Static, organic, monolithic music: synths, singing bowls, flutes and processed voices, recorded in a fifteenth-century stone country house in the hills of central Italy." | Hero line from the design. The design said "voices"; changed to "processed voices" to match the legacy text. |
+| 12 | (design) "…spent the next eighteen years exploring…", "passed away in April 2013", "a tribute from listeners who still return to his sound" | not used | Not stated in the legacy text. "April" is supported only by the obituary's URL date. |
+| 13 | (design) caption "In The Kiva, his analog studio." | "Gianluigi Gasparetti with a wooden flute." | Nothing confirms where the photo was taken. |
+
+## About page (from `disclaimer.html`)
+
+| # | Original (legacy) | New | Reason |
+|---|---|---|---|
+| 14 | "The purpose of this website is purely to inform about the life and music of the ambient artist Oöphoi (Gianluigi Gasparetti) and does not have any commercial intent." | "This website exists only to share information about the life and music of the ambient artist Oöphoi (Gianluigi Gasparetti). It is unofficial and has no commercial purpose." | Grammar (the original sentence had no subject for "does not have"). |
+| 15 | "Most of the information collected here was taken from Wikipedia, Discogs and other sources including forums, blogs and personal friends (sources linked)." | "Most of the information here comes from Wikipedia, Discogs and other sources, including forums, blogs and personal friends. Sources are linked where they are used." | Clearer wording; the parenthetical became its own sentence. |
+| 16 | "For any question, suggestion or submission please contact: ran@rankirlian.com" | "For questions, suggestions or submissions, please write to ran@rankirlian.com." (mailto link) | Grammar. **Please confirm that this address should be public.** |
+
+## Release data
+
+Release titles are kept exactly as they appear in the legacy tables (Discogs-style title case). Notes from `compilations.html` lose their leading "- ", start with a capital letter and gain a final full stop. Wording is unchanged (including "Both tracks Included in…").

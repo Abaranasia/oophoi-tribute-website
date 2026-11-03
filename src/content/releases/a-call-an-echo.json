@@ -1,0 +1,24 @@
+{
+  "title": "A Call, An Echo",
+  "slug": "a-call-an-echo",
+  "type": "ep",
+  "year": 2005,
+  "labels": [
+    {
+      "name": "Penumbra",
+      "discogsUrl": "https://www.discogs.com/label/Penumbra"
+    }
+  ],
+  "format": "CDr, EP",
+  "credit": {
+    "with": [
+      "Klaus Wiese"
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 624882
+  },
+  "cover": "../../assets/covers/a-call-an-echo.jpg",
+  "hidden": false
+}

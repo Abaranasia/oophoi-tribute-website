@@ -1,0 +1,32 @@
+{
+  "title": "Electroacoustic Music. Vol. VII",
+  "slug": "electroacoustic-music-vol-vii",
+  "type": "compilation-appearance",
+  "year": 2002,
+  "labels": [
+    {
+      "name": "Electroshock Records",
+      "discogsUrl": "https://www.discogs.com/label/Electroshock+Records"
+    }
+  ],
+  "format": "2xCD, Comp",
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 215991
+  },
+  "cover": "../../assets/covers/electroacoustic-music-vol-vii.jpg",
+  "tracks": [
+    {
+      "title": "Dissolving In The Void",
+      "duration": "9:26"
+    }
+  ],
+  "note": "Taken from the album Time Fragments Vol. 3 (2001)",
+  "relatedTo": [
+    "time-fragments-vol-3-the-archives-1999-2000"
+  ],
+  "hidden": false
+}

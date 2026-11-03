@@ -1,0 +1,23 @@
+{
+  "title": "The Physics Of Heaven",
+  "slug": "the-physics-of-heaven",
+  "type": "album",
+  "year": 2013,
+  "labels": [
+    {
+      "name": "Altera Orbe",
+      "discogsUrl": "https://www.discogs.com/label/Altera+Orbe"
+    }
+  ],
+  "credit": {
+    "with": [
+      "Ran Kirlian"
+    ]
+  },
+  "discogs": {
+    "kind": "master",
+    "id": 551270
+  },
+  "cover": "../../assets/covers/the-physics-of-heaven.jpg",
+  "hidden": false
+}

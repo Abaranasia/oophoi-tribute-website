@@ -1,0 +1,24 @@
+{
+  "title": "Trifida",
+  "slug": "trifida",
+  "type": "ep",
+  "year": 2006,
+  "labels": [
+    {
+      "name": "Penumbra",
+      "discogsUrl": "https://www.discogs.com/label/Penumbra"
+    }
+  ],
+  "format": "CDr, EP",
+  "credit": {
+    "with": [
+      "L.E.M."
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 805123
+  },
+  "cover": "../../assets/covers/trifida.jpg",
+  "hidden": false
+}

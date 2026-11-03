@@ -1,0 +1,21 @@
+---
+import type { Release } from "../domain/releases";
+import CoverFrame from "./CoverFrame.astro";
+
+interface Props {
+  release: Release;
+  /** Heading level of the title inside the card. */
+  headingLevel?: "h3" | "h4";
+}
+
+const { release, headingLevel: Heading = "h3" } = Astro.props;
+const { data } = release;
+const meta = [data.catalogNo, String(data.year), data.labels[0]?.name].filter(Boolean).join(" · ");
+---
+<li class="list-none">
+  <a href={`/discography/${data.slug}/`} class="group flex flex-col gap-3.5 text-ink no-underline hover:text-ink">
+    <CoverFrame cover={data.cover} alt="" placeholder={data.catalogNo} />
+    <Heading class="font-display text-xl leading-tight sm:text-2xl group-hover:text-accent-hover">{data.title}</Heading>
+    <span class="text-[13px] text-muted">{meta}</span>
+  </a>
+</li>

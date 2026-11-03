@@ -1,0 +1,24 @@
+{
+  "title": "The Light Sweeps All The Mist Away",
+  "slug": "the-light-sweeps-all-the-mist-away",
+  "type": "ep",
+  "year": 2005,
+  "labels": [
+    {
+      "name": "Penumbra",
+      "discogsUrl": "https://www.discogs.com/label/Penumbra"
+    }
+  ],
+  "format": "CDr, EP",
+  "credit": {
+    "with": [
+      "Klaus Wiese"
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 625472
+  },
+  "cover": "../../assets/covers/the-light-sweeps-all-the-mist-away.jpg",
+  "hidden": false
+}

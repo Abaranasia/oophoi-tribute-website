@@ -1,0 +1,21 @@
+{
+  "title": "Hymns To A Silent Sky",
+  "slug": "hymns-to-a-silent-sky",
+  "type": "album",
+  "year": 2005,
+  "labels": [
+    {
+      "name": "Nextera",
+      "discogsUrl": "https://www.discogs.com/label/Nextera"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 700792
+  },
+  "cover": "../../assets/covers/hymns-to-a-silent-sky.jpg",
+  "hidden": false
+}

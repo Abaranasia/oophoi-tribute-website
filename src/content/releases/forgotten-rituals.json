@@ -1,0 +1,23 @@
+{
+  "title": "Forgotten Rituals",
+  "slug": "forgotten-rituals",
+  "type": "album",
+  "year": 2007,
+  "labels": [
+    {
+      "name": "Faria Records",
+      "discogsUrl": "https://www.discogs.com/label/Faria+Records"
+    }
+  ],
+  "credit": {
+    "with": [
+      "Faryus"
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 971797
+  },
+  "cover": "../../assets/covers/forgotten-rituals.jpg",
+  "hidden": false
+}

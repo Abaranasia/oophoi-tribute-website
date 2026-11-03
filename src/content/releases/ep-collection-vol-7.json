@@ -1,0 +1,24 @@
+{
+  "title": "EP Collection Vol.7",
+  "slug": "ep-collection-vol-7",
+  "type": "album",
+  "year": 2006,
+  "labels": [
+    {
+      "name": "Penumbra",
+      "discogsUrl": "https://www.discogs.com/label/Penumbra"
+    }
+  ],
+  "credit": {
+    "with": [
+      "Netherworld",
+      "Liquid Ghosts"
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 1126281
+  },
+  "cover": "../../assets/covers/ep-collection-vol-7.jpg",
+  "hidden": false
+}

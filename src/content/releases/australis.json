@@ -1,0 +1,24 @@
+{
+  "title": "Australis",
+  "slug": "australis",
+  "type": "ep",
+  "year": 2006,
+  "labels": [
+    {
+      "name": "Penumbra",
+      "discogsUrl": "https://www.discogs.com/label/Penumbra"
+    }
+  ],
+  "format": "CDr, EP",
+  "credit": {
+    "with": [
+      "Tau Ceti"
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 799344
+  },
+  "cover": "../../assets/covers/australis.jpg",
+  "hidden": false
+}

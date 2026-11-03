@@ -1,0 +1,22 @@
+{
+  "title": "Night Currents",
+  "slug": "night-currents",
+  "type": "album",
+  "year": 1998,
+  "labels": [
+    {
+      "name": "Due Acque",
+      "discogsUrl": "https://www.discogs.com/label/Due+Acque"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "master",
+    "id": 66157,
+    "versions": 3
+  },
+  "cover": "../../assets/covers/night-currents.jpg",
+  "hidden": false
+}
