@@ -14,6 +14,25 @@
     "kind": "release",
     "id": 4222181
   },
+  "cover": "../../assets/covers/musica-invisibile-4222181.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "10:33"
+    },
+    {
+      "title": "Untitled",
+      "duration": "25:04"
+    },
+    {
+      "title": "Untitled",
+      "duration": "15:59"
+    },
+    {
+      "title": "Untitled",
+      "duration": "13:43"
+    }
+  ],
   "relatedTo": [
     "musica-invisibile"
   ],

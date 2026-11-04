@@ -14,5 +14,16 @@
     "kind": "release",
     "id": 1621747
   },
+  "cover": "../../assets/covers/klangschalen-meditation.jpg",
+  "tracks": [
+    {
+      "title": "Klangschalen Meditation Part One",
+      "duration": "27:55"
+    },
+    {
+      "title": "Klangschalen Meditation Part Two",
+      "duration": "29:27"
+    }
+  ],
   "hidden": false
 }

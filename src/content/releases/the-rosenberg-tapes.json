@@ -15,5 +15,36 @@
     "id": 514352,
     "versions": 2
   },
+  "cover": "../../assets/covers/the-rosenberg-tapes.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "15:03"
+    },
+    {
+      "title": "Untitled",
+      "duration": "9:53"
+    },
+    {
+      "title": "Untitled",
+      "duration": "10:16"
+    },
+    {
+      "title": "Untitled",
+      "duration": "8:15"
+    },
+    {
+      "title": "Untitled",
+      "duration": "10:26"
+    },
+    {
+      "title": "Untitled",
+      "duration": "12:48"
+    },
+    {
+      "title": "Untitled",
+      "duration": "7:18"
+    }
+  ],
   "hidden": false
 }

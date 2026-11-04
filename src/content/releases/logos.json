@@ -14,5 +14,40 @@
     "kind": "release",
     "id": 387725
   },
+  "cover": "../../assets/covers/logos.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "2:38"
+    },
+    {
+      "title": "Untitled",
+      "duration": "7:59"
+    },
+    {
+      "title": "Untitled",
+      "duration": "6:10"
+    },
+    {
+      "title": "Untitled",
+      "duration": "8:21"
+    },
+    {
+      "title": "Untitled",
+      "duration": "7:33"
+    },
+    {
+      "title": "Untitled",
+      "duration": "6:01"
+    },
+    {
+      "title": "Untitled",
+      "duration": "4:04"
+    },
+    {
+      "title": "Untitled",
+      "duration": "11:33"
+    }
+  ],
   "hidden": false
 }

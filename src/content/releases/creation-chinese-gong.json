@@ -16,5 +16,16 @@
     "kind": "release",
     "id": 1719082
   },
+  "cover": "../../assets/covers/creation-chinese-gong.jpg",
+  "tracks": [
+    {
+      "title": "Chinese Gong I",
+      "duration": "29:38"
+    },
+    {
+      "title": "Chinese Gong II",
+      "duration": "29:40"
+    }
+  ],
   "hidden": false
 }

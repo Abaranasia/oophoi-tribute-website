@@ -14,5 +14,28 @@
     "kind": "release",
     "id": 1718976
   },
+  "cover": "../../assets/covers/sabiha-sabiya.jpg",
+  "tracks": [
+    {
+      "title": "Part One",
+      "duration": "5:42"
+    },
+    {
+      "title": "Part Two",
+      "duration": "21:05"
+    },
+    {
+      "title": "Part Three",
+      "duration": "2:39"
+    },
+    {
+      "title": "Part One",
+      "duration": "18:30"
+    },
+    {
+      "title": "Part Two",
+      "duration": "11:40"
+    }
+  ],
   "hidden": false
 }

@@ -15,5 +15,16 @@
     "id": 514362,
     "versions": 2
   },
+  "cover": "../../assets/covers/death-of-a-samurai.jpg",
+  "tracks": [
+    {
+      "title": "New York II",
+      "duration": "31:22"
+    },
+    {
+      "title": "Death Of A Samurai",
+      "duration": "29:30"
+    }
+  ],
   "hidden": false
 }

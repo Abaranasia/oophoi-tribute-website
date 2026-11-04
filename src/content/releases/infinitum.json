@@ -15,5 +15,12 @@
     "id": 514334,
     "versions": 2
   },
+  "cover": "../../assets/covers/infinitum.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "1:07:13"
+    }
+  ],
   "hidden": false
 }

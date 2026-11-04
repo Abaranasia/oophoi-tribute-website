@@ -14,5 +14,16 @@
     "kind": "release",
     "id": 1718954
   },
+  "cover": "../../assets/covers/qumra-ii.jpg",
+  "tracks": [
+    {
+      "title": "Qumra The Eternal Melody",
+      "duration": "29:59"
+    },
+    {
+      "title": "The Hidden Treasure",
+      "duration": "30:06"
+    }
+  ],
   "hidden": false
 }

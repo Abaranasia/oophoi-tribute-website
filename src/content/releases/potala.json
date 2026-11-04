@@ -9,6 +9,7 @@
       "discogsUrl": "https://www.discogs.com/label/Drone+Records"
     }
   ],
+  "catalogNo": "SUB-07",
   "format": "10\", Ltd, Cle/Minialbum",
   "credit": {
     "with": []
@@ -18,5 +19,15 @@
     "id": 329408
   },
   "cover": "../../assets/covers/potala.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "12:20"
+    },
+    {
+      "title": "Untitled",
+      "duration": "15:27"
+    }
+  ],
   "hidden": false
 }

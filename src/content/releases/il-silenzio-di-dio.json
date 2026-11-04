@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Databloem"
     }
   ],
+  "catalogNo": "DB035-2011",
+  "format": "CD, Album",
   "credit": {
     "with": []
   },
@@ -17,5 +19,35 @@
     "id": 3068601
   },
   "cover": "../../assets/covers/il-silenzio-di-dio.jpg",
+  "tracks": [
+    {
+      "title": "Bisbigli Di Angeli Tra Cielo E Terra Part 1 [Angels' Whispers Between Heaven And Earth]",
+      "duration": "11:17"
+    },
+    {
+      "title": "Bisbigli Di Angeli Tra Cielo E Terra Part 2",
+      "duration": "10:25"
+    },
+    {
+      "title": "Lux Aeterna",
+      "duration": "5:15"
+    },
+    {
+      "title": "Le Acque Del Plenilunio [Full Moon Waters]",
+      "duration": "16:08"
+    },
+    {
+      "title": "Sognando La Grande Madre [Dreaming The Great Mother]",
+      "duration": "16:37"
+    },
+    {
+      "title": "Il Tempo Della Fine [End Of Time]",
+      "duration": "9:22"
+    },
+    {
+      "title": "Il Silenzio Di Dio [The Silence Of God]",
+      "duration": "7:52"
+    }
+  ],
   "hidden": false
 }

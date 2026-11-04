@@ -9,6 +9,7 @@
       "discogsUrl": "https://www.discogs.com/label/Due+Acque"
     }
   ],
+  "format": "CDr, Album",
   "credit": {
     "with": []
   },
@@ -18,5 +19,35 @@
     "versions": 2
   },
   "cover": "../../assets/covers/mare-imbrium.jpg",
+  "tracks": [
+    {
+      "title": "Through The Night",
+      "duration": "5:08"
+    },
+    {
+      "title": "Clouds Passing",
+      "duration": "9:21"
+    },
+    {
+      "title": "Cambrian Rain",
+      "duration": "8:05"
+    },
+    {
+      "title": "An Invisible World Revealed",
+      "duration": "11:23"
+    },
+    {
+      "title": "The Goddess Chant",
+      "duration": "4:29"
+    },
+    {
+      "title": "Prophecy",
+      "duration": "9:19"
+    },
+    {
+      "title": "Corridors Of Time",
+      "duration": "15:59"
+    }
+  ],
   "hidden": false
 }

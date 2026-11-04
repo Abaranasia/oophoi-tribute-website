@@ -14,5 +14,64 @@
     "kind": "release",
     "id": 728766
   },
+  "cover": "../../assets/covers/kw.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "2:33"
+    },
+    {
+      "title": "Untitled",
+      "duration": "4:07"
+    },
+    {
+      "title": "Untitled",
+      "duration": "10:56"
+    },
+    {
+      "title": "Untitled",
+      "duration": "2:04"
+    },
+    {
+      "title": "Untitled",
+      "duration": "4:07"
+    },
+    {
+      "title": "Untitled",
+      "duration": "3:19"
+    },
+    {
+      "title": "Untitled",
+      "duration": "2:48"
+    },
+    {
+      "title": "Untitled",
+      "duration": "1:53"
+    },
+    {
+      "title": "Untitled",
+      "duration": "5:25"
+    },
+    {
+      "title": "Untitled",
+      "duration": "7:21"
+    },
+    {
+      "title": "Untitled",
+      "duration": "3:34"
+    },
+    {
+      "title": "Untitled",
+      "duration": "5:11"
+    },
+    {
+      "title": "Untitled",
+      "duration": "7:00"
+    },
+    {
+      "title": "Untitled",
+      "duration": "1:51"
+    }
+  ],
   "hidden": false
 }

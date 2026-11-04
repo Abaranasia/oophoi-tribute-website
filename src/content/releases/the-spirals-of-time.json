@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Aurora"
     }
   ],
+  "catalogNo": "aur 01",
+  "format": "2xCD, Album, Ltd, Num",
   "credit": {
     "with": []
   },
@@ -18,5 +20,51 @@
     "versions": 3
   },
   "cover": "../../assets/covers/the-spirals-of-time.jpg",
+  "tracks": [
+    {
+      "title": "Ism-El Azam (Birth And Death Of Sound)",
+      "duration": "6:42"
+    },
+    {
+      "title": "Wajad (The Sacred Ecstasy)",
+      "duration": "7:02"
+    },
+    {
+      "title": "Pungi (The Enchanted Flute)",
+      "duration": "8:20"
+    },
+    {
+      "title": "Mah (The Healing Water)",
+      "duration": "11:06"
+    },
+    {
+      "title": "Anahad (The Abstract Sound)",
+      "duration": "5:24"
+    },
+    {
+      "title": "Ilm (The Absolute Knowledge)",
+      "duration": "9:33"
+    },
+    {
+      "title": "Huwal (In The Presence Of God)",
+      "duration": "8:19"
+    },
+    {
+      "title": "Zat (The Source Of The Eternal Life)",
+      "duration": "15:33"
+    },
+    {
+      "title": "Aluk (The Sacred Chant)",
+      "duration": "15:27"
+    },
+    {
+      "title": "Hur (The Beauty Of The Sky)",
+      "duration": "6:35"
+    },
+    {
+      "title": "Giza-I Ruh (The Soul Food)",
+      "duration": "7:19"
+    }
+  ],
   "hidden": false
 }

@@ -14,5 +14,24 @@
     "kind": "release",
     "id": 925904
   },
+  "cover": "../../assets/covers/ghost-works.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "6:30"
+    },
+    {
+      "title": "Untitled",
+      "duration": "27:28"
+    },
+    {
+      "title": "Untitled",
+      "duration": "17:32"
+    },
+    {
+      "title": "Untitled",
+      "duration": "10:40"
+    }
+  ],
   "hidden": false
 }

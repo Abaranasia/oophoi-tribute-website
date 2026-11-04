@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Hic+Sunt+Leones"
     }
   ],
+  "catalogNo": "HSL 011",
+  "format": "CD, Album",
   "credit": {
     "with": []
   },
@@ -18,5 +20,29 @@
     "versions": 3
   },
   "cover": "../../assets/covers/static-soundscapes-three-lights-at-the-end-of-the-world.jpg",
+  "tracks": [
+    {
+      "title": "Floating Through The Gates Of Time",
+      "duration": "8:03"
+    },
+    {
+      "title": "Space Forest Part 1: Distant Monastery",
+      "duration": "19:30"
+    },
+    {
+      "title": "Cave Ritual",
+      "duration": "11:23"
+    },
+    {
+      "title": "The Chamber Of Dreams",
+      "duration": "4:22"
+    },
+    {
+      "title": "Three Lights At The End Of The World"
+    },
+    {
+      "title": "Infinite Skies / The Final Passage"
+    }
+  ],
   "hidden": false
 }

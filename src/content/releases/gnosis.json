@@ -14,5 +14,40 @@
     "kind": "release",
     "id": 400749
   },
+  "cover": "../../assets/covers/gnosis.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "13:02"
+    },
+    {
+      "title": "Untitled",
+      "duration": "6:18"
+    },
+    {
+      "title": "Untitled",
+      "duration": "5:50"
+    },
+    {
+      "title": "Untitled",
+      "duration": "5:17"
+    },
+    {
+      "title": "Untitled",
+      "duration": "8:05"
+    },
+    {
+      "title": "Untitled",
+      "duration": "9:15"
+    },
+    {
+      "title": "Untitled",
+      "duration": "8:12"
+    },
+    {
+      "title": "Untitled",
+      "duration": "5:52"
+    }
+  ],
   "hidden": false
 }

@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Electroshock+Records"
     }
   ],
+  "catalogNo": "ELCD 024",
+  "format": "CD, Album",
   "credit": {
     "with": []
   },
@@ -17,5 +19,23 @@
     "id": 135514
   },
   "cover": "../../assets/covers/bardo.jpg",
+  "tracks": [
+    {
+      "title": "Samten Bardo - Contemplation",
+      "duration": "16:14"
+    },
+    {
+      "title": "Chikai Bardo - Dissolution",
+      "duration": "11:38"
+    },
+    {
+      "title": "Chonyi Bardo - A Path Of The Lights",
+      "duration": "28:54"
+    },
+    {
+      "title": "Sipai Bardo - Crossing The Bridge Of Existence The Eternal Cycle",
+      "duration": "17:34"
+    }
+  ],
   "hidden": false
 }

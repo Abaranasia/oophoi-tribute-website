@@ -9,6 +9,7 @@
       "discogsUrl": "https://www.discogs.com/label/Due+Acque"
     }
   ],
+  "format": "CDr, Comp, Ltd",
   "credit": {
     "with": []
   },
@@ -18,5 +19,31 @@
     "versions": 5
   },
   "cover": "../../assets/covers/time-fragments-vol-2-the-archives-1998-1999.jpg",
+  "tracks": [
+    {
+      "title": "Voices In Ether",
+      "duration": "9:07"
+    },
+    {
+      "title": "The Last Farewell",
+      "duration": "8:06"
+    },
+    {
+      "title": "The Changeling",
+      "duration": "13:30"
+    },
+    {
+      "title": "Mah (Alternate Version)",
+      "duration": "11:28"
+    },
+    {
+      "title": "Requiem For The Green Planet",
+      "duration": "18:09"
+    },
+    {
+      "title": "Borealis",
+      "duration": "10:45"
+    }
+  ],
   "hidden": false
 }

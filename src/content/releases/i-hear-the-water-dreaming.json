@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Prikosnov%C3%A9nie"
     }
   ],
+  "catalogNo": "PRIK092",
+  "format": "CD, Album, Ltd",
   "credit": {
     "with": [
       "Louisa John-Krol"
@@ -19,5 +21,40 @@
     "id": 495927
   },
   "cover": "../../assets/covers/i-hear-the-water-dreaming.jpg",
+  "tracks": [
+    {
+      "title": "The Narni Owl",
+      "duration": "6:43"
+    },
+    {
+      "title": "Conversations Between A Wolf And A Firefly",
+      "duration": "10:43"
+    },
+    {
+      "title": "The Hour Of Fauns",
+      "duration": "6:25"
+    },
+    {
+      "title": "Let The Nightsky Envelope Us",
+      "duration": "7:13"
+    },
+    {
+      "title": "The Dream Of Cydron"
+    },
+    {
+      "title": "The Dream Of Kalyh"
+    },
+    {
+      "title": "The Dream Of Narwal"
+    },
+    {
+      "title": "The Whispering Valley",
+      "duration": "3:42"
+    },
+    {
+      "title": "A Vessel For Michael",
+      "duration": "11:31"
+    }
+  ],
   "hidden": false
 }

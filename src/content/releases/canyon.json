@@ -15,5 +15,24 @@
     "id": 514350,
     "versions": 2
   },
+  "cover": "../../assets/covers/canyon.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "18:44"
+    },
+    {
+      "title": "Untitled",
+      "duration": "12:18"
+    },
+    {
+      "title": "Untitled",
+      "duration": "3:37"
+    },
+    {
+      "title": "Untitled",
+      "duration": "24:50"
+    }
+  ],
   "hidden": false
 }

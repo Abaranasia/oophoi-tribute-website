@@ -15,5 +15,12 @@
     "id": 514347,
     "versions": 2
   },
+  "cover": "../../assets/covers/ruh.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "1:02:24"
+    }
+  ],
   "hidden": false
 }

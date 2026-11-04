@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Faria+Records"
     }
   ],
+  "catalogNo": "FAR-08",
+  "format": "CD, Album, Ltd",
   "credit": {
     "with": []
   },
@@ -17,5 +19,23 @@
     "id": 971878
   },
   "cover": "../../assets/covers/dreams-part-three.jpg",
+  "tracks": [
+    {
+      "title": "Endless Waiting At The Gates Of Forever",
+      "duration": "20:18"
+    },
+    {
+      "title": "The Moon Hangs In The Sky Like A Dreaming Eye",
+      "duration": "14:43"
+    },
+    {
+      "title": "Rusted Machineries Abandoned On An Alien Shore",
+      "duration": "20:24"
+    },
+    {
+      "title": "Kissing The Electric Butterfly",
+      "duration": "21:42"
+    }
+  ],
   "hidden": false
 }

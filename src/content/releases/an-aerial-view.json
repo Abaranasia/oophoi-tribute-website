@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Glacial+Movements+Records"
     }
   ],
+  "catalogNo": "WSGM001",
+  "format": "CD, Album, Ltd",
   "credit": {
     "with": []
   },
@@ -17,5 +19,11 @@
     "id": 1289284
   },
   "cover": "../../assets/covers/an-aerial-view.jpg",
+  "tracks": [
+    {
+      "title": "An Aerial View",
+      "duration": "1:05:07"
+    }
+  ],
   "hidden": false
 }

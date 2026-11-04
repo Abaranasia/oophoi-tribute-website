@@ -14,5 +14,28 @@
     "kind": "release",
     "id": 1621682
   },
+  "cover": "../../assets/covers/geisha.jpg",
+  "tracks": [
+    {
+      "title": "Part One",
+      "duration": "5:37"
+    },
+    {
+      "title": "Part Two",
+      "duration": "20:41"
+    },
+    {
+      "title": "Part Three",
+      "duration": "5:05"
+    },
+    {
+      "title": "Part One",
+      "duration": "22:46"
+    },
+    {
+      "title": "Part Two",
+      "duration": "8:03"
+    }
+  ],
   "hidden": false
 }

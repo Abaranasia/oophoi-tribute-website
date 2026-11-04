@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Nextera"
     }
   ],
+  "catalogNo": "ERA 2038-2",
+  "format": "CD, Album, Ltd",
   "credit": {
     "with": []
   },
@@ -17,5 +19,27 @@
     "id": 700792
   },
   "cover": "../../assets/covers/hymns-to-a-silent-sky.jpg",
+  "tracks": [
+    {
+      "title": "Beyond These Skies",
+      "duration": "7:07"
+    },
+    {
+      "title": "Fragile Beauty",
+      "duration": "12:34"
+    },
+    {
+      "title": "The Unbearable Sadness Of Memories",
+      "duration": "21:23"
+    },
+    {
+      "title": "Night Psalm",
+      "duration": "11:47"
+    },
+    {
+      "title": "Let The Nightsky Envelope Us",
+      "duration": "7:30"
+    }
+  ],
   "hidden": false
 }

@@ -9,6 +9,7 @@
       "discogsUrl": "https://www.discogs.com/label/Due+Acque"
     }
   ],
+  "format": "CDr",
   "credit": {
     "with": []
   },
@@ -18,5 +19,27 @@
     "versions": 3
   },
   "cover": "../../assets/covers/night-currents.jpg",
+  "tracks": [
+    {
+      "title": "Darklands",
+      "duration": "6:13"
+    },
+    {
+      "title": "The Necromancer",
+      "duration": "11:59"
+    },
+    {
+      "title": "Timegate",
+      "duration": "16:32"
+    },
+    {
+      "title": "Dimensional Passage",
+      "duration": "0:49"
+    },
+    {
+      "title": "Floating",
+      "duration": "28:30"
+    }
+  ],
   "hidden": false
 }

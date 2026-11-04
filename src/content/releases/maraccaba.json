@@ -14,5 +14,36 @@
     "kind": "release",
     "id": 1647091
   },
+  "cover": "../../assets/covers/maraccaba.jpg",
+  "tracks": [
+    {
+      "title": "Part One",
+      "duration": "14:37"
+    },
+    {
+      "title": "Part Two",
+      "duration": "6:58"
+    },
+    {
+      "title": "Part Three",
+      "duration": "9:02"
+    },
+    {
+      "title": "Part Four",
+      "duration": "6:55"
+    },
+    {
+      "title": "Part Five",
+      "duration": "5:24"
+    },
+    {
+      "title": "Part Six",
+      "duration": "9:52"
+    },
+    {
+      "title": "Part Seven",
+      "duration": "5:21"
+    }
+  ],
   "hidden": false
 }

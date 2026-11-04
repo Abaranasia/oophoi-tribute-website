@@ -14,5 +14,16 @@
     "kind": "release",
     "id": 1554049
   },
+  "cover": "../../assets/covers/tibetische-klangschalen-i.jpg",
+  "tracks": [
+    {
+      "title": "Part One",
+      "duration": "29:57"
+    },
+    {
+      "title": "Part Two",
+      "duration": "29:52"
+    }
+  ],
   "hidden": false
 }

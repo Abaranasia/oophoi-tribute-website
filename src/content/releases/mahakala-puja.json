@@ -14,5 +14,32 @@
     "kind": "release",
     "id": 925914
   },
+  "cover": "../../assets/covers/mahakala-puja.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "0:13"
+    },
+    {
+      "title": "Untitled",
+      "duration": "13:27"
+    },
+    {
+      "title": "Untitled",
+      "duration": "9:35"
+    },
+    {
+      "title": "Untitled",
+      "duration": "7:07"
+    },
+    {
+      "title": "Untitled",
+      "duration": "26:27"
+    },
+    {
+      "title": "Untitled",
+      "duration": "4:32"
+    }
+  ],
   "hidden": false
 }

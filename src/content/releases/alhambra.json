@@ -14,5 +14,24 @@
     "kind": "release",
     "id": 1553920
   },
+  "cover": "../../assets/covers/alhambra.jpg",
+  "tracks": [
+    {
+      "title": "The Violet Rose Part One",
+      "duration": "16:56"
+    },
+    {
+      "title": "The Violet Rose Part Two",
+      "duration": "11:34"
+    },
+    {
+      "title": "The Moorish Princess Part One",
+      "duration": "24:59"
+    },
+    {
+      "title": "The Moorish Princess Part Two",
+      "duration": "4:27"
+    }
+  ],
   "hidden": false
 }

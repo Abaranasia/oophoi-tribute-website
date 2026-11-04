@@ -9,6 +9,7 @@
       "discogsUrl": "https://www.discogs.com/label/Due+Acque"
     }
   ],
+  "format": "CDr, Album",
   "credit": {
     "with": [
       "Mathias Grassow",
@@ -21,5 +22,11 @@
     "versions": 4
   },
   "cover": "../../assets/covers/upuaut.jpg",
+  "tracks": [
+    {
+      "title": "Upuaut",
+      "duration": "1:05:52"
+    }
+  ],
   "hidden": false
 }

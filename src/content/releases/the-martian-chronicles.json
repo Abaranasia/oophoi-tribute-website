@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Hypnos"
     }
   ],
+  "catalogNo": "hyp3159",
+  "format": "CD, Album",
   "credit": {
     "with": [
       "Seren Ffordd"
@@ -19,5 +21,35 @@
     "id": 3158796
   },
   "cover": "../../assets/covers/the-martian-chronicles.jpg",
+  "tracks": [
+    {
+      "title": "The Long Years",
+      "duration": "14:38"
+    },
+    {
+      "title": "Dead Cities",
+      "duration": "15:03"
+    },
+    {
+      "title": "Blue Fire",
+      "duration": "13:19"
+    },
+    {
+      "title": "End Of A Changeling",
+      "duration": "2:49"
+    },
+    {
+      "title": "Canals",
+      "duration": "8:10"
+    },
+    {
+      "title": "Flamebirds Waiting For The Storm",
+      "duration": "10:05"
+    },
+    {
+      "title": "Unremembered",
+      "duration": "9:55"
+    }
+  ],
   "hidden": false
 }

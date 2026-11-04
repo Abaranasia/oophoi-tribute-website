@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Umbra"
     }
   ],
+  "catalogNo": "umbra 060",
+  "format": "CDr, Comp",
   "credit": {
     "with": []
   },
@@ -17,5 +19,27 @@
     "id": 210933
   },
   "cover": "../../assets/covers/whispers-from-the-noisy-void.jpg",
+  "tracks": [
+    {
+      "title": "Cold Sun",
+      "duration": "6:50"
+    },
+    {
+      "title": "Eclipse In The 4th System",
+      "duration": "21:44"
+    },
+    {
+      "title": "Quantum Light",
+      "duration": "13:25"
+    },
+    {
+      "title": "Hieros Gamos",
+      "duration": "9:55"
+    },
+    {
+      "title": "Substance Metallique",
+      "duration": "23:12"
+    }
+  ],
   "hidden": false
 }

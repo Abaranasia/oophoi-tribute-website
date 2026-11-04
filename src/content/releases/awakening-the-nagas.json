@@ -9,6 +9,7 @@
       "discogsUrl": "https://www.discogs.com/label/Penumbra"
     }
   ],
+  "catalogNo": "Penumbra 013",
   "format": "CDr, EP",
   "credit": {
     "with": []
@@ -18,5 +19,11 @@
     "id": 624859
   },
   "cover": "../../assets/covers/awakening-the-nagas.jpg",
+  "tracks": [
+    {
+      "title": "Awakening The Nagas",
+      "duration": "24:27"
+    }
+  ],
   "hidden": false
 }

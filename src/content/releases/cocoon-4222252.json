@@ -14,6 +14,21 @@
     "kind": "release",
     "id": 4222252
   },
+  "cover": "../../assets/covers/cocoon-4222252.jpg",
+  "tracks": [
+    {
+      "title": "New York",
+      "duration": "30:40"
+    },
+    {
+      "title": "Cocoon",
+      "duration": "10:54"
+    },
+    {
+      "title": "The Great Room / Vargas",
+      "duration": "10:00"
+    }
+  ],
   "relatedTo": [
     "cocoon"
   ],

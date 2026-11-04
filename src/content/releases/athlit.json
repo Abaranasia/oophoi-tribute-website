@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Hypnos"
     }
   ],
+  "catalogNo": "hyp2236",
+  "format": "CD, Album",
   "credit": {
     "with": []
   },
@@ -17,5 +19,23 @@
     "id": 221375
   },
   "cover": "../../assets/covers/athlit.jpg",
+  "tracks": [
+    {
+      "title": "Drifting Into Blank Space",
+      "duration": "16:40"
+    },
+    {
+      "title": "An Ever-Changing Horizon",
+      "duration": "10:30"
+    },
+    {
+      "title": "On Wings Of Light",
+      "duration": "18:05"
+    },
+    {
+      "title": "Lord Of The Starfields",
+      "duration": "28:31"
+    }
+  ],
   "hidden": false
 }

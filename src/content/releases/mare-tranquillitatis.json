@@ -9,6 +9,7 @@
       "discogsUrl": "https://www.discogs.com/label/Due+Acque"
     }
   ],
+  "format": "CDr, Album",
   "credit": {
     "with": []
   },
@@ -18,5 +19,31 @@
     "versions": 3
   },
   "cover": "../../assets/covers/mare-tranquillitatis.jpg",
+  "tracks": [
+    {
+      "title": "Hypnos",
+      "duration": "5:23"
+    },
+    {
+      "title": "In The Wake Of Kere",
+      "duration": "12:27"
+    },
+    {
+      "title": "Enlil",
+      "duration": "4:10"
+    },
+    {
+      "title": "Snwy",
+      "duration": "5:00"
+    },
+    {
+      "title": "Ybris",
+      "duration": "10:10"
+    },
+    {
+      "title": "The Dreaming Lilith",
+      "duration": "28:45"
+    }
+  ],
   "hidden": false
 }

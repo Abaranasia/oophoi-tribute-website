@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Umbra"
     }
   ],
+  "catalogNo": "umbra 015",
+  "format": "2xCDr, Album",
   "credit": {
     "with": [
       "Tau Ceti"
@@ -20,5 +22,31 @@
     "versions": 3
   },
   "cover": "../../assets/covers/archaic-oceans.jpg",
+  "tracks": [
+    {
+      "title": "Atlantis Rising",
+      "duration": "39:48"
+    },
+    {
+      "title": "Ophir",
+      "duration": "20:37"
+    },
+    {
+      "title": "Meru",
+      "duration": "17:33"
+    },
+    {
+      "title": "Faroer",
+      "duration": "9:19"
+    },
+    {
+      "title": "Piri Reis",
+      "duration": "17:37"
+    },
+    {
+      "title": "Ultima Thule",
+      "duration": "12:31"
+    }
+  ],
   "hidden": false
 }

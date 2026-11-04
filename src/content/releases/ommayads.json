@@ -14,5 +14,24 @@
     "kind": "release",
     "id": 925702
   },
+  "cover": "../../assets/covers/ommayads.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "14:10"
+    },
+    {
+      "title": "Untitled",
+      "duration": "24:22"
+    },
+    {
+      "title": "Untitled",
+      "duration": "12:13"
+    },
+    {
+      "title": "Untitled",
+      "duration": "6:01"
+    }
+  ],
   "hidden": false
 }

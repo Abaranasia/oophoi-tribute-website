@@ -14,5 +14,24 @@
     "kind": "release",
     "id": 1626276
   },
+  "cover": "../../assets/covers/qumra-i.jpg",
+  "tracks": [
+    {
+      "title": "Part One",
+      "duration": "10:06"
+    },
+    {
+      "title": "Part Two",
+      "duration": "20:31"
+    },
+    {
+      "title": "Part Three",
+      "duration": "4:15"
+    },
+    {
+      "title": "Part Four",
+      "duration": "25:02"
+    }
+  ],
   "hidden": false
 }

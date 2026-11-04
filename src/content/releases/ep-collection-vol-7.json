@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Penumbra"
     }
   ],
+  "catalogNo": "Penumbra 037",
+  "format": "CDr, Comp",
   "credit": {
     "with": [
       "Netherworld",
@@ -20,5 +22,19 @@
     "id": 1126281
   },
   "cover": "../../assets/covers/ep-collection-vol-7.jpg",
+  "tracks": [
+    {
+      "title": "Postcards From The Void",
+      "duration": "21:50"
+    },
+    {
+      "title": "Suddenly The Birds Fell To Silence",
+      "duration": "20:53"
+    },
+    {
+      "title": "Lost",
+      "duration": "22:20"
+    }
+  ],
   "hidden": false
 }

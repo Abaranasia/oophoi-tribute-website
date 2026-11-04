@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Penumbra"
     }
   ],
+  "catalogNo": "Penumbra 031",
+  "format": "CDr, Comp",
   "credit": {
     "with": []
   },
@@ -17,5 +19,23 @@
     "id": 1084582
   },
   "cover": "../../assets/covers/ep-collection-vol-1.jpg",
+  "tracks": [
+    {
+      "title": "As We Slip Away To Dream",
+      "duration": "23:59"
+    },
+    {
+      "title": "Vertigo",
+      "duration": "23:40"
+    },
+    {
+      "title": "A Desperate Serenity",
+      "duration": "16:55"
+    },
+    {
+      "title": "Echoes From A Bleeding Sky",
+      "duration": "5:50"
+    }
+  ],
   "hidden": false
 }

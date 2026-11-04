@@ -9,6 +9,7 @@
       "discogsUrl": "https://www.discogs.com/label/Penumbra"
     }
   ],
+  "catalogNo": "Penumbra 010",
   "format": "CDr, EP",
   "credit": {
     "with": [
@@ -20,5 +21,15 @@
     "id": 1339394
   },
   "cover": "../../assets/covers/le-torri-del-silenzio.jpg",
+  "tracks": [
+    {
+      "title": "An' Warth",
+      "duration": "11:07"
+    },
+    {
+      "title": "Baath Nag",
+      "duration": "7:15"
+    }
+  ],
   "hidden": false
 }

@@ -9,6 +9,7 @@
       "discogsUrl": "https://www.discogs.com/label/Penumbra"
     }
   ],
+  "catalogNo": "Penumbra 019",
   "format": "CDr, EP",
   "credit": {
     "with": []
@@ -18,5 +19,15 @@
     "id": 624901
   },
   "cover": "../../assets/covers/khumba-mela.jpg",
+  "tracks": [
+    {
+      "title": "Khumba Mela Part I",
+      "duration": "12:09"
+    },
+    {
+      "title": "Khumba Mela Part II",
+      "duration": "8:32"
+    }
+  ],
   "hidden": false
 }

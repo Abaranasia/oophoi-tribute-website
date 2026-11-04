@@ -14,5 +14,12 @@
     "kind": "release",
     "id": 925698
   },
+  "cover": "../../assets/covers/live-at-due-acque-1998.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "1:08:35"
+    }
+  ],
   "hidden": false
 }

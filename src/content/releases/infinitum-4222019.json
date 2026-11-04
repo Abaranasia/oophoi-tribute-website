@@ -14,6 +14,13 @@
     "kind": "release",
     "id": 4222019
   },
+  "cover": "../../assets/covers/infinitum-4222019.jpg",
+  "tracks": [
+    {
+      "title": "Infinitum",
+      "duration": "1:07:13"
+    }
+  ],
   "relatedTo": [
     "infinitum"
   ],

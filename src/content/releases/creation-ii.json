@@ -14,5 +14,16 @@
     "kind": "release",
     "id": 925613
   },
+  "cover": "../../assets/covers/creation-ii.jpg",
+  "tracks": [
+    {
+      "title": "Part I",
+      "duration": "30:21"
+    },
+    {
+      "title": "Part II",
+      "duration": "30:36"
+    }
+  ],
   "hidden": false
 }

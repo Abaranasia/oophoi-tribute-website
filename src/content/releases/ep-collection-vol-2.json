@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Penumbra"
     }
   ],
+  "catalogNo": "Penumbra 032",
+  "format": "CDr, Comp",
   "credit": {
     "with": []
   },
@@ -17,5 +19,19 @@
     "id": 1084600
   },
   "cover": "../../assets/covers/ep-collection-vol-2.jpg",
+  "tracks": [
+    {
+      "title": "Awakening The Nagas",
+      "duration": "24:27"
+    },
+    {
+      "title": "Where The Green Ants Dream",
+      "duration": "21:04"
+    },
+    {
+      "title": "The Light Sweeps All The Mist Away",
+      "duration": "22:16"
+    }
+  ],
   "hidden": false
 }

@@ -14,5 +14,36 @@
     "kind": "release",
     "id": 925667
   },
+  "cover": "../../assets/covers/cosmic-glue-ii.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "5:41"
+    },
+    {
+      "title": "Untitled",
+      "duration": "9:22"
+    },
+    {
+      "title": "Untitled",
+      "duration": "17:24"
+    },
+    {
+      "title": "Untitled",
+      "duration": "6:03"
+    },
+    {
+      "title": "Untitled",
+      "duration": "9:41"
+    },
+    {
+      "title": "Untitled",
+      "duration": "6:24"
+    },
+    {
+      "title": "Untitled",
+      "duration": "9:31"
+    }
+  ],
   "hidden": false
 }

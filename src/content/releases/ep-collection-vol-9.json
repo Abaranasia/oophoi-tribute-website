@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Penumbra"
     }
   ],
+  "catalogNo": "Penumbra 039",
+  "format": "CDr, Comp",
   "credit": {
     "with": [
       "L.E.M."
@@ -19,5 +21,23 @@
     "id": 1126288
   },
   "cover": "../../assets/covers/ep-collection-vol-9.jpg",
+  "tracks": [
+    {
+      "title": "The Sacred River",
+      "duration": "18:38"
+    },
+    {
+      "title": "Eph-Elm-Nah",
+      "duration": "9:14"
+    },
+    {
+      "title": "Australis",
+      "duration": "20:32"
+    },
+    {
+      "title": "Borealis",
+      "duration": "22:08"
+    }
+  ],
   "hidden": false
 }

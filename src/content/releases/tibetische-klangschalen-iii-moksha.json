@@ -14,5 +14,16 @@
     "kind": "release",
     "id": 1561598
   },
+  "cover": "../../assets/covers/tibetische-klangschalen-iii-moksha.jpg",
+  "tracks": [
+    {
+      "title": "Moksha Part One",
+      "duration": "29:52"
+    },
+    {
+      "title": "Moksha Part Two",
+      "duration": "23:53"
+    }
+  ],
   "hidden": false
 }

@@ -14,6 +14,53 @@
     "kind": "release",
     "id": 924534
   },
+  "cover": "../../assets/covers/touareg-924534.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "1:51"
+    },
+    {
+      "title": "Untitled",
+      "duration": "6:08"
+    },
+    {
+      "title": "Untitled",
+      "duration": "5:22"
+    },
+    {
+      "title": "Untitled",
+      "duration": "6:04"
+    },
+    {
+      "title": "Untitled",
+      "duration": "4:16"
+    },
+    {
+      "title": "Untitled",
+      "duration": "6:18"
+    },
+    {
+      "title": "Untitled",
+      "duration": "5:04"
+    },
+    {
+      "title": "Untitled",
+      "duration": "7:10"
+    },
+    {
+      "title": "Untitled",
+      "duration": "7:15"
+    },
+    {
+      "title": "Untitled",
+      "duration": "6:47"
+    },
+    {
+      "title": "Untitled",
+      "duration": "5:54"
+    }
+  ],
   "relatedTo": [
     "touareg"
   ],

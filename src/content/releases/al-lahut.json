@@ -14,5 +14,72 @@
     "kind": "release",
     "id": 924385
   },
+  "cover": "../../assets/covers/al-lahut.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "2:49"
+    },
+    {
+      "title": "Untitled",
+      "duration": "13:41"
+    },
+    {
+      "title": "Untitled",
+      "duration": "2:54"
+    },
+    {
+      "title": "Untitled",
+      "duration": "2:31"
+    },
+    {
+      "title": "Untitled",
+      "duration": "1:28"
+    },
+    {
+      "title": "Untitled",
+      "duration": "3:01"
+    },
+    {
+      "title": "Untitled",
+      "duration": "2:45"
+    },
+    {
+      "title": "Untitled",
+      "duration": "3:12"
+    },
+    {
+      "title": "Untitled",
+      "duration": "4:26"
+    },
+    {
+      "title": "Untitled",
+      "duration": "5:18"
+    },
+    {
+      "title": "Untitled",
+      "duration": "1:11"
+    },
+    {
+      "title": "Untitled",
+      "duration": "3:07"
+    },
+    {
+      "title": "Untitled",
+      "duration": "1:34"
+    },
+    {
+      "title": "Untitled",
+      "duration": "3:49"
+    },
+    {
+      "title": "Untitled",
+      "duration": "2:35"
+    },
+    {
+      "title": "Untitled",
+      "duration": "1:22"
+    }
+  ],
   "hidden": false
 }

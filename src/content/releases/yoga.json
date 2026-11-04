@@ -14,5 +14,36 @@
     "kind": "release",
     "id": 728781
   },
+  "cover": "../../assets/covers/yoga.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "10:13"
+    },
+    {
+      "title": "Untitled",
+      "duration": "7:20"
+    },
+    {
+      "title": "Untitled",
+      "duration": "8:08"
+    },
+    {
+      "title": "Untitled",
+      "duration": "7:12"
+    },
+    {
+      "title": "Untitled",
+      "duration": "10:16"
+    },
+    {
+      "title": "Untitled",
+      "duration": "7:16"
+    },
+    {
+      "title": "Untitled",
+      "duration": "5:51"
+    }
+  ],
   "hidden": false
 }

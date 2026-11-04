@@ -9,6 +9,7 @@
       "discogsUrl": "https://www.discogs.com/label/Penumbra"
     }
   ],
+  "catalogNo": "Penumbra 012",
   "format": "CDr, EP",
   "credit": {
     "with": []
@@ -18,5 +19,11 @@
     "id": 624866
   },
   "cover": "../../assets/covers/as-we-slip-away-to-dream.jpg",
+  "tracks": [
+    {
+      "title": "As We Slip Away To Dream",
+      "duration": "23:59"
+    }
+  ],
   "hidden": false
 }
