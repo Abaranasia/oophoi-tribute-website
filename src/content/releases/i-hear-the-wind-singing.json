@@ -1,0 +1,21 @@
+{
+  "title": "I Hear The Wind Singing",
+  "slug": "i-hear-the-wind-singing",
+  "type": "album",
+  "year": 2013,
+  "labels": [
+    {
+      "name": "Practising Nature",
+      "discogsUrl": "https://www.discogs.com/label/Practising+Nature"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 4649992
+  },
+  "cover": "../../assets/covers/i-hear-the-wind-singing.jpg",
+  "hidden": false
+}

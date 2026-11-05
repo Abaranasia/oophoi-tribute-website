@@ -1,0 +1,36 @@
+{
+  "title": "Schwingungen Radio Auf CD Nr. 87 - 08/2002",
+  "slug": "schwingungen-radio-auf-cd-nr-87-08-2002",
+  "type": "compilation-appearance",
+  "year": 2002,
+  "labels": [
+    {
+      "name": "Cue Records (Germany)",
+      "discogsUrl": "https://www.discogs.com/label/Cue+Records+%28Germany%29"
+    }
+  ],
+  "format": "CD, Comp",
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 744285
+  },
+  "cover": "../../assets/covers/schwingungen-radio-auf-cd-nr-87-08-2002.jpg",
+  "tracks": [
+    {
+      "title": "Lord Of The Starfields",
+      "duration": "3:58"
+    },
+    {
+      "title": "Drifting Into Blank Space",
+      "duration": "3:58"
+    }
+  ],
+  "note": "Both tracks taken from the album Athlit (2002)",
+  "relatedTo": [
+    "athlit"
+  ],
+  "hidden": false
+}

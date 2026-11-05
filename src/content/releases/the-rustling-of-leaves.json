@@ -1,0 +1,22 @@
+{
+  "title": "The Rustling Of Leaves",
+  "slug": "the-rustling-of-leaves",
+  "type": "album",
+  "year": 2003,
+  "labels": [
+    {
+      "name": "Due Acque",
+      "discogsUrl": "https://www.discogs.com/label/Due+Acque"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "master",
+    "id": 66160,
+    "versions": 2
+  },
+  "cover": "../../assets/covers/the-rustling-of-leaves.jpg",
+  "hidden": false
+}

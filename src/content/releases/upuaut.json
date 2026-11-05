@@ -1,0 +1,25 @@
+{
+  "title": "Upuaut",
+  "slug": "upuaut",
+  "type": "album",
+  "year": 1999,
+  "labels": [
+    {
+      "name": "Due Acque",
+      "discogsUrl": "https://www.discogs.com/label/Due+Acque"
+    }
+  ],
+  "credit": {
+    "with": [
+      "Mathias Grassow",
+      "Amir Baghiri"
+    ]
+  },
+  "discogs": {
+    "kind": "master",
+    "id": 104489,
+    "versions": 4
+  },
+  "cover": "../../assets/covers/upuaut.jpg",
+  "hidden": false
+}

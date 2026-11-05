@@ -1,0 +1,21 @@
+{
+  "title": "Bardo",
+  "slug": "bardo",
+  "type": "album",
+  "year": 2002,
+  "labels": [
+    {
+      "name": "Electroshock Records",
+      "discogsUrl": "https://www.discogs.com/label/Electroshock+Records"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 135514
+  },
+  "cover": "../../assets/covers/bardo.jpg",
+  "hidden": false
+}

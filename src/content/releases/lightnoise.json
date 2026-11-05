@@ -1,0 +1,42 @@
+{
+  "title": "Lightnoise",
+  "slug": "lightnoise",
+  "type": "compilation-appearance",
+  "year": 2005,
+  "labels": [
+    {
+      "name": "Umbra",
+      "discogsUrl": "https://www.discogs.com/label/Umbra"
+    }
+  ],
+  "format": "2xCDr",
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 460616
+  },
+  "cover": "../../assets/covers/lightnoise.jpg",
+  "tracks": [
+    {
+      "title": "Eclipse In The Fourth System",
+      "duration": "21:44",
+      "with": [
+        "Tau Ceti"
+      ]
+    },
+    {
+      "title": "Quantum Light",
+      "duration": "13:25",
+      "with": [
+        "Klaus Wiese"
+      ]
+    }
+  ],
+  "note": "Both tracks Included in Whispers from the Noisy Void (2007)",
+  "relatedTo": [
+    "whispers-from-the-noisy-void"
+  ],
+  "hidden": false
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Wouivre",
+  "slug": "wouivre",
+  "type": "album",
+  "year": 1999,
+  "labels": [
+    {
+      "name": "Aurora",
+      "discogsUrl": "https://www.discogs.com/label/Aurora"
+    }
+  ],
+  "credit": {
+    "with": [
+      "Klaus Wiese"
+    ]
+  },
+  "discogs": {
+    "kind": "master",
+    "id": 66161,
+    "versions": 2
+  },
+  "cover": "../../assets/covers/wouivre.jpg",
+  "hidden": false
+}

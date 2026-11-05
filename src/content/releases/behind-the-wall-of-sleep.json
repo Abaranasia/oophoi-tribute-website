@@ -1,0 +1,22 @@
+{
+  "title": "Behind The Wall Of Sleep",
+  "slug": "behind-the-wall-of-sleep",
+  "type": "album",
+  "year": 1998,
+  "labels": [
+    {
+      "name": "Due Acque",
+      "discogsUrl": "https://www.discogs.com/label/Due+Acque"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "master",
+    "id": 66151,
+    "versions": 3
+  },
+  "cover": "../../assets/covers/behind-the-wall-of-sleep.jpg",
+  "hidden": false
+}

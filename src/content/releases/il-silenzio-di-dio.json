@@ -1,0 +1,21 @@
+{
+  "title": "Il Silenzio Di Dio",
+  "slug": "il-silenzio-di-dio",
+  "type": "album",
+  "year": 2011,
+  "labels": [
+    {
+      "name": "Databloem",
+      "discogsUrl": "https://www.discogs.com/label/Databloem"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 3068601
+  },
+  "cover": "../../assets/covers/il-silenzio-di-dio.jpg",
+  "hidden": false
+}

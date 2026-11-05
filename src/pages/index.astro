@@ -1,0 +1,19 @@
+---
+import { getReleasesBySlug, getVisibleReleases } from "@features/discography/domain/releases";
+import FeaturedReleases from "@features/home/components/FeaturedReleases.astro";
+import HomeHero from "@features/home/components/HomeHero.astro";
+import HomeStory from "@features/home/components/HomeStory.astro";
+import MemorialNote from "@features/home/components/MemorialNote.astro";
+import { featuredReleaseSlugs } from "@features/home/featured-releases";
+import BaseLayout from "@features/shared/layouts/BaseLayout.astro";
+import { heroPortrait } from "@features/home/portrait";
+
+const featured = await getReleasesBySlug(featuredReleaseSlugs);
+const total = (await getVisibleReleases()).length;
+---
+<BaseLayout image={heroPortrait.src} imageAlt={heroPortrait.alt} type="profile">
+  <HomeHero />
+  <HomeStory />
+  <FeaturedReleases releases={featured} total={total} />
+  <MemorialNote />
+</BaseLayout>

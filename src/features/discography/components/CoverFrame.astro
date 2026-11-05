@@ -1,0 +1,46 @@
+---
+// Legacy covers are 90px Discogs thumbnails. Instead of stretching them into
+// blurry squares, they sit at a capped size inside a quiet square frame.
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+
+interface Props {
+  cover?: ImageMetadata;
+  /** Empty when the surrounding link already names the release. */
+  alt: string;
+  /** Text shown when there is no cover, e.g. a catalogue number. */
+  placeholder?: string;
+  size?: "card" | "detail";
+}
+
+const { cover, alt, placeholder = "Oöphoi", size = "card" } = Astro.props;
+---
+<div
+  class:list={[
+    "flex aspect-square w-full items-center justify-center border border-hairline bg-frame transition-colors",
+    size === "detail" ? "max-w-80" : "group-hover:border-hairline-strong",
+  ]}
+>
+  {cover ? (
+    <Image
+      src={cover}
+      alt={alt}
+      width={cover.width}
+      height={cover.height}
+      loading={size === "detail" ? "eager" : "lazy"}
+      class:list={[
+        "h-auto shadow-[0_12px_32px_rgba(0,0,0,0.55)] ring-1 ring-black/40",
+        size === "detail" ? "w-36" : "w-[56%] max-w-36",
+      ]}
+    />
+  ) : (
+    <span
+      class="px-4 text-center font-display text-xl tracking-[0.2em] text-muted uppercase"
+      role={alt ? "img" : undefined}
+      aria-label={alt || undefined}
+      aria-hidden={alt ? undefined : "true"}
+    >
+      {placeholder}
+    </span>
+  )}
+</div>

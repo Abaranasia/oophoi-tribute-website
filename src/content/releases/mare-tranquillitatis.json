@@ -1,0 +1,22 @@
+{
+  "title": "Mare Tranquillitatis",
+  "slug": "mare-tranquillitatis",
+  "type": "album",
+  "year": 2001,
+  "labels": [
+    {
+      "name": "Due Acque",
+      "discogsUrl": "https://www.discogs.com/label/Due+Acque"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "master",
+    "id": 66156,
+    "versions": 3
+  },
+  "cover": "../../assets/covers/mare-tranquillitatis.jpg",
+  "hidden": false
+}

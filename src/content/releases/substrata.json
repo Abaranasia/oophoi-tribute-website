@@ -1,0 +1,24 @@
+{
+  "title": "Substrata",
+  "slug": "substrata",
+  "type": "ep",
+  "year": 2006,
+  "labels": [
+    {
+      "name": "Penumbra",
+      "discogsUrl": "https://www.discogs.com/label/Penumbra"
+    }
+  ],
+  "format": "CDr, EP",
+  "credit": {
+    "with": [
+      "L.E.M."
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 1339364
+  },
+  "cover": "../../assets/covers/substrata.jpg",
+  "hidden": false
+}

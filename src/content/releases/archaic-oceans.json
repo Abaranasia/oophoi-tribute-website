@@ -1,0 +1,24 @@
+{
+  "title": "Archaic Oceans",
+  "slug": "archaic-oceans",
+  "type": "album",
+  "year": 2004,
+  "labels": [
+    {
+      "name": "Umbra",
+      "discogsUrl": "https://www.discogs.com/label/Umbra"
+    }
+  ],
+  "credit": {
+    "with": [
+      "Tau Ceti"
+    ]
+  },
+  "discogs": {
+    "kind": "master",
+    "id": 462017,
+    "versions": 3
+  },
+  "cover": "../../assets/covers/archaic-oceans.jpg",
+  "hidden": false
+}

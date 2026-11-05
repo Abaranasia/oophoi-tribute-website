@@ -1,0 +1,22 @@
+{
+  "title": "Vertigo",
+  "slug": "vertigo",
+  "type": "ep",
+  "year": 2005,
+  "labels": [
+    {
+      "name": "Penumbra",
+      "discogsUrl": "https://www.discogs.com/label/Penumbra"
+    }
+  ],
+  "format": "CDr, EP",
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 624872
+  },
+  "cover": "../../assets/covers/vertigo.jpg",
+  "hidden": false
+}

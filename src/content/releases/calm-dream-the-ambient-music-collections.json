@@ -1,0 +1,32 @@
+{
+  "title": "Calm Dream - The Ambient Music Collections",
+  "slug": "calm-dream-the-ambient-music-collections",
+  "type": "compilation-appearance",
+  "year": 2004,
+  "labels": [
+    {
+      "name": "Nitromusic",
+      "discogsUrl": "https://www.discogs.com/label/Nitromusic"
+    }
+  ],
+  "format": "CDROM, Comp",
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 3668647
+  },
+  "cover": "../../assets/covers/calm-dream-the-ambient-music-collections.jpg",
+  "tracks": [
+    {
+      "title": "Mare Imbrium",
+      "duration": "1:03:43"
+    }
+  ],
+  "note": "Full Mare Imbrium album (2001)",
+  "relatedTo": [
+    "mare-imbrium"
+  ],
+  "hidden": false
+}

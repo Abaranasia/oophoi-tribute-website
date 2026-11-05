@@ -1,0 +1,24 @@
+{
+  "title": "Postcards From The Void",
+  "slug": "postcards-from-the-void",
+  "type": "ep",
+  "year": 2005,
+  "labels": [
+    {
+      "name": "Penumbra",
+      "discogsUrl": "https://www.discogs.com/label/Penumbra"
+    }
+  ],
+  "format": "CDr, EP",
+  "credit": {
+    "with": [
+      "Netherworld"
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 624858
+  },
+  "cover": "../../assets/covers/postcards-from-the-void.jpg",
+  "hidden": false
+}

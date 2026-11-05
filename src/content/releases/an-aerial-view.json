@@ -1,0 +1,21 @@
+{
+  "title": "An Aerial View",
+  "slug": "an-aerial-view",
+  "type": "album",
+  "year": 2008,
+  "labels": [
+    {
+      "name": "Glacial Movements Records",
+      "discogsUrl": "https://www.discogs.com/label/Glacial+Movements+Records"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 1289284
+  },
+  "cover": "../../assets/covers/an-aerial-view.jpg",
+  "hidden": false
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Time Fragments Vol. 1 - The Archives 1995/1997",
+  "slug": "time-fragments-vol-1-the-archives-1995-1997",
+  "type": "album",
+  "year": 2001,
+  "labels": [
+    {
+      "name": "Due Acque",
+      "discogsUrl": "https://www.discogs.com/label/Due+Acque"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "master",
+    "id": 104501,
+    "versions": 5
+  },
+  "cover": "../../assets/covers/time-fragments-vol-1-the-archives-1995-1997.jpg",
+  "hidden": false
+}

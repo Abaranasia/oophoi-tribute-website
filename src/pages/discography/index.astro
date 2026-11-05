@@ -1,0 +1,42 @@
+---
+import ReleaseFilter from "@features/discography/components/ReleaseFilter.astro";
+import ReleaseGrid from "@features/discography/components/ReleaseGrid.astro";
+import { getReleaseSections } from "@features/discography/domain/releases";
+import BaseLayout from "@features/shared/layouts/BaseLayout.astro";
+
+const sections = await getReleaseSections();
+const total = sections.reduce((sum, section) => sum + section.releases.length, 0);
+---
+<BaseLayout
+  title="Discography"
+  description={`The Oöphoi discography: ${total} albums, EPs, compilation appearances and Klaus Wiese remasters, with labels, credits and Discogs links.`}
+>
+  <div class="bg-ground-alt">
+    <div class="page-container flex flex-col gap-12 py-16 sm:py-24">
+      <header class="flex flex-wrap items-end justify-between gap-6">
+        <div class="flex max-w-narrow flex-col gap-4">
+          <h1 class="text-5xl sm:text-[56px]">Discography</h1>
+          <p class="text-[17px] leading-relaxed text-ink-soft">
+            {total} releases from 1996 to 2013, compiled from the original tribute site. Each entry links to
+            Discogs for full credits and versions.
+          </p>
+        </div>
+        <ReleaseFilter groups={sections.map(({ id, label, releases }) => ({ id, label, count: releases.length }))} />
+      </header>
+
+      <div id="all" class="flex flex-col gap-20">
+        {sections.map((section) => (
+          <section id={section.id} data-release-section aria-labelledby={`${section.id}-heading`} class="flex scroll-mt-8 flex-col gap-8">
+            <div class="flex flex-col gap-2 border-t border-hairline pt-8">
+              <h2 id={`${section.id}-heading`} class="text-4xl">
+                {section.label} <span class="font-sans text-base text-muted">({section.releases.length})</span>
+              </h2>
+              <p class="text-[15px] text-muted">{section.description}</p>
+            </div>
+            <ReleaseGrid releases={section.releases} />
+          </section>
+        ))}
+      </div>
+    </div>
+  </div>
+</BaseLayout>

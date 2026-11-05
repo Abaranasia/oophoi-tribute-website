@@ -1,0 +1,21 @@
+{
+  "title": "Dreams Part Three",
+  "slug": "dreams-part-three",
+  "type": "album",
+  "year": 2006,
+  "labels": [
+    {
+      "name": "Faria Records",
+      "discogsUrl": "https://www.discogs.com/label/Faria+Records"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 971878
+  },
+  "cover": "../../assets/covers/dreams-part-three.jpg",
+  "hidden": false
+}

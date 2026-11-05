@@ -1,0 +1,21 @@
+{
+  "title": "I Hear The Woods Whispering",
+  "slug": "i-hear-the-woods-whispering",
+  "type": "album",
+  "year": 2013,
+  "labels": [
+    {
+      "name": "Practising Nature",
+      "discogsUrl": "https://www.discogs.com/label/Practising+Nature"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 4649949
+  },
+  "cover": "../../assets/covers/i-hear-the-woods-whispering.jpg",
+  "hidden": false
+}

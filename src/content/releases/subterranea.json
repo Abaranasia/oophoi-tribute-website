@@ -1,0 +1,23 @@
+{
+  "title": "Subterranea",
+  "slug": "subterranea",
+  "type": "album",
+  "year": 2003,
+  "labels": [
+    {
+      "name": "Nextera",
+      "discogsUrl": "https://www.discogs.com/label/Nextera"
+    }
+  ],
+  "credit": {
+    "with": [
+      "Tau Ceti"
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 337555
+  },
+  "cover": "../../assets/covers/subterranea.jpg",
+  "hidden": false
+}

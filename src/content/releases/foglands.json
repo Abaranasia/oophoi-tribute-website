@@ -1,0 +1,29 @@
+{
+  "title": "Foglands",
+  "slug": "foglands",
+  "type": "compilation-appearance",
+  "year": 2007,
+  "labels": [
+    {
+      "name": "Umbra",
+      "discogsUrl": "https://www.discogs.com/label/Umbra"
+    }
+  ],
+  "format": "CDr, Comp",
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 1550577
+  },
+  "cover": "../../assets/covers/foglands.jpg",
+  "tracks": [
+    {
+      "title": "Outremer",
+      "duration": "13:06"
+    }
+  ],
+  "note": "Previously unreleased",
+  "hidden": false
+}

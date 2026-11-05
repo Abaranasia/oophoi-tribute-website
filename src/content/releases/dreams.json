@@ -1,0 +1,22 @@
+{
+  "title": "Dreams",
+  "slug": "dreams",
+  "type": "minialbum",
+  "year": 2004,
+  "labels": [
+    {
+      "name": "Umbra",
+      "discogsUrl": "https://www.discogs.com/label/Umbra"
+    }
+  ],
+  "format": "7xCDr, Mini, Ltd",
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 398805
+  },
+  "cover": "../../assets/covers/dreams.jpg",
+  "hidden": false
+}

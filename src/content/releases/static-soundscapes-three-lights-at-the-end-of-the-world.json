@@ -1,0 +1,22 @@
+{
+  "title": "Static Soundscapes: Three Lights At The End Of The World",
+  "slug": "static-soundscapes-three-lights-at-the-end-of-the-world",
+  "type": "album",
+  "year": 1996,
+  "labels": [
+    {
+      "name": "Hic Sunt Leones",
+      "discogsUrl": "https://www.discogs.com/label/Hic+Sunt+Leones"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "master",
+    "id": 210906,
+    "versions": 3
+  },
+  "cover": "../../assets/covers/static-soundscapes-three-lights-at-the-end-of-the-world.jpg",
+  "hidden": false
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Cherua",
+  "slug": "cherua",
+  "type": "album",
+  "year": 2006,
+  "labels": [
+    {
+      "name": "Umbra",
+      "discogsUrl": "https://www.discogs.com/label/Umbra"
+    }
+  ],
+  "credit": {
+    "with": [
+      "Klaus Wiese"
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 1550697
+  },
+  "cover": "../../assets/covers/cherua.jpg",
+  "hidden": false
+}

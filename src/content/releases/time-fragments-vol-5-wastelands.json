@@ -1,0 +1,22 @@
+{
+  "title": "Time Fragments Vol. 5 - Wastelands",
+  "slug": "time-fragments-vol-5-wastelands",
+  "type": "album",
+  "year": 2005,
+  "labels": [
+    {
+      "name": "Umbra",
+      "discogsUrl": "https://www.discogs.com/label/Umbra"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "master",
+    "id": 304358,
+    "versions": 2
+  },
+  "cover": "../../assets/covers/time-fragments-vol-5-wastelands.jpg",
+  "hidden": false
+}

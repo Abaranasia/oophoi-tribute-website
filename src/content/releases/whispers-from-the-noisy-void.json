@@ -1,0 +1,21 @@
+{
+  "title": "Whispers From The Noisy Void",
+  "slug": "whispers-from-the-noisy-void",
+  "type": "album",
+  "year": 2007,
+  "labels": [
+    {
+      "name": "Umbra",
+      "discogsUrl": "https://www.discogs.com/label/Umbra"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "master",
+    "id": 210933
+  },
+  "cover": "../../assets/covers/whispers-from-the-noisy-void.jpg",
+  "hidden": false
+}

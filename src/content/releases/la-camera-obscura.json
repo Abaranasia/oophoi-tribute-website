@@ -1,0 +1,25 @@
+{
+  "title": "La Camera Obscura",
+  "slug": "la-camera-obscura",
+  "type": "album",
+  "year": 2004,
+  "labels": [
+    {
+      "name": "Umbra",
+      "discogsUrl": "https://www.discogs.com/label/Umbra"
+    }
+  ],
+  "credit": {
+    "alias": "Liquid Ghosts",
+    "with": [
+      "Netherworld",
+      "Tau Ceti"
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 375909
+  },
+  "cover": "../../assets/covers/la-camera-obscura.jpg",
+  "hidden": false
+}

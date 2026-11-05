@@ -1,0 +1,21 @@
+{
+  "title": "Arpe Di Sabbia",
+  "slug": "arpe-di-sabbia",
+  "type": "album",
+  "year": 2007,
+  "labels": [
+    {
+      "name": "Nextera",
+      "discogsUrl": "https://www.discogs.com/label/Nextera"
+    }
+  ],
+  "credit": {
+    "with": []
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 1072058
+  },
+  "cover": "../../assets/covers/arpe-di-sabbia.jpg",
+  "hidden": false
+}

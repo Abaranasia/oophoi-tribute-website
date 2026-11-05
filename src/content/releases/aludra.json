@@ -1,0 +1,24 @@
+{
+  "title": "Aludra",
+  "slug": "aludra",
+  "type": "ep",
+  "year": 2006,
+  "labels": [
+    {
+      "name": "Penumbra",
+      "discogsUrl": "https://www.discogs.com/label/Penumbra"
+    }
+  ],
+  "format": "CDr, EP",
+  "credit": {
+    "with": [
+      "L.E.M."
+    ]
+  },
+  "discogs": {
+    "kind": "release",
+    "id": 805119
+  },
+  "cover": "../../assets/covers/aludra.jpg",
+  "hidden": false
+}
