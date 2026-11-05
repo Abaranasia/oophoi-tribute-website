@@ -1,14 +1,14 @@
 ---
 import { render } from "astro:content";
 import ReleaseGrid from "@features/discography/components/ReleaseGrid.astro";
-import { getReleaseLinks, getReleasesBySlug } from "@features/discography/domain/releases";
+import { assertReleaseSlugs, getReleasesBySlug } from "@features/discography/domain/releases";
 import { getNewsPosts } from "@features/news/domain/news";
 import BaseLayout from "@features/shared/layouts/BaseLayout.astro";
 
 const posts = await Promise.all(
   (await getNewsPosts()).map(async (post) => {
-    // Fails the build on a release slug without a page.
-    await getReleaseLinks(post.data.releases);
+    // getReleasesBySlug skips unknown slugs, so check them first: a typo fails the build.
+    await assertReleaseSlugs(post.data.releases);
     return {
       post,
       id: post.id.replace(/^\d{4}-\d{2}-/, ""),

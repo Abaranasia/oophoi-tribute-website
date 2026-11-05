@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { releaseLinkMap, releaseLinks } from "./release-links";
+import { assertReleasePages, releaseLinkMap, releaseLinks } from "./release-links";
 
 const releases = [
   { slug: "the-physics-of-heaven", title: "The Physics Of Heaven", hidden: false },
@@ -27,5 +27,17 @@ describe("releaseLinkMap", () => {
 
   it("fails on unknown slugs like releaseLinks", () => {
     expect(() => releaseLinkMap(["missing"], releases)).toThrow(/missing/);
+  });
+});
+
+describe("assertReleasePages", () => {
+  it("accepts slugs that all have a page", () => {
+    expect(() => assertReleasePages(["the-physics-of-heaven"], releases)).not.toThrow();
+    expect(() => assertReleasePages([], releases)).not.toThrow();
+  });
+
+  it("fails the build on an unknown or hidden slug", () => {
+    expect(() => assertReleasePages(["the-physics-of-hell"], releases)).toThrow(/the-physics-of-hell/);
+    expect(() => assertReleasePages(["ruh-925627"], releases)).toThrow(/ruh-925627/);
   });
 });

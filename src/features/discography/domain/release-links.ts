@@ -27,3 +27,8 @@ export function releaseLinkMap<S extends string>(slugs: readonly S[], releases: 
   const links = releaseLinks(slugs, releases);
   return Object.fromEntries(slugs.map((slug, index) => [slug, links[index]])) as Record<S, ReleaseLink>;
 }
+
+/** Throws on an unknown or hidden slug, for content that lists releases without linking them inline. */
+export function assertReleasePages(slugs: readonly string[], releases: readonly Linkable[]): void {
+  releaseLinks(slugs, releases);
+}

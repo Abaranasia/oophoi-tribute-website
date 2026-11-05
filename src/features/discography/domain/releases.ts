@@ -3,7 +3,7 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 import { groupReleases, sortReleases, type ReleaseGroup } from "./release-groups";
 import { relatedSlugs } from "./release-format";
-import { releaseLinkMap, type ReleaseLink } from "./release-links";
+import { assertReleasePages, releaseLinkMap, type ReleaseLink } from "./release-links";
 import { countOwnReleases, selectReleases, type ReleaseSelector } from "./release-selection";
 
 export type Release = CollectionEntry<"releases">;
@@ -61,6 +61,15 @@ export async function getOwnReleaseCount(): Promise<number> {
 export async function getReleaseLinks<S extends string>(slugs: readonly S[]): Promise<Record<S, ReleaseLink>> {
   const releases = await getVisibleReleases();
   return releaseLinkMap(
+    slugs,
+    releases.map(({ data }) => data),
+  );
+}
+
+/** Fails the build when any slug has no release page (unknown or hidden). */
+export async function assertReleaseSlugs(slugs: readonly string[]): Promise<void> {
+  const releases = await getVisibleReleases();
+  assertReleasePages(
     slugs,
     releases.map(({ data }) => data),
   );

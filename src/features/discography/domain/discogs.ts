@@ -1,3 +1,5 @@
+import { OOPHOI_DISCOGS_ARTIST_ID } from "@features/shared/config/site";
+
 export type DiscogsKind = "master" | "release";
 
 export interface DiscogsRef {
@@ -16,7 +18,7 @@ export function discogsUrl({ kind, id }: DiscogsRef): string {
 // Discogs ids checked against api.discogs.com (artist and label credits of the releases in this
 // collection) on 2026-11-03. Names that are not listed here are shown as plain text.
 const DISCOGS_ARTIST_IDS: Readonly<Record<string, number>> = {
-  "Oöphoi": 162295,
+  "Oöphoi": OOPHOI_DISCOGS_ARTIST_ID,
   "Alio Die": 45771,
   "Aqua Dorsa": 1497795,
   "Enrico Coniglio": 846624,
