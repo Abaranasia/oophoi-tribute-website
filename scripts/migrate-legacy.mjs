@@ -134,11 +134,12 @@ if (abort) {
   process.exit(1);
 }
 
+let leftoverBackups;
 try {
-  await swapStagedDirectories([
+  ({ leftoverBackups } = await swapStagedDirectories([
     { staging: releasesStaging, target: releasesDir },
     { staging: coversStaging, target: coversDir },
-  ]);
+  ]));
 } catch (error) {
   await removeStaging();
   // swapStagedDirectories restores the originals before rethrowing, and says so in the message
@@ -148,3 +149,8 @@ try {
 }
 
 console.log(`\nWrote ${releases.length} release files and ${coverCount} covers.`);
+if (leftoverBackups.length > 0) {
+  // The swap succeeded; these only hold the previous files, but the next run refuses to start while they exist.
+  console.warn("\nWarning: could not remove the old backup directories. Delete them before the next run:");
+  for (const path of leftoverBackups) console.warn(`  ${path}`);
+}

@@ -31,11 +31,16 @@ export function abortReason({ unparsed, writeErrors }) {
 
 /**
  * Replaces each `target` directory with its `staging` directory. Either every target is swapped,
- * or every target is restored as it was and the error is rethrown.
+ * or every target is restored as it was and the error is rethrown. Removing the backups afterwards
+ * cannot undo a completed swap, so a failure there is reported instead of thrown.
  * @param {{ staging: string, target: string }[]} pairs
- * @param {{ rename?: (from: string, to: string) => Promise<void> }} [ops] injectable for tests
+ * @param {{
+ *   rename?: (from: string, to: string) => Promise<void>,
+ *   rm?: (path: string, options: { recursive: boolean, force: boolean }) => Promise<void>,
+ * }} [ops] injectable for tests
+ * @returns {Promise<{ leftoverBackups: string[] }>} backups that could not be removed after the swap
  */
-export async function swapStagedDirectories(pairs, { rename = fsRename } = {}) {
+export async function swapStagedDirectories(pairs, { rename = fsRename, rm = fsRm } = {}) {
   for (const { staging, target } of pairs) {
     if (!existsSync(staging)) throw new Error(`Staging directory not found: ${staging}`);
     if (existsSync(backupPathFor(target))) {
@@ -66,5 +71,13 @@ export async function swapStagedDirectories(pairs, { rename = fsRename } = {}) {
     throw error;
   }
 
-  for (const { target } of pairs) await fsRm(backupPathFor(target), { recursive: true, force: true });
+  const leftoverBackups = [];
+  for (const { target } of pairs) {
+    try {
+      await rm(backupPathFor(target), { recursive: true, force: true });
+    } catch {
+      leftoverBackups.push(backupPathFor(target));
+    }
+  }
+  return { leftoverBackups };
 }

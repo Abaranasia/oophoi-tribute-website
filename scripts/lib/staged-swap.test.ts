@@ -103,6 +103,23 @@ describe("swapStagedDirectories", () => {
     expect(await list(backupPathFor(releases.target))).toEqual(["a.json"]);
   });
 
+  it("still succeeds and reports the leftover backups when removing them fails after the swap", async () => {
+    const releases = await prepare("releases", ["a.json"], ["b.json"]);
+    const failingRm = async () => {
+      throw new Error("EBUSY: backup is locked");
+    };
+
+    const result = await swapStagedDirectories([releases], { rm: failingRm });
+
+    expect(await list(releases.target)).toEqual(["b.json"]);
+    expect(result.leftoverBackups).toEqual([backupPathFor(releases.target)]);
+  });
+
+  it("reports no leftover backups when cleanup succeeds", async () => {
+    const releases = await prepare("releases", ["a.json"], ["b.json"]);
+    expect(await swapStagedDirectories([releases])).toEqual({ leftoverBackups: [] });
+  });
+
   it("refuses to start when a staging directory is missing, without touching any target", async () => {
     const releases = await prepare("releases", ["a.json"], ["b.json"]);
     const missing = { staging: join(root, ".covers.staging"), target: join(root, "covers") };
