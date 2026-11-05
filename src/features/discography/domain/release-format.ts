@@ -25,7 +25,12 @@ function creditPhrase({ artist, credit }: { artist: string; credit: Credit }): s
   return collaborators ? `${artist} as ${credit.alias}, with ${collaborators}` : `${artist} as ${credit.alias}`;
 }
 
-/** "Album" → "album", but "EP" and "Klaus Wiese remaster" keep their capitals. */
+/**
+ * Lowercases the first letter only when the label opens with an ordinary capitalised word (one
+ * capital, then lowercase letters) that is not followed by another capitalised word. So "Album" and
+ * "Box set" become "album" and "box set", while acronyms ("EP", "CDr") and labels that open with a
+ * name ("Klaus Wiese remaster") keep their capitals.
+ */
 const typeInSentence = (typeLabel: string) =>
   /^[A-Z][a-z]+\b(?! [A-Z])/.test(typeLabel) ? typeLabel.charAt(0).toLowerCase() + typeLabel.slice(1) : typeLabel;
 

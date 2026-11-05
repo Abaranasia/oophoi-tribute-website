@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { creditLine, relatedSlugs, releaseDescription } from "./release-format";
+import { RELEASE_TYPE_LABELS } from "./release-types";
 
 describe("creditLine", () => {
   it("credits Oöphoi alone when there are no collaborators", () => {
@@ -53,6 +54,36 @@ describe("releaseDescription", () => {
     const sentence = (typeLabel: string) => releaseDescription({ ...base, typeLabel, artist: "Oöphoi", credit: { with: [] }, labels: [] });
     expect(sentence("Compilation appearance")).toBe("Genesis (2002), compilation appearance by Oöphoi.");
     expect(sentence("EP")).toBe("Genesis (2002), EP by Oöphoi.");
+  });
+
+  it.each([
+    ["Album", "album"],
+    ["EP", "EP"],
+    ["Minialbum", "minialbum"],
+    ["Compilation appearance", "compilation appearance"],
+    ["Box set", "box set"],
+    ["Klaus Wiese remaster", "Klaus Wiese remaster"],
+  ])("writes the release type label %s as %s inside the sentence", (typeLabel, expected) => {
+    const sentence = releaseDescription({ ...base, typeLabel, artist: "Oöphoi", credit: { with: [] }, labels: [] });
+    expect(sentence).toBe(`Genesis (2002), ${expected} by Oöphoi.`);
+  });
+
+  it("covers every release type label", () => {
+    expect(Object.values(RELEASE_TYPE_LABELS).sort()).toEqual(
+      ["Album", "Box set", "Compilation appearance", "EP", "Klaus Wiese remaster", "Minialbum"],
+    );
+  });
+
+  it.each([
+    ["CDr", "CDr"],
+    ["DVD", "DVD"],
+    ["A", "A"],
+    ["box set", "box set"],
+    ["Split with Tau Ceti", "split with Tau Ceti"],
+    ["Live Album", "Live Album"],
+  ])("leaves the edge case %s as %s", (typeLabel, expected) => {
+    const sentence = releaseDescription({ ...base, typeLabel, artist: "Oöphoi", credit: { with: [] }, labels: [] });
+    expect(sentence).toBe(`Genesis (2002), ${expected} by Oöphoi.`);
   });
 
   it("joins several labels and omits the label part when there is none", () => {

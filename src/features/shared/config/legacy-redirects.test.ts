@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { RELEASE_GROUPS } from "@features/discography/domain/release-groups";
 import { astroRedirects, LEGACY_REDIRECTS, redirectFileMoves } from "./legacy-redirects.mjs";
 
 // Every page of the 2013 site that visitors or search engines may still link to.
@@ -26,7 +27,8 @@ const LEGACY_PAGES = [
 ];
 
 const SITE_PAGES = ["/", "/news/", "/biography/", "/discography/", "/labels/umbra/", "/labels/penumbra/", "/gallery/", "/memorial/", "/about/"];
-const DISCOGRAPHY_ANCHORS = ["albums", "eps", "compilations", "kw-remasters"];
+// The discography page renders one section per release group, with the group id as its anchor.
+const DISCOGRAPHY_ANCHORS = RELEASE_GROUPS.map((group) => group.id);
 
 describe("LEGACY_REDIRECTS", () => {
   it.each(LEGACY_PAGES)("maps /%s to a page of the new site", (file) => {
