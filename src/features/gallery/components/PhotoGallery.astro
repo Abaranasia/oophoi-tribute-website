@@ -62,9 +62,10 @@ const fullImages = new Map(
 <dialog
   data-lightbox
   aria-label="Photo viewer"
-  class="m-auto max-h-[96vh] w-[min(96vw,1100px)] max-w-none overflow-auto rounded-[2px] border border-hairline-strong bg-ground p-4 text-ink backdrop:bg-black/85 sm:p-6"
+  class="m-auto max-h-[96vh] w-[min(96vw,1100px)] max-w-none overflow-auto rounded-[2px] border border-hairline-strong bg-ground p-0 text-ink backdrop:bg-black/85"
 >
-  <div class="flex flex-col gap-4">
+  <!-- The padding lives here, not on the dialog, so only true backdrop clicks hit the dialog element. -->
+  <div class="flex flex-col gap-4 p-4 sm:p-6">
     <div class="flex items-center justify-between gap-4">
       <p data-lightbox-counter class="text-[13px] text-muted tabular-nums" aria-live="polite"></p>
       <button type="button" data-lightbox-close autofocus class="pill pill-outline">
