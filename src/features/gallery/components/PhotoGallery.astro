@@ -1,0 +1,145 @@
+---
+// Grouped thumbnail grid. Without JavaScript each thumbnail links to the full image; with it, the
+// links open a native <dialog> lightbox (Esc closes, arrow keys or buttons move, focus returns).
+import { getImage, Image } from "astro:assets";
+import type { PhotoGroup } from "../domain/photo-groups";
+import type { Photo } from "../domain/photos";
+
+interface Props {
+  groups: PhotoGroup<Photo>[];
+}
+
+const { groups } = Astro.props;
+const fullImages = new Map(
+  await Promise.all(
+    groups
+      .flatMap((group) => group.photos)
+      .map(async (photo) => [photo.id, await getImage({ src: photo.src, width: Math.min(photo.src.width, 1600) })] as const),
+  ),
+);
+---
+<div class="flex flex-col gap-20">
+  {groups.map((group) => (
+    <section id={group.id} aria-labelledby={`${group.id}-heading`} class="flex scroll-mt-8 flex-col gap-8">
+      <h2 id={`${group.id}-heading`} class="border-t border-hairline pt-8 text-4xl">
+        {group.heading} <span class="font-sans text-base text-muted">({group.photos.length})</span>
+      </h2>
+      <ul class="grid grid-cols-2 gap-x-5 gap-y-8 p-0 sm:grid-cols-[repeat(auto-fill,minmax(200px,1fr))] sm:gap-x-8">
+        {group.photos.map((photo) => {
+          const full = fullImages.get(photo.id)!;
+          return (
+            <li class="list-none">
+              <figure class="flex flex-col gap-3">
+                <a
+                  href={full.src}
+                  data-lightbox-item
+                  data-index={photo.index}
+                  data-alt={photo.alt}
+                  data-caption={photo.caption}
+                  data-width={full.attributes.width}
+                  data-height={full.attributes.height}
+                  class="group block overflow-hidden rounded-[2px] border border-hairline bg-frame"
+                >
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    widths={[240, 480]}
+                    sizes="(min-width: 640px) 240px, 50vw"
+                    class="aspect-square w-full object-cover transition-opacity group-hover:opacity-85"
+                  />
+                  <span class="sr-only"> (view larger)</span>
+                </a>
+                <figcaption class="text-[13px] leading-snug text-muted">{photo.caption}</figcaption>
+              </figure>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  ))}
+</div>
+
+<dialog
+  data-lightbox
+  aria-label="Photo viewer"
+  class="m-auto max-h-[96vh] w-[min(96vw,1100px)] max-w-none overflow-auto rounded-[2px] border border-hairline-strong bg-ground p-4 text-ink backdrop:bg-black/85 sm:p-6"
+>
+  <div class="flex flex-col gap-4">
+    <div class="flex items-center justify-between gap-4">
+      <p data-lightbox-counter class="text-[13px] text-muted tabular-nums" aria-live="polite"></p>
+      <button type="button" data-lightbox-close autofocus class="pill pill-outline">
+        Close<span class="sr-only"> photo viewer</span>
+      </button>
+    </div>
+    <figure class="flex flex-col gap-3">
+      <img data-lightbox-image alt="" class="mx-auto h-auto max-h-[72vh] w-auto max-w-full object-contain" />
+      <figcaption id="lightbox-caption" data-lightbox-caption class="text-[15px] leading-relaxed text-ink-soft"></figcaption>
+    </figure>
+    <div class="flex justify-between gap-4">
+      <button type="button" data-lightbox-prev class="pill pill-outline">
+        <span aria-hidden="true">←&nbsp;</span>Previous<span class="sr-only"> photo</span>
+      </button>
+      <button type="button" data-lightbox-next class="pill pill-outline">
+        Next<span class="sr-only"> photo</span><span aria-hidden="true">&nbsp;→</span>
+      </button>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const dialog = document.querySelector<HTMLDialogElement>("[data-lightbox]");
+  const items = [...document.querySelectorAll<HTMLAnchorElement>("[data-lightbox-item]")].sort(
+    (a, b) => Number(a.dataset.index) - Number(b.dataset.index),
+  );
+  const image = dialog?.querySelector<HTMLImageElement>("[data-lightbox-image]");
+  const caption = dialog?.querySelector<HTMLElement>("[data-lightbox-caption]");
+  const counter = dialog?.querySelector<HTMLElement>("[data-lightbox-counter]");
+
+  if (dialog && image && caption && counter && typeof dialog.showModal === "function") {
+    let current = 0;
+
+    const show = (index: number) => {
+      current = (index + items.length) % items.length;
+      const item = items[current];
+      image.src = item.href;
+      image.alt = item.dataset.alt ?? "";
+      image.width = Number(item.dataset.width);
+      image.height = Number(item.dataset.height);
+      caption.textContent = item.dataset.caption ?? "";
+      counter.textContent = `Photo ${current + 1} of ${items.length}`;
+    };
+
+    items.forEach((item, index) => {
+      item.addEventListener("click", (event) => {
+        // Modified clicks keep their default behaviour (e.g. open the image in a new tab).
+        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        show(index);
+        dialog.showModal();
+      });
+    });
+
+    dialog.querySelector("[data-lightbox-prev]")?.addEventListener("click", () => show(current - 1));
+    dialog.querySelector("[data-lightbox-next]")?.addEventListener("click", () => show(current + 1));
+    dialog.querySelector("[data-lightbox-close]")?.addEventListener("click", () => dialog.close());
+
+    dialog.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowLeft") show(current - 1);
+      else if (event.key === "ArrowRight") show(current + 1);
+      else return;
+      event.preventDefault();
+    });
+
+    // A click on the backdrop lands on the dialog element itself.
+    dialog.addEventListener("click", (event) => {
+      if (event.target === dialog) dialog.close();
+    });
+
+    // Esc, the close button and backdrop clicks all end here: focus returns to the thumbnail of the
+    // photo shown last, so keyboard users continue from where they were.
+    dialog.addEventListener("close", () => {
+      image.removeAttribute("src");
+      items[current]?.focus();
+    });
+  }
+</script>

@@ -14,6 +14,21 @@
     "kind": "release",
     "id": 924457
   },
+  "cover": "../../assets/covers/cocoon-924457.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "30:40"
+    },
+    {
+      "title": "Untitled",
+      "duration": "10:54"
+    },
+    {
+      "title": "Untitled",
+      "duration": "10:00"
+    }
+  ],
   "relatedTo": [
     "cocoon"
   ],

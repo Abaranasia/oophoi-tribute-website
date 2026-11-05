@@ -14,6 +14,17 @@
     "kind": "release",
     "id": 4222212
   },
+  "cover": "../../assets/covers/death-of-a-samurai-4222212.jpg",
+  "tracks": [
+    {
+      "title": "New York II",
+      "duration": "31:22"
+    },
+    {
+      "title": "Death Of A Samurai",
+      "duration": "29:30"
+    }
+  ],
   "relatedTo": [
     "death-of-a-samurai"
   ],

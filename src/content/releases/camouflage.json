@@ -15,5 +15,20 @@
     "id": 514365,
     "versions": 2
   },
+  "cover": "../../assets/covers/camouflage.jpg",
+  "tracks": [
+    {
+      "title": "Cocoon II",
+      "duration": "15:12"
+    },
+    {
+      "title": "Death Of A Samurai II",
+      "duration": "29:05"
+    },
+    {
+      "title": "Minotaurus",
+      "duration": "25:20"
+    }
+  ],
   "hidden": false
 }

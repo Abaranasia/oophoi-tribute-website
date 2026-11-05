@@ -9,6 +9,7 @@
       "discogsUrl": "https://www.discogs.com/label/Umbra"
     }
   ],
+  "catalogNo": "Umbra 002",
   "format": "7xCDr, Mini, Ltd",
   "credit": {
     "with": []
@@ -18,5 +19,46 @@
     "id": 398805
   },
   "cover": "../../assets/covers/dreams.jpg",
+  "tracks": [
+    {
+      "title": "First Transmission",
+      "duration": "5:49"
+    },
+    {
+      "title": "Metamorphosis",
+      "duration": "7:50"
+    },
+    {
+      "title": "Dissolution",
+      "duration": "8:05"
+    },
+    {
+      "title": "Meeting The Water Spirits",
+      "duration": "20:00"
+    },
+    {
+      "title": "Warm Waves"
+    },
+    {
+      "title": "The Howling Of Subcyclonical Entities",
+      "duration": "22:33"
+    },
+    {
+      "title": "A Single, Perfect Sphere Beyond The Curved Horizon",
+      "duration": "21:52"
+    },
+    {
+      "title": "A Flock Of Butterflies Descends Into A Zen Garden",
+      "duration": "21:45"
+    },
+    {
+      "title": "Endless Waiting At The Gates Of Forever",
+      "duration": "22:05"
+    },
+    {
+      "title": "Whispering Fireflies At The Edge Of The Night",
+      "duration": "22:25"
+    }
+  ],
   "hidden": false
 }

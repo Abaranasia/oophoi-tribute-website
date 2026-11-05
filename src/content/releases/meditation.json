@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Harmonie+(2)"
     }
   ],
+  "catalogNo": "AA 0388-2 331",
+  "format": "CD, Album",
   "credit": {
     "with": []
   },
@@ -17,6 +19,16 @@
     "id": 772334
   },
   "cover": "../../assets/covers/meditation.jpg",
+  "tracks": [
+    {
+      "title": "Mare Vaporum - Part 1",
+      "duration": "58:27"
+    },
+    {
+      "title": "Hypnos",
+      "duration": "5:05"
+    }
+  ],
   "note": "Compilation, mostly Mare Vaporum",
   "relatedTo": [
     "mare-vaporum"

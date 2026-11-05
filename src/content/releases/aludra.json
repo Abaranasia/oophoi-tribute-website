@@ -9,6 +9,7 @@
       "discogsUrl": "https://www.discogs.com/label/Penumbra"
     }
   ],
+  "catalogNo": "Penumbra 026",
   "format": "CDr, EP",
   "credit": {
     "with": [
@@ -20,5 +21,19 @@
     "id": 805119
   },
   "cover": "../../assets/covers/aludra.jpg",
+  "tracks": [
+    {
+      "title": "Aludra I",
+      "duration": "6:31"
+    },
+    {
+      "title": "Aludra Silence",
+      "duration": "0:59"
+    },
+    {
+      "title": "Aludra II",
+      "duration": "15:30"
+    }
+  ],
   "hidden": false
 }

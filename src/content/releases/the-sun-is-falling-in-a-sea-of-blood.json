@@ -9,6 +9,7 @@
       "discogsUrl": "https://www.discogs.com/label/Penumbra"
     }
   ],
+  "catalogNo": "Penumbra 001",
   "format": "CDr, EP",
   "credit": {
     "with": []
@@ -18,5 +19,15 @@
     "id": 624304
   },
   "cover": "../../assets/covers/the-sun-is-falling-in-a-sea-of-blood.jpg",
+  "tracks": [
+    {
+      "title": "A Desperate Serenity",
+      "duration": "16:55"
+    },
+    {
+      "title": "Echoes From A Bleeding Sky",
+      "duration": "5:50"
+    }
+  ],
   "hidden": false
 }

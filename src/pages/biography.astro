@@ -1,7 +1,124 @@
 ---
-import ComingSoon from "@features/shared/components/ComingSoon.astro";
+import { Image } from "astro:assets";
+import portrait from "@assets/images/gianluigi-gasparetti-flute-sepia.jpg";
+import DiscogsName from "@features/discography/components/DiscogsName.astro";
+import { getOwnReleaseCount, getReleaseLinks } from "@features/discography/domain/releases";
+import { externalLinks } from "@features/shared/config/site";
+import ProsePage from "@features/shared/components/ProsePage.astro";
+import ProseSection from "@features/shared/components/ProseSection.astro";
 import BaseLayout from "@features/shared/layouts/BaseLayout.astro";
+
+const releases = await getReleaseLinks([
+  "static-soundscapes-three-lights-at-the-end-of-the-world",
+  "the-spirals-of-time",
+  "genesis",
+  "the-path-of-white-clouds",
+  "dreamfields",
+  "the-martian-chronicles",
+  "the-physics-of-heaven",
+  "cloudlands",
+  "il-silenzio-di-dio",
+  "i-hear-the-wind-singing",
+  "i-hear-the-woods-whispering",
+]);
+const ownReleaseCount = await getOwnReleaseCount();
+const portraitAlt = "Sepia photo of Gianluigi Gasparetti seated on a rug, holding a wooden flute between two clay vessel drums";
 ---
-<BaseLayout title="Biography" description="The life of Gianluigi Gasparetti, from Deep Listenings magazine to The Kiva studio, is being written for this site.">
-  <ComingSoon title="Biography" summary="The life of Gianluigi Gasparetti, from Deep Listenings magazine to The Kiva studio, is being written for this site." />
+<BaseLayout
+  title="Biography"
+  description="The life and music of Gianluigi Gasparetti (1958–2013), known as Oöphoi: Deep Listenings magazine, his instruments, The Kiva studio and his collaborations."
+  image={portrait}
+  imageAlt={portraitAlt}
+  type="profile"
+>
+  <ProsePage eyebrow="Gianluigi Gasparetti · 1958 – 2013" title="Biography">
+    <figure slot="figure" class="flex w-full max-w-[248px] flex-col gap-3">
+      <Image
+        src={portrait}
+        alt={portraitAlt}
+        widths={[248, 496]}
+        sizes="(min-width: 640px) 248px, 100vw"
+        loading="eager"
+        class="aspect-[248/400] w-full rounded-[2px] object-cover"
+      />
+      <figcaption class="text-[13px] text-muted">Gianluigi Gasparetti with a wooden flute.</figcaption>
+    </figure>
+
+    <ProseSection id="life" title="Life and Deep Listenings">
+      <p>
+        Oöphoi was the pseudonym of Gianluigi Gasparetti, born in Rome, Italy, on 26 March 1958. A music collector
+        since childhood, he was also the editor of <a href={externalLinks.deepListenings}><em>Deep Listenings</em></a>,
+        an Italian magazine devoted to ambient and deep atmospheric music, where he published interviews with many
+        renowned ambient artists, including Steve Roach and Michael Stearns.
+      </p>
+      <p>
+        He began his own experiments in 1995 with basic equipment, exploring the shores of deep space ambient music.
+        His first album,
+        <a href={releases["static-soundscapes-three-lights-at-the-end-of-the-world"].href}><cite>Three Lights at the End of the World</cite></a>,
+        composed in 1995, was released in 1996 by the Italian ambient artist <DiscogsName kind="artist" name="Alio Die" />
+        on his own label, <DiscogsName kind="label" name="Hic Sunt Leones" />. Alio Die himself plays for one minute on
+        one of its tracks. His double live album <a href={releases["the-spirals-of-time"].href}><cite>The Spirals of Time</cite></a>
+        followed in 1998 on <DiscogsName kind="label" name="Aurora" />.
+      </p>
+      <p>
+        Gianluigi Gasparetti died in 2013, aged 55, after a long illness. The <a href="/memorial/">memorial page</a>
+        gathers the tributes that followed.
+      </p>
+    </ProseSection>
+
+    <ProseSection id="music" title="The music and instruments">
+      <p>
+        His music is static, organic and minimal, with a solid, monolithic feel, often set in a meditative and
+        spiritual context. His recordings unfold through slight harmonic variations.
+      </p>
+      <p>
+        He worked mainly with synths and samplers, singing bowls, flutes, theremin, waterphone, processed voices and
+        unusual percussion: wood chimes, stones, shells and crystal chimes.
+      </p>
+    </ProseSection>
+
+    <ProseSection id="the-kiva" title="The Kiva studio">
+      <p>
+        All of his music was recorded with analog-only equipment in <DiscogsName kind="label" name="The Kiva" />, his
+        studio, a former stable in a fifteenth-century stone country house in the hills of central Italy.
+      </p>
+      <p>The <a href="/gallery/">gallery</a> includes a photo of him in his studio.</p>
+    </ProseSection>
+
+    <ProseSection id="collaborations" title="Collaborations and labels">
+      <p>
+        In 2002 he founded the experimental ambient group <DiscogsName kind="artist" name="Nebula" /> with
+        <DiscogsName kind="artist" name="Klaus Wiese" />, <DiscogsName kind="artist" name="Mauro Malgrande" />,
+        <DiscogsName kind="artist" name="Lorenzo Pierobon" /> and <DiscogsName kind="artist" name="Tau Ceti" />, which
+        released <a href={releases.genesis.href}><cite>Genesis</cite></a> (2002) and
+        <a href={releases["the-path-of-white-clouds"].href}><cite>The Path of White Clouds</cite></a> (2003).
+      </p>
+      <p>
+        This site lists {ownReleaseCount} of his albums, EPs and minialbums, released on many international labels,
+        including <DiscogsName kind="label" name="Hic Sunt Leones" />, Amplexus,
+        <DiscogsName kind="label" name="Hypnos" />, <DiscogsName kind="label" name="Nextera" />,
+        <DiscogsName kind="label" name="Electroshock Records" />, Skean Dhu,
+        <DiscogsName kind="label" name="Stella Maris" />, Aplaus and <DiscogsName kind="label" name="Mystery Sea" />.
+        He also ran his own label, <a href="/labels/umbra/">Umbra</a>, devoted to the music of new Italian ambient
+        artists, and its sublabel for EP-length releases, <a href="/labels/penumbra/">Penumbra</a>.
+      </p>
+      <p>
+        His later work included several collaborations:
+        <a href={releases.dreamfields.href}><cite>Dreamfields</cite></a> with
+        <DiscogsName kind="artist" name="Paul Vnuk Jr." /> (Nextera, 2011),
+        <a href={releases["the-martian-chronicles"].href}><cite>The Martian Chronicles</cite></a> with
+        <DiscogsName kind="artist" name="Seren Ffordd" /> (Hypnos, 2011),
+        <a href={releases["the-physics-of-heaven"].href}><cite>The Physics of Heaven</cite></a> with
+        <DiscogsName kind="artist" name="Ran Kirlian" /> (Altera Orbe, 2013), and
+        <a href={releases.cloudlands.href}><cite>Cloudlands</cite></a> with the Italian guitarist
+        <DiscogsName kind="artist" name="Enrico Coniglio" />, under the name Aqua Dorsa (Glacial Movements, 2009).
+      </p>
+      <p>
+        His last solo releases were <a href={releases["il-silenzio-di-dio"].href}><cite>Il Silenzio di Dio</cite></a>
+        (Databloem, 2011), and <a href={releases["i-hear-the-wind-singing"].href}><cite>I Hear the Wind Singing</cite></a>
+        and <a href={releases["i-hear-the-woods-whispering"].href}><cite>I Hear the Woods Whispering</cite></a>, both
+        released in 2013 on Practising Nature, a division of Databloem.
+      </p>
+    </ProseSection>
+  </ProsePage>
 </BaseLayout>

@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Faria+Records"
     }
   ],
+  "catalogNo": "FAR-07",
+  "format": "CD, Album, Ltd",
   "credit": {
     "with": []
   },
@@ -17,5 +19,15 @@
     "id": 971584
   },
   "cover": "../../assets/covers/dreams-part-two.jpg",
+  "tracks": [
+    {
+      "title": "The Howling Of Subcyclonical Entities",
+      "duration": "22:03"
+    },
+    {
+      "title": "Lost In The Haze Of A Summer Lawn",
+      "duration": "14:52"
+    }
+  ],
   "hidden": false
 }

@@ -14,5 +14,16 @@
     "kind": "release",
     "id": 1719006
   },
+  "cover": "../../assets/covers/the-healing-touch-of-tambura-i.jpg",
+  "tracks": [
+    {
+      "title": "Synchronicity One",
+      "duration": "29:03"
+    },
+    {
+      "title": "Synchronicity Two",
+      "duration": "29:24"
+    }
+  ],
   "hidden": false
 }

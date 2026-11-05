@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Umbra"
     }
   ],
+  "catalogNo": "umbra 052",
+  "format": "CDr, Album",
   "credit": {
     "with": []
   },
@@ -17,5 +19,11 @@
     "id": 799379
   },
   "cover": "../../assets/covers/aquos-the-complete-drones.jpg",
+  "tracks": [
+    {
+      "title": "Aquos",
+      "duration": "1:14:05"
+    }
+  ],
   "hidden": false
 }

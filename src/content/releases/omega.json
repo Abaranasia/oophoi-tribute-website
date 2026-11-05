@@ -15,5 +15,12 @@
     "id": 514359,
     "versions": 2
   },
+  "cover": "../../assets/covers/omega.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "1:02:15"
+    }
+  ],
   "hidden": false
 }

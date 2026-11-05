@@ -14,6 +14,13 @@
     "kind": "release",
     "id": 4222197
   },
+  "cover": "../../assets/covers/omega-4222197.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "1:02:15"
+    }
+  ],
   "relatedTo": [
     "omega"
   ],

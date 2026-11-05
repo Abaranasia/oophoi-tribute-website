@@ -1,0 +1,13 @@
+---
+// An artist or label name, linked to Discogs only when its Discogs id is verified.
+import { discogsArtistUrl, discogsLabelUrl } from "../domain/discogs";
+
+interface Props {
+  kind: "artist" | "label";
+  name: string;
+}
+
+const { kind, name } = Astro.props;
+const href = kind === "artist" ? discogsArtistUrl(name) : discogsLabelUrl(name);
+---
+{href ? <a href={href} rel="external">{name}</a> : name}

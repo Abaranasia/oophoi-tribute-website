@@ -14,5 +14,20 @@
     "kind": "release",
     "id": 388004
   },
+  "cover": "../../assets/covers/maquam.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "22:16"
+    },
+    {
+      "title": "Untitled",
+      "duration": "28:03"
+    },
+    {
+      "title": "Untitled",
+      "duration": "19:10"
+    }
+  ],
   "hidden": false
 }

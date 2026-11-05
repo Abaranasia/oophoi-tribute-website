@@ -14,5 +14,44 @@
     "kind": "release",
     "id": 1718949
   },
+  "cover": "../../assets/covers/kalengra.jpg",
+  "tracks": [
+    {
+      "title": "Part One",
+      "duration": "10:22"
+    },
+    {
+      "title": "Part Two",
+      "duration": "6:54"
+    },
+    {
+      "title": "Part Three",
+      "duration": "12:21"
+    },
+    {
+      "title": "Part Four",
+      "duration": "1:08"
+    },
+    {
+      "title": "Part One",
+      "duration": "2:01"
+    },
+    {
+      "title": "Part Two",
+      "duration": "6:56"
+    },
+    {
+      "title": "Part Three",
+      "duration": "3:28"
+    },
+    {
+      "title": "Part Four",
+      "duration": "14:37"
+    },
+    {
+      "title": "Part Five",
+      "duration": "3:02"
+    }
+  ],
   "hidden": false
 }

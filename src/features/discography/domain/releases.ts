@@ -3,6 +3,8 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 import { groupReleases, sortReleases, type ReleaseGroup } from "./release-groups";
 import { relatedSlugs } from "./release-format";
+import { releaseLinkMap, type ReleaseLink } from "./release-links";
+import { countOwnReleases, selectReleases, type ReleaseSelector } from "./release-selection";
 
 export type Release = CollectionEntry<"releases">;
 
@@ -38,6 +40,30 @@ export async function getRelatedReleases(release: Release): Promise<Release[]> {
     all.map(({ data }) => data),
   );
   return sortByData(slugs.map((slug) => visible.get(slug)!));
+}
+
+/** Visible releases on a label and/or of some types, sorted like the discography. */
+export async function getSelectedReleases(selector: ReleaseSelector): Promise<Release[]> {
+  const releases = await getVisibleReleases();
+  const bySlug = new Map(releases.map((release) => [release.data.slug, release]));
+  return selectReleases(
+    releases.map(({ data }) => data),
+    selector,
+  ).map((data) => bySlug.get(data.slug)!);
+}
+
+/** Number of Oöphoi's own visible releases (no compilation tracks or Klaus Wiese remasters). */
+export async function getOwnReleaseCount(): Promise<number> {
+  return countOwnReleases((await getVisibleReleases()).map(({ data }) => data));
+}
+
+/** Links to release pages for hand-written prose and posts; an unknown slug fails the build. */
+export async function getReleaseLinks<S extends string>(slugs: readonly S[]): Promise<Record<S, ReleaseLink>> {
+  const releases = await getVisibleReleases();
+  return releaseLinkMap(
+    slugs,
+    releases.map(({ data }) => data),
+  );
 }
 
 /** Releases picked for the home page, in the given order; unknown slugs are skipped. */

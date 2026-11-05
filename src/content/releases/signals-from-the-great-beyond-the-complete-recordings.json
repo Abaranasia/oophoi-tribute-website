@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Umbra"
     }
   ],
+  "catalogNo": "GOS9",
+  "format": "CDr, Album, Ltd",
   "credit": {
     "with": []
   },
@@ -18,5 +20,23 @@
     "versions": 5
   },
   "cover": "../../assets/covers/signals-from-the-great-beyond-the-complete-recordings.jpg",
+  "tracks": [
+    {
+      "title": "Kolenhaar",
+      "duration": "11:19"
+    },
+    {
+      "title": "Lightwaves",
+      "duration": "12:22"
+    },
+    {
+      "title": "Geometry",
+      "duration": "11:04"
+    },
+    {
+      "title": "Sculpting The Fields",
+      "duration": "24:20"
+    }
+  ],
   "hidden": false
 }

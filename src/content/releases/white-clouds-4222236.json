@@ -14,6 +14,45 @@
     "kind": "release",
     "id": 4222236
   },
+  "cover": "../../assets/covers/white-clouds-4222236.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "13:31"
+    },
+    {
+      "title": "Untitled",
+      "duration": "21:03"
+    },
+    {
+      "title": "Untitled",
+      "duration": "5:53"
+    },
+    {
+      "title": "Untitled",
+      "duration": "6:52"
+    },
+    {
+      "title": "Untitled",
+      "duration": "7:14"
+    },
+    {
+      "title": "Untitled",
+      "duration": "1:43"
+    },
+    {
+      "title": "Untitled",
+      "duration": "5:55"
+    },
+    {
+      "title": "Untitled",
+      "duration": "3:23"
+    },
+    {
+      "title": "Untitled",
+      "duration": "8:14"
+    }
+  ],
   "relatedTo": [
     "white-clouds"
   ],

@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Nextera"
     }
   ],
+  "catalogNo": "ERA 2045-2",
+  "format": "2xCD, Album, Ltd",
   "credit": {
     "with": []
   },
@@ -17,5 +19,39 @@
     "id": 1072058
   },
   "cover": "../../assets/covers/arpe-di-sabbia.jpg",
+  "tracks": [
+    {
+      "title": "Tramonto In Sila",
+      "duration": "5:50"
+    },
+    {
+      "title": "La Clessidra Della Notte",
+      "duration": "31:51"
+    },
+    {
+      "title": "Le Lunghe Ombre",
+      "duration": "8:00"
+    },
+    {
+      "title": "Un Lento Battere D'Ali",
+      "duration": "13:02"
+    },
+    {
+      "title": "Orbite Di Sale",
+      "duration": "21:25"
+    },
+    {
+      "title": "Il Fruscio Della Luna Crescente",
+      "duration": "14:30"
+    },
+    {
+      "title": "La Memoria Liquida, Le Maree Minerali",
+      "duration": "24:46"
+    },
+    {
+      "title": "La Porta Sull'Abisso Di Stelle",
+      "duration": "11:11"
+    }
+  ],
   "hidden": false
 }

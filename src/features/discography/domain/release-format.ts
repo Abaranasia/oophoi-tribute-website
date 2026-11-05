@@ -18,6 +18,32 @@ export function creditLine({ artist, credit }: { artist: string; credit: Credit 
   return collaborators ? `${artist} with ${collaborators}` : artist;
 }
 
+/** Credit for running text: an alias is attributed to the release's own artist ("Klaus Wiese as …"). */
+function creditPhrase({ artist, credit }: { artist: string; credit: Credit }): string {
+  if (!credit.alias) return creditLine({ artist, credit });
+  const collaborators = joinNames(credit.with);
+  return collaborators ? `${artist} as ${credit.alias}, with ${collaborators}` : `${artist} as ${credit.alias}`;
+}
+
+/** "Album" → "album", but "EP" and "Klaus Wiese remaster" keep their capitals. */
+const typeInSentence = (typeLabel: string) =>
+  /^[A-Z][a-z]+\b(?! [A-Z])/.test(typeLabel) ? typeLabel.charAt(0).toLowerCase() + typeLabel.slice(1) : typeLabel;
+
+export interface ReleaseDescriptionInput {
+  title: string;
+  year: number;
+  typeLabel: string;
+  artist: string;
+  credit: Credit;
+  labels: readonly string[];
+}
+
+/** Meta description of a release page, e.g. "Genesis (2002), album by Oöphoi as Nebula, with … on Stella Maris." */
+export function releaseDescription({ title, year, typeLabel, artist, credit, labels }: ReleaseDescriptionInput): string {
+  const on = labels.length > 0 ? ` on ${labels.join(", ")}` : "";
+  return `${title} (${year}), ${typeInSentence(typeLabel)} by ${creditPhrase({ artist, credit })}${on}.`;
+}
+
 interface Linkable {
   slug: string;
   hidden: boolean;

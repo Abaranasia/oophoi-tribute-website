@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Stella+Maris"
     }
   ],
+  "catalogNo": "CD 002",
+  "format": "CDr, Album, Ltd, Num",
   "credit": {
     "alias": "Nebula",
     "with": [
@@ -23,5 +25,31 @@
     "versions": 2
   },
   "cover": "../../assets/covers/the-path-of-white-clouds.jpg",
+  "tracks": [
+    {
+      "title": "The Quest",
+      "duration": "4:00"
+    },
+    {
+      "title": "Ascension",
+      "duration": "10:36"
+    },
+    {
+      "title": "Devotion",
+      "duration": "13:25"
+    },
+    {
+      "title": "The Living Mandala",
+      "duration": "9:15"
+    },
+    {
+      "title": "Enlightenment",
+      "duration": "16:20"
+    },
+    {
+      "title": "The Path Of White Clouds",
+      "duration": "11:16"
+    }
+  ],
   "hidden": false
 }

@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Stella+Maris"
     }
   ],
+  "catalogNo": "SM01",
+  "format": "CD, Album",
   "credit": {
     "alias": "Nebula",
     "with": [
@@ -22,5 +24,35 @@
     "id": 605881
   },
   "cover": "../../assets/covers/genesis.jpg",
+  "tracks": [
+    {
+      "title": "OM Creation: Breaking The Cosmic Egg",
+      "duration": "3:12"
+    },
+    {
+      "title": "Let There Be Light",
+      "duration": "6:48"
+    },
+    {
+      "title": "Floating Galaxies",
+      "duration": "14:45"
+    },
+    {
+      "title": "Time Vessel At The Gates Of Forever",
+      "duration": "14:45"
+    },
+    {
+      "title": "Pulves Et Umbra (Dust And Shadows)",
+      "duration": "9:14"
+    },
+    {
+      "title": "The Sacred Pool Of Tepeu And Gucumatz",
+      "duration": "18:30"
+    },
+    {
+      "title": "The Dawn Of Man",
+      "duration": "9:38"
+    }
+  ],
   "hidden": false
 }

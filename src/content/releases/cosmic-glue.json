@@ -14,5 +14,24 @@
     "kind": "release",
     "id": 1561621
   },
+  "cover": "../../assets/covers/cosmic-glue.jpg",
+  "tracks": [
+    {
+      "title": "Part One",
+      "duration": "23:08"
+    },
+    {
+      "title": "Part Two",
+      "duration": "5:46"
+    },
+    {
+      "title": "Part Three",
+      "duration": "22:26"
+    },
+    {
+      "title": "Part Four",
+      "duration": "7:00"
+    }
+  ],
   "hidden": false
 }

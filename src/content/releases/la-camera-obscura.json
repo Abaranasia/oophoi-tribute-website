@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Umbra"
     }
   ],
+  "catalogNo": "Umbra 018",
+  "format": "CDr, Album",
   "credit": {
     "alias": "Liquid Ghosts",
     "with": [
@@ -21,5 +23,19 @@
     "id": 375909
   },
   "cover": "../../assets/covers/la-camera-obscura.jpg",
+  "tracks": [
+    {
+      "title": "In The Still Of The Night",
+      "duration": "20:43"
+    },
+    {
+      "title": "Shades, Voices",
+      "duration": "26:40"
+    },
+    {
+      "title": "Distant, Far Away",
+      "duration": "24:29"
+    }
+  ],
   "hidden": false
 }

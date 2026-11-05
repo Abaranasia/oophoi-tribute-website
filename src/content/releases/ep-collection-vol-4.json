@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Penumbra"
     }
   ],
+  "catalogNo": "Penumbra 034",
+  "format": "CDr, Comp",
   "credit": {
     "with": [
       "L.E.M."
@@ -19,5 +21,31 @@
     "id": 1126264
   },
   "cover": "../../assets/covers/ep-collection-vol-4.jpg",
+  "tracks": [
+    {
+      "title": "Trifida 1",
+      "duration": "16:55"
+    },
+    {
+      "title": "Trifida 2",
+      "duration": "4:52"
+    },
+    {
+      "title": "Aludra 1",
+      "duration": "6:31"
+    },
+    {
+      "title": "Aludra 2",
+      "duration": "0:59"
+    },
+    {
+      "title": "Aludra 3",
+      "duration": "15:30"
+    },
+    {
+      "title": "The Gates Of Aldebaran",
+      "duration": "23:13"
+    }
+  ],
   "hidden": false
 }

@@ -14,5 +14,24 @@
     "kind": "release",
     "id": 1719045
   },
+  "cover": "../../assets/covers/trance.jpg",
+  "tracks": [
+    {
+      "title": "Tibetische Klangschalen Part One",
+      "duration": "23:27"
+    },
+    {
+      "title": "Tibetische Klangschalen Part Two",
+      "duration": "7:12"
+    },
+    {
+      "title": "Tibetische Klangschalen Part Three",
+      "duration": "19:54"
+    },
+    {
+      "title": "Tibetische Klangschalen Part Four",
+      "duration": "8:37"
+    }
+  ],
   "hidden": false
 }

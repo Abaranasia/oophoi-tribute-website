@@ -1,0 +1,15 @@
+---
+// A titled section of a ProsePage; `id` is used for the heading anchor.
+interface Props {
+  id: string;
+  title: string;
+}
+
+const { id, title } = Astro.props;
+---
+<section aria-labelledby={`${id}-heading`} class="flex flex-col gap-6 border-t border-hairline pt-10">
+  <h2 id={`${id}-heading`} class="text-4xl">{title}</h2>
+  <div class="prose-text">
+    <slot />
+  </div>
+</section>

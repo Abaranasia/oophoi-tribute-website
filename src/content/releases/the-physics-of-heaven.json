@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Altera+Orbe"
     }
   ],
+  "catalogNo": "AOR0017",
+  "format": "CDr, Album, Ltd",
   "credit": {
     "with": [
       "Ran Kirlian"
@@ -19,5 +21,31 @@
     "id": 551270
   },
   "cover": "../../assets/covers/the-physics-of-heaven.jpg",
+  "tracks": [
+    {
+      "title": "Breath",
+      "duration": "10:28"
+    },
+    {
+      "title": "Ascend",
+      "duration": "15:35"
+    },
+    {
+      "title": "White Shores I",
+      "duration": "20:10"
+    },
+    {
+      "title": "White Shores II",
+      "duration": "9:12"
+    },
+    {
+      "title": "Transmigration",
+      "duration": "11:32"
+    },
+    {
+      "title": "The Golden Fields",
+      "duration": "5:48"
+    }
+  ],
   "hidden": false
 }

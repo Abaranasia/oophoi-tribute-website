@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Hypnos"
     }
   ],
+  "catalogNo": "hyp2649",
+  "format": "CD, Album",
   "credit": {
     "with": [
       "Paul Vnuk Jr."
@@ -19,5 +21,19 @@
     "id": 744193
   },
   "cover": "../../assets/covers/distance-to-zero.jpg",
+  "tracks": [
+    {
+      "title": "Distance To Zero I",
+      "duration": "16:51"
+    },
+    {
+      "title": "Distance To Zero II",
+      "duration": "24:14"
+    },
+    {
+      "title": "Distance To Zero IV",
+      "duration": "17:50"
+    }
+  ],
   "hidden": false
 }

@@ -1,28 +1,49 @@
 ---
 import { externalLinks } from "@features/shared/config/site";
+import ProsePage from "@features/shared/components/ProsePage.astro";
+import ProseSection from "@features/shared/components/ProseSection.astro";
 import BaseLayout from "@features/shared/layouts/BaseLayout.astro";
+
+const sources = [
+  { title: "Oöphoi on Wikipedia", href: externalLinks.wikipedia },
+  { title: "Oöphoi on Discogs", href: externalLinks.discogsArtist, note: "release data, credits and versions" },
+  { title: "Deep Listenings magazine", href: externalLinks.deepListenings, note: "archived copy" },
+  { title: "Oöphoi (Gianluigi Gasparetti) has passed away, Hypnos", href: externalLinks.obituary, note: "archived copy" },
+  { title: "Oöphoi Tribute on Sunday Evening Sinewaves, Hypnos", href: externalLinks.tributeBroadcast, note: "archived copy" },
+  { title: "R.I.P. Oophoi, Hypnos forum", href: externalLinks.forumThread, note: "archived copy" },
+];
 ---
 <BaseLayout
   title="About this site"
-  description="About this unofficial, non-commercial tribute to Oöphoi (Gianluigi Gasparetti): its purpose, sources and contact."
+  description="About this unofficial, non-commercial tribute to Oöphoi (Gianluigi Gasparetti): its purpose, sources and credits."
 >
-  <article class="mx-auto flex max-w-narrow flex-col gap-6 px-4 py-20 sm:px-6 sm:py-28">
-    <p class="eyebrow text-accent">About</p>
-    <h1 class="text-5xl sm:text-6xl">About this site</h1>
-    <div class="flex flex-col gap-5 text-[17px] leading-[1.7] text-ink-soft">
+  <ProsePage eyebrow="About" title="About this site">
+    <div slot="lede" class="prose-text">
       <p>
         This website exists only to share information about the life and music of the ambient artist Oöphoi
         (Gianluigi Gasparetti). It is unofficial and has no commercial purpose.
       </p>
       <p>
-        Most of the information here comes from <a href={externalLinks.wikipedia}>Wikipedia</a>,
-        <a href={externalLinks.discogsArtist}>Discogs</a> and other sources, including forums, blogs and personal
-        friends. Sources are linked where they are used.
-      </p>
-      <p>
-        For questions, suggestions or submissions, please write to
-        <a href="mailto:ran@rankirlian.com">ran@rankirlian.com</a>.
+        Most of the information here comes from Wikipedia, Discogs and other sources, including forums, blogs and
+        personal friends. Sources are linked where they are used.
       </p>
     </div>
-  </article>
+
+    <ProseSection id="sources" title="Sources">
+      <ul class="flex flex-col gap-3 p-0">
+        {sources.map((source) => (
+          <li class="list-none">
+            <a href={source.href} rel="external">{source.title}</a>
+            {source.note && <span class="text-muted"> ({source.note})</span>}
+          </li>
+        ))}
+      </ul>
+    </ProseSection>
+
+    <ProseSection id="credits" title="Credits">
+      <p>
+        This tribute site was created by <a href={externalLinks.siteAuthor} rel="external">Ran Kirlian</a>.
+      </p>
+    </ProseSection>
+  </ProsePage>
 </BaseLayout>

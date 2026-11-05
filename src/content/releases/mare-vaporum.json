@@ -9,6 +9,7 @@
       "discogsUrl": "https://www.discogs.com/label/Due+Acque"
     }
   ],
+  "format": "CDr, Album",
   "credit": {
     "with": []
   },
@@ -18,5 +19,23 @@
     "versions": 4
   },
   "cover": "../../assets/covers/mare-vaporum.jpg",
+  "tracks": [
+    {
+      "title": "Mare Vaporum Parts 1-3",
+      "duration": "58:36"
+    },
+    {
+      "title": "Untitled",
+      "duration": "0:32"
+    },
+    {
+      "title": "Untitled",
+      "duration": "8:50"
+    },
+    {
+      "title": "Untitled",
+      "duration": "0:22"
+    }
+  ],
   "hidden": false
 }

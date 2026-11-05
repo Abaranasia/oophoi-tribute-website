@@ -9,6 +9,7 @@
       "discogsUrl": "https://www.discogs.com/label/Penumbra"
     }
   ],
+  "catalogNo": "Penumbra 024",
   "format": "CDr, EP",
   "credit": {
     "with": [
@@ -20,5 +21,11 @@
     "id": 775276
   },
   "cover": "../../assets/covers/algol.jpg",
+  "tracks": [
+    {
+      "title": "Algol",
+      "duration": "21:51"
+    }
+  ],
   "hidden": false
 }

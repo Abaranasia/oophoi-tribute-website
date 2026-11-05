@@ -9,6 +9,7 @@
       "discogsUrl": "https://www.discogs.com/label/Penumbra"
     }
   ],
+  "catalogNo": "Penumbra 014",
   "format": "CDr, EP",
   "credit": {
     "with": [
@@ -20,5 +21,11 @@
     "id": 624858
   },
   "cover": "../../assets/covers/postcards-from-the-void.jpg",
+  "tracks": [
+    {
+      "title": "Postcards From The Void",
+      "duration": "21:50"
+    }
+  ],
   "hidden": false
 }

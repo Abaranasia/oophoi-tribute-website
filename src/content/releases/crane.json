@@ -14,5 +14,40 @@
     "kind": "release",
     "id": 387689
   },
+  "cover": "../../assets/covers/crane.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "6:37"
+    },
+    {
+      "title": "Untitled",
+      "duration": "11:03"
+    },
+    {
+      "title": "Untitled",
+      "duration": "5:32"
+    },
+    {
+      "title": "Untitled",
+      "duration": "4:12"
+    },
+    {
+      "title": "Untitled",
+      "duration": "8:37"
+    },
+    {
+      "title": "Untitled",
+      "duration": "8:57"
+    },
+    {
+      "title": "Untitled",
+      "duration": "5:47"
+    },
+    {
+      "title": "Untitled",
+      "duration": "5:52"
+    }
+  ],
   "hidden": false
 }

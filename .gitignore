@@ -20,3 +20,6 @@ pnpm-debug.log*
 
 # local agent tooling cache
 .atl/
+
+# enrichment script cache (HTTP responses, cover candidates, proposals)
+.cache/enrich/

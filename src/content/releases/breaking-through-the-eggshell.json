@@ -14,5 +14,12 @@
     "kind": "release",
     "id": 925642
   },
+  "cover": "../../assets/covers/breaking-through-the-eggshell.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "55:09"
+    }
+  ],
   "hidden": false
 }

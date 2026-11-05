@@ -1,0 +1,26 @@
+---
+// Release grids under a label page, styled like the discography sections.
+import ReleaseGrid from "@features/discography/components/ReleaseGrid.astro";
+import type { Release } from "@features/discography/domain/releases";
+
+interface Props {
+  sections: { id: string; heading: string; description: string; releases: Release[] }[];
+}
+
+const { sections } = Astro.props;
+---
+<div class="bg-ground-alt">
+  <div class="page-container flex flex-col gap-20 py-16 sm:py-24">
+    {sections.filter((section) => section.releases.length > 0).map((section) => (
+      <section id={section.id} aria-labelledby={`${section.id}-heading`} class="flex scroll-mt-8 flex-col gap-8">
+        <div class="flex flex-col gap-2 border-t border-hairline pt-8">
+          <h2 id={`${section.id}-heading`} class="text-4xl">
+            {section.heading} <span class="font-sans text-base text-muted">({section.releases.length})</span>
+          </h2>
+          <p class="text-[15px] text-muted">{section.description}</p>
+        </div>
+        <ReleaseGrid releases={section.releases} />
+      </section>
+    ))}
+  </div>
+</div>

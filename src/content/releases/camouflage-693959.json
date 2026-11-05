@@ -14,6 +14,21 @@
     "kind": "release",
     "id": 693959
   },
+  "cover": "../../assets/covers/camouflage-693959.jpg",
+  "tracks": [
+    {
+      "title": "Cocoon II",
+      "duration": "15:12"
+    },
+    {
+      "title": "Death Of A Samurai II",
+      "duration": "29:05"
+    },
+    {
+      "title": "Minotaurus",
+      "duration": "25:20"
+    }
+  ],
   "relatedTo": [
     "camouflage"
   ],

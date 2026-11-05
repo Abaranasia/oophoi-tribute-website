@@ -15,5 +15,20 @@
     "id": 514370,
     "versions": 2
   },
+  "cover": "../../assets/covers/cocoon.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "30:40"
+    },
+    {
+      "title": "Untitled",
+      "duration": "10:54"
+    },
+    {
+      "title": "Untitled",
+      "duration": "10:00"
+    }
+  ],
   "hidden": false
 }

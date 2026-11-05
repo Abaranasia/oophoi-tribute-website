@@ -14,5 +14,16 @@
     "kind": "release",
     "id": 1625665
   },
+  "cover": "../../assets/covers/divine-orbit.jpg",
+  "tracks": [
+    {
+      "title": "The Inside-Outside Dream",
+      "duration": "24:16"
+    },
+    {
+      "title": "With Open Eyes",
+      "duration": "23:01"
+    }
+  ],
   "hidden": false
 }

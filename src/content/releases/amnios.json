@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Umbra"
     }
   ],
+  "catalogNo": "Umbra 051",
+  "format": "CDr, Album",
   "credit": {
     "with": []
   },
@@ -18,5 +20,19 @@
     "versions": 3
   },
   "cover": "../../assets/covers/amnios.jpg",
+  "tracks": [
+    {
+      "title": "Pool Of Life"
+    },
+    {
+      "title": "Tuning The DNA"
+    },
+    {
+      "title": "Amniotic Resonances"
+    },
+    {
+      "title": "Molecular Pulse"
+    }
+  ],
   "hidden": false
 }

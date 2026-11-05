@@ -9,6 +9,7 @@
       "discogsUrl": "https://www.discogs.com/label/Due+Acque"
     }
   ],
+  "format": "CDr, Comp, Ltd",
   "credit": {
     "with": []
   },
@@ -18,5 +19,31 @@
     "versions": 5
   },
   "cover": "../../assets/covers/time-fragments-vol-1-the-archives-1995-1997.jpg",
+  "tracks": [
+    {
+      "title": "Childhood Memories",
+      "duration": "10:59"
+    },
+    {
+      "title": "Ancient Ruins",
+      "duration": "7:11"
+    },
+    {
+      "title": "A Gathering Of Pygmy Gods",
+      "duration": "22:58"
+    },
+    {
+      "title": "A Call To A Prayer",
+      "duration": "12:00"
+    },
+    {
+      "title": "Till The End Of The World",
+      "duration": "7:03"
+    },
+    {
+      "title": "Lost Lake",
+      "duration": "5:10"
+    }
+  ],
   "hidden": false
 }

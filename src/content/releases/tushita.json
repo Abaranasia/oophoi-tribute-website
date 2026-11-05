@@ -14,5 +14,20 @@
     "kind": "release",
     "id": 1719074
   },
+  "cover": "../../assets/covers/tushita.jpg",
+  "tracks": [
+    {
+      "title": "Koan Part One",
+      "duration": "28:06"
+    },
+    {
+      "title": "Koan Part Two",
+      "duration": "1:25"
+    },
+    {
+      "title": "Tushita",
+      "duration": "31:00"
+    }
+  ],
   "hidden": false
 }

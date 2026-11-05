@@ -1,7 +1,52 @@
 ---
-import ComingSoon from "@features/shared/components/ComingSoon.astro";
+import { externalLinks } from "@features/shared/config/site";
+import ProsePage from "@features/shared/components/ProsePage.astro";
+import ProseSection from "@features/shared/components/ProseSection.astro";
 import BaseLayout from "@features/shared/layouts/BaseLayout.astro";
+
+const remembrances = [
+  {
+    title: "Oöphoi (Gianluigi Gasparetti) has passed away",
+    description: "The obituary published by Hypnos.",
+    href: externalLinks.obituary,
+  },
+  {
+    title: "Oöphoi Tribute on Sunday Evening Sinewaves",
+    description: "Hypnos's announcement of a tribute broadcast.",
+    href: externalLinks.tributeBroadcast,
+  },
+  {
+    title: "R.I.P. Oophoi",
+    description: "The thread on the Hypnos forum where friends and listeners remembered him.",
+    href: externalLinks.forumThread,
+  },
+];
 ---
-<BaseLayout title="Memorial" description="A page for memories and tributes to Gianluigi Gasparetti is being prepared.">
-  <ComingSoon title="Memorial" summary="A page for memories and tributes to Gianluigi Gasparetti is being prepared." />
+<BaseLayout title="Memorial" description="In memory of Gianluigi Gasparetti (Oöphoi, 1958–2013): the Hypnos obituary, the tribute broadcast and the forum thread.">
+  <ProsePage eyebrow="Gianluigi Gasparetti · 1958 – 2013" title="Memorial">
+    <p slot="lede" class="text-[17px] leading-[1.7] text-ink-soft">
+      Gianluigi Gasparetti, known as Oöphoi, died in 2013 after a long illness, aged 55. This page gathers the
+      tributes that followed.
+    </p>
+
+    <ProseSection id="hypnos" title="Remembered by Hypnos">
+      <p>The original pages are offline; these links open archived copies on the Wayback Machine.</p>
+      <ul class="flex flex-col gap-5 p-0">
+        {remembrances.map((item) => (
+          <li class="list-none">
+            <a href={item.href} rel="external" class="font-display text-2xl">{item.title}</a>
+            <p class="text-[15px] text-muted">{item.description}</p>
+          </li>
+        ))}
+      </ul>
+    </ProseSection>
+
+    <section aria-labelledby="tributes-heading" class="flex flex-col gap-6 border-t border-hairline pt-10">
+      <h2 id="tributes-heading" class="text-4xl">Tributes and messages</h2>
+      <div class="flex flex-col gap-3 rounded-[2px] border border-dashed border-hairline-strong p-6 text-[15px] text-muted">
+        <p class="eyebrow text-accent">Placeholder</p>
+        <p>Tributes and messages from friends and listeners will be added here by the site owner.</p>
+      </div>
+    </section>
+  </ProsePage>
 </BaseLayout>

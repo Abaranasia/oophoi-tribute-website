@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Arya"
     }
   ],
+  "catalogNo": "Y12",
+  "format": "CD, Album, Ltd",
   "credit": {
     "with": [
       "Tau Ceti"
@@ -20,5 +22,35 @@
     "versions": 4
   },
   "cover": "../../assets/covers/celestial-geometries.jpg",
+  "tracks": [
+    {
+      "title": "Arsia Echoes",
+      "duration": "9:58"
+    },
+    {
+      "title": "Cydonia Plains",
+      "duration": "7:03"
+    },
+    {
+      "title": "Valles Marineris",
+      "duration": "11:06"
+    },
+    {
+      "title": "Chryse Planitia",
+      "duration": "7:30"
+    },
+    {
+      "title": "Isidis",
+      "duration": "13:32"
+    },
+    {
+      "title": "Candor Chasm",
+      "duration": "6:46"
+    },
+    {
+      "title": "Tholus",
+      "duration": "13:20"
+    }
+  ],
   "hidden": false
 }

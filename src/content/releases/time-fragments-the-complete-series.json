@@ -18,5 +18,175 @@
     "id": 2670399
   },
   "cover": "../../assets/covers/time-fragments-the-complete-series.jpg",
+  "tracks": [
+    {
+      "title": "Childhood Memories",
+      "duration": "10:59"
+    },
+    {
+      "title": "Ancient Ruins",
+      "duration": "7:11"
+    },
+    {
+      "title": "A Gathering Of Rygmy Gods Part 1",
+      "duration": "11:34"
+    },
+    {
+      "title": "A Gathering Of Rygmy Gods Part 2",
+      "duration": "11:25"
+    },
+    {
+      "title": "A Call To Prayer",
+      "duration": "12:01"
+    },
+    {
+      "title": "Till The End Of The World",
+      "duration": "7:03"
+    },
+    {
+      "title": "Lost Lake",
+      "duration": "5:08"
+    },
+    {
+      "title": "Voices In Ether",
+      "duration": "9:09"
+    },
+    {
+      "title": "The Last Farewell",
+      "duration": "8:13"
+    },
+    {
+      "title": "The Changeling",
+      "duration": "13:33"
+    },
+    {
+      "title": "Mah (Alternate Version)",
+      "duration": "11:31"
+    },
+    {
+      "title": "Requiem For The Green Planet Part 1",
+      "duration": "8:37"
+    },
+    {
+      "title": "Requiem For The Green Planet Part 2",
+      "duration": "9:07"
+    },
+    {
+      "title": "Borealis",
+      "duration": "10:23"
+    },
+    {
+      "title": "Clouds Over Mars",
+      "duration": "13:14"
+    },
+    {
+      "title": "The Forest Dreams Of God Part 1",
+      "duration": "9:51"
+    },
+    {
+      "title": "The Forest Dreams Of God Part 2",
+      "duration": "10:43"
+    },
+    {
+      "title": "The Forest Dreams Of God Part 3",
+      "duration": "8:25"
+    },
+    {
+      "title": "Dissolving In The Void",
+      "duration": "10:14"
+    },
+    {
+      "title": "Approaching The Island Of Sirens",
+      "duration": "9:47"
+    },
+    {
+      "title": "Oniria",
+      "duration": "14:53"
+    },
+    {
+      "title": "Cygnus Planante Part 1",
+      "duration": "10:14"
+    },
+    {
+      "title": "Cygnus Planante Part 2",
+      "duration": "11:38"
+    },
+    {
+      "title": "The Somnific Dance Of Inanna Part 1",
+      "duration": "10:17"
+    },
+    {
+      "title": "The Somnific Dance Of Inanna Part 2",
+      "duration": "9:27"
+    },
+    {
+      "title": "Harvest Moon",
+      "duration": "9:43"
+    },
+    {
+      "title": "The Deaf Birds Of Alpha Aleph",
+      "duration": "11:42"
+    },
+    {
+      "title": "I Canti Di Babele",
+      "duration": "10:03"
+    },
+    {
+      "title": "Mandala Glass",
+      "duration": "14:03"
+    },
+    {
+      "title": "Praying Gurkas",
+      "duration": "11:48"
+    },
+    {
+      "title": "Endless Rain On Altair IV",
+      "duration": "15:30"
+    },
+    {
+      "title": "Meeting Rama Part 1",
+      "duration": "12:57"
+    },
+    {
+      "title": "Meeting Rama Part 2",
+      "duration": "10:42"
+    },
+    {
+      "title": "A Pale Reflection Of God Part 1",
+      "duration": "13:56"
+    },
+    {
+      "title": "A Pale Reflection Of God Part 2",
+      "duration": "14:49"
+    },
+    {
+      "title": "Le Monde Inanime",
+      "duration": "8:57"
+    },
+    {
+      "title": "Behind The Wall Of Sleep Part 1",
+      "duration": "11:13"
+    },
+    {
+      "title": "Behind The Wall Of Sleep Part 2",
+      "duration": "10:57"
+    },
+    {
+      "title": "Behind The Wall Of Sleep Part 3",
+      "duration": "10:52"
+    },
+    {
+      "title": "Behind The Wall Of Sleep Part 4",
+      "duration": "11:22"
+    },
+    {
+      "title": "Behind The Wall Of Sleep Part 5",
+      "duration": "11:40"
+    },
+    {
+      "title": "Behind The Wall Of Sleep Part 6",
+      "duration": "10:48"
+    }
+  ],
   "hidden": false
 }

@@ -14,5 +14,24 @@
     "kind": "release",
     "id": 1719002
   },
+  "cover": "../../assets/covers/thanatos.jpg",
+  "tracks": [
+    {
+      "title": "Part One",
+      "duration": "15:23"
+    },
+    {
+      "title": "Part Two",
+      "duration": "13:29"
+    },
+    {
+      "title": "Part Three",
+      "duration": "16:04"
+    },
+    {
+      "title": "Part Four",
+      "duration": "12:58"
+    }
+  ],
   "hidden": false
 }

@@ -14,5 +14,16 @@
     "kind": "release",
     "id": 924475
   },
+  "cover": "../../assets/covers/pulse.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "30:13"
+    },
+    {
+      "title": "Untitled",
+      "duration": "22:39"
+    }
+  ],
   "hidden": false
 }

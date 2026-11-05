@@ -1,0 +1,70 @@
+---
+import { Image } from "astro:assets";
+import logo from "@assets/labels/umbra-logo.jpg";
+import DiscogsName from "@features/discography/components/DiscogsName.astro";
+import { discogsLabelUrl } from "@features/discography/domain/discogs";
+import { getSelectedReleases } from "@features/discography/domain/releases";
+import LabelReleaseSections from "@features/labels/components/LabelReleaseSections.astro";
+import ProsePage from "@features/shared/components/ProsePage.astro";
+import ProseSection from "@features/shared/components/ProseSection.astro";
+import BaseLayout from "@features/shared/layouts/BaseLayout.astro";
+
+const sections = [
+  {
+    id: "umbra-releases",
+    heading: "Oöphoi on Umbra",
+    description: "Releases on Umbra in this discography, including compilations.",
+    releases: await getSelectedReleases({ label: "Umbra" }),
+  },
+  {
+    id: "kw-remasters",
+    heading: "Klaus Wiese remasters",
+    description: "The KW series: Klaus Wiese albums released and remastered by Oöphoi between 2004 and 2007.",
+    releases: await getSelectedReleases({ types: ["kw-remaster"] }),
+  },
+];
+const logoAlt = "Umbra logo: a black brushstroke circle on white";
+---
+<BaseLayout
+  title="Umbra"
+  description="Umbra, Oöphoi's own label for ambient drone music, and its series of remastered Klaus Wiese albums."
+  image={logo}
+  imageAlt={logoAlt}
+>
+  <ProsePage eyebrow="Label" title="Umbra">
+    <Image slot="figure" src={logo} alt={logoAlt} width={logo.width} class="w-28 rounded-[2px] sm:w-36" />
+
+    <ProseSection id="history" title="History">
+      <p>
+        Umbra was Oöphoi's own label for ambient drone music, based in Umbria, a region of central Italy. It was
+        devoted to the music of new Italian ambient artists. Besides its regular catalogue, numbered from Umbra 001 to
+        Umbra 068, the label reissued remastered editions of Klaus Wiese's back catalogue in a separate series, from
+        KW 001 to KW 049.
+      </p>
+      <p>
+        Some releases were numbered, and most were limited to 99 copies. Early releases came in regular-size
+        slimcases, which were gradually replaced by the label's typical oversized paper sleeves because the slimcases
+        proved too fragile.
+      </p>
+      <p>
+        There was no official announcement, but the label stopped restocking in early 2008, and most of the remaining
+        stock was bought by <DiscogsName kind="label" name="Hypnos" />.
+      </p>
+      <p>
+        Umbra also had a sublabel, <a href="/labels/penumbra/">Penumbra</a>, devoted to EP-length releases.
+      </p>
+      <p><a href={discogsLabelUrl("Umbra")} rel="external">The complete list of Umbra releases on Discogs</a></p>
+    </ProseSection>
+
+    <ProseSection id="klaus-wiese" title="The Klaus Wiese remasters">
+      <p>
+        From 2004 to 2007 Oöphoi released and remastered several albums by the German composer
+        <DiscogsName kind="artist" name="Klaus Wiese" />, who was also a close friend of Gianluigi. Some of these albums
+        had never been released before. Others changed subtly: Oöphoi remastered and remixed the sound, Oöphoi and
+        Alessandra Clini designed new covers, and a few albums were even retitled.
+      </p>
+    </ProseSection>
+  </ProsePage>
+
+  <LabelReleaseSections sections={sections} />
+</BaseLayout>

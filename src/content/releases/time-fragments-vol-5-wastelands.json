@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Umbra"
     }
   ],
+  "catalogNo": "umbra 026",
+  "format": "CDr, Comp",
   "credit": {
     "with": []
   },
@@ -18,5 +20,27 @@
     "versions": 2
   },
   "cover": "../../assets/covers/time-fragments-vol-5-wastelands.jpg",
+  "tracks": [
+    {
+      "title": "The Deaf Birds Of Alpha Aleph",
+      "duration": "11:48"
+    },
+    {
+      "title": "I Canti Di Babele",
+      "duration": "10:03"
+    },
+    {
+      "title": "Mandala Glass",
+      "duration": "14:19"
+    },
+    {
+      "title": "Praying Gurkas",
+      "duration": "11:55"
+    },
+    {
+      "title": "Endless Rain On Altair IV",
+      "duration": "15:33"
+    }
+  ],
   "hidden": false
 }

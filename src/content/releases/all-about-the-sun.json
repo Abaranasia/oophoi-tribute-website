@@ -14,5 +14,16 @@
     "kind": "release",
     "id": 1553961
   },
+  "cover": "../../assets/covers/all-about-the-sun.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "0:03"
+    },
+    {
+      "title": "All About The Sun",
+      "duration": "1:01:55"
+    }
+  ],
   "hidden": false
 }

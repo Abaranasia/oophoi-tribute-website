@@ -9,6 +9,7 @@
       "discogsUrl": "https://www.discogs.com/label/Due+Acque"
     }
   ],
+  "format": "CDr, Ltd",
   "credit": {
     "with": []
   },
@@ -18,5 +19,27 @@
     "versions": 2
   },
   "cover": "../../assets/covers/the-rustling-of-leaves.jpg",
+  "tracks": [
+    {
+      "title": "Seasons' Tide",
+      "duration": "4:21"
+    },
+    {
+      "title": "Red Roads/Skeletons",
+      "duration": "11:01"
+    },
+    {
+      "title": "Nightfallin'",
+      "duration": "9:33"
+    },
+    {
+      "title": "High Winds White Sky",
+      "duration": "30:17"
+    },
+    {
+      "title": "Whispers Of Winter",
+      "duration": "8:49"
+    }
+  ],
   "hidden": false
 }

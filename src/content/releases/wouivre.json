@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Aurora"
     }
   ],
+  "catalogNo": "AUR005",
+  "format": "CD, Album, Ltd",
   "credit": {
     "with": [
       "Klaus Wiese"
@@ -20,5 +22,35 @@
     "versions": 2
   },
   "cover": "../../assets/covers/wouivre.jpg",
+  "tracks": [
+    {
+      "title": "Nemeton - The Celestial Clearing",
+      "duration": "0:25"
+    },
+    {
+      "title": "Llyr - The Dark Stream",
+      "duration": "17:40"
+    },
+    {
+      "title": "Taran - The Thunder",
+      "duration": "9:03"
+    },
+    {
+      "title": "Llia'g - The Wizard",
+      "duration": "6:51"
+    },
+    {
+      "title": "Dheeog Bhair - Hallucinations",
+      "duration": "7:17"
+    },
+    {
+      "title": "Guth Ather - Invocation",
+      "duration": "18:39"
+    },
+    {
+      "title": "Cruith Ire - The Primordial Harp",
+      "duration": "13:40"
+    }
+  ],
   "hidden": false
 }

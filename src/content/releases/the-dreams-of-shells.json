@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Mystery+Sea"
     }
   ],
+  "catalogNo": "MS08",
+  "format": "CDr, Album, Ltd, Num",
   "credit": {
     "with": []
   },
@@ -18,5 +20,19 @@
     "versions": 3
   },
   "cover": "../../assets/covers/the-dreams-of-shells.jpg",
+  "tracks": [
+    {
+      "title": "Cydron",
+      "duration": "18:53"
+    },
+    {
+      "title": "Kalyx",
+      "duration": "20:45"
+    },
+    {
+      "title": "Narwal",
+      "duration": "28:50"
+    }
+  ],
   "hidden": false
 }

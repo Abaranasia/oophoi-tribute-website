@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Faria+Records"
     }
   ],
+  "catalogNo": "FAR-06",
+  "format": "CD, Album, Ltd",
   "credit": {
     "with": []
   },
@@ -17,5 +19,23 @@
     "id": 787270
   },
   "cover": "../../assets/covers/dreams-part-one.jpg",
+  "tracks": [
+    {
+      "title": "A Flock Of Butterflies Descends Into A Zen Garden",
+      "duration": "21:13"
+    },
+    {
+      "title": "Whispering Fireflies At The Edge Of The Night",
+      "duration": "21:53"
+    },
+    {
+      "title": "A Single, Perfect Sphere Beyond The Curved Horizon",
+      "duration": "21:17"
+    },
+    {
+      "title": "Riding A White Swan Over Silent Lands",
+      "duration": "14:46"
+    }
+  ],
   "hidden": false
 }

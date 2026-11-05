@@ -9,6 +9,7 @@
       "discogsUrl": "https://www.discogs.com/label/Penumbra"
     }
   ],
+  "catalogNo": "Penumbra 015",
   "format": "CDr, EP",
   "credit": {
     "with": []
@@ -18,5 +19,11 @@
     "id": 624872
   },
   "cover": "../../assets/covers/vertigo.jpg",
+  "tracks": [
+    {
+      "title": "Vertigo",
+      "duration": "23:40"
+    }
+  ],
   "hidden": false
 }

@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Glacial+Movements+Records"
     }
   ],
+  "catalogNo": "GM006",
+  "format": "CD, Album",
   "credit": {
     "alias": "Aqua Dorsa",
     "with": [
@@ -20,5 +22,35 @@
     "id": 1832427
   },
   "cover": "../../assets/covers/cloudlands.jpg",
+  "tracks": [
+    {
+      "title": "A Pillow Of Clouds",
+      "duration": "5:22"
+    },
+    {
+      "title": "Daylight Fading Into Evening Silence",
+      "duration": "5:05"
+    },
+    {
+      "title": "The Pond Reflected Her Smile",
+      "duration": "9:13"
+    },
+    {
+      "title": "Zero Gravity",
+      "duration": "10:59"
+    },
+    {
+      "title": "Syhan",
+      "duration": "12:11"
+    },
+    {
+      "title": "Alone In The Rising Fog",
+      "duration": "18:31"
+    },
+    {
+      "title": "Night Of Trembling Stars",
+      "duration": "6:05"
+    }
+  ],
   "hidden": false
 }

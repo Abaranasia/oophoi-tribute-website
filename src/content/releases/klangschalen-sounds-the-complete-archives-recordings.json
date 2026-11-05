@@ -14,5 +14,152 @@
     "kind": "release",
     "id": 1562717
   },
+  "cover": "../../assets/covers/klangschalen-sounds-the-complete-archives-recordings.jpg",
+  "tracks": [
+    {
+      "title": "Space II",
+      "duration": "15:53"
+    },
+    {
+      "title": "Venus - Neptune I",
+      "duration": "11:15"
+    },
+    {
+      "title": "OM Ton - Solar Wind",
+      "duration": "31:26"
+    },
+    {
+      "title": "Space III",
+      "duration": "17:46"
+    },
+    {
+      "title": "Neptune",
+      "duration": "10:09"
+    },
+    {
+      "title": "Kirchen Hall",
+      "duration": "19:09"
+    },
+    {
+      "title": "Universe",
+      "duration": "8:07"
+    },
+    {
+      "title": "Jaguar",
+      "duration": "13:47"
+    },
+    {
+      "title": "Neptune - Saturn",
+      "duration": "20:47"
+    },
+    {
+      "title": "High Flying Lemming",
+      "duration": "12:55"
+    },
+    {
+      "title": "Universe III",
+      "duration": "28:32"
+    },
+    {
+      "title": "Venus - Saturn",
+      "duration": "21:38"
+    },
+    {
+      "title": "Ta Ha",
+      "duration": "19:36"
+    },
+    {
+      "title": "Venus - Neptune II",
+      "duration": "30:46"
+    },
+    {
+      "title": "OM Ton Uranus",
+      "duration": "29:20"
+    },
+    {
+      "title": "Venus - Neptune IV",
+      "duration": "24:49"
+    },
+    {
+      "title": "Uranus OM Ton II",
+      "duration": "28:35"
+    },
+    {
+      "title": "Venus - Neptun V",
+      "duration": "14:17"
+    },
+    {
+      "title": "Neptune B",
+      "duration": "30:30"
+    },
+    {
+      "title": "Venus - Neptune VI",
+      "duration": "14:50"
+    },
+    {
+      "title": "OM Ton",
+      "duration": "30:29"
+    },
+    {
+      "title": "Klangsch - O - Ton",
+      "duration": "14:48"
+    },
+    {
+      "title": "Hohe Freunde",
+      "duration": "25:48"
+    },
+    {
+      "title": "Space Variation",
+      "duration": "17:36"
+    },
+    {
+      "title": "Tiefschale",
+      "duration": "6:36"
+    },
+    {
+      "title": "Neptune Weissenstein",
+      "duration": "16:33"
+    },
+    {
+      "title": "Space Luftkissen",
+      "duration": "23:15"
+    },
+    {
+      "title": "Jubilee Venus - Neptune",
+      "duration": "9:44"
+    },
+    {
+      "title": "Alpha Sound",
+      "duration": "11:48"
+    },
+    {
+      "title": "Omega Sound",
+      "duration": "10:33"
+    },
+    {
+      "title": "Universe II",
+      "duration": "12:10"
+    },
+    {
+      "title": "Hohe Freunde II",
+      "duration": "24:09"
+    },
+    {
+      "title": "Hohe Schalen",
+      "duration": "9:35"
+    },
+    {
+      "title": "Venus - Neptune III",
+      "duration": "10:02"
+    },
+    {
+      "title": "Deep Sound",
+      "duration": "16:41"
+    },
+    {
+      "title": "Solar Wind",
+      "duration": "30:23"
+    }
+  ],
   "hidden": false
 }

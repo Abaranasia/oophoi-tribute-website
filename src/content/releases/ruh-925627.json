@@ -14,6 +14,13 @@
     "kind": "release",
     "id": 925627
   },
+  "cover": "../../assets/covers/ruh-925627.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "1:02:24"
+    }
+  ],
   "relatedTo": [
     "ruh"
   ],

@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Nextera"
     }
   ],
+  "catalogNo": "ERA2029-2",
+  "format": "CD, Album, Ltd",
   "credit": {
     "with": [
       "Tau Ceti"
@@ -19,5 +21,31 @@
     "id": 337555
   },
   "cover": "../../assets/covers/subterranea.jpg",
+  "tracks": [
+    {
+      "title": "In The Wake Of Ouranos",
+      "duration": "9:55"
+    },
+    {
+      "title": "Vril-Ya",
+      "duration": "7:59"
+    },
+    {
+      "title": "Omphalos",
+      "duration": "4:00"
+    },
+    {
+      "title": "Aph-Lin",
+      "duration": "10:07"
+    },
+    {
+      "title": "Rex Mundi",
+      "duration": "21:36"
+    },
+    {
+      "title": "The Chamber Of Eternity",
+      "duration": "13:40"
+    }
+  ],
   "hidden": false
 }

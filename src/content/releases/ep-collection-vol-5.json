@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Penumbra"
     }
   ],
+  "catalogNo": "Penumbra 035",
+  "format": "CDr, Comp",
   "credit": {
     "with": [
       "Tau Ceti"
@@ -19,5 +21,23 @@
     "id": 1126270
   },
   "cover": "../../assets/covers/ep-collection-vol-5.jpg",
+  "tracks": [
+    {
+      "title": "An'Warth",
+      "duration": "11:06"
+    },
+    {
+      "title": "Baath Nag",
+      "duration": "7:15"
+    },
+    {
+      "title": "Algol",
+      "duration": "26:22"
+    },
+    {
+      "title": "Lifting The Veil",
+      "duration": "21:51"
+    }
+  ],
   "hidden": false
 }

@@ -9,6 +9,7 @@
       "discogsUrl": "https://www.discogs.com/label/Due+Acque"
     }
   ],
+  "format": "CDr, Album",
   "credit": {
     "with": []
   },
@@ -18,5 +19,11 @@
     "versions": 3
   },
   "cover": "../../assets/covers/behind-the-wall-of-sleep.jpg",
+  "tracks": [
+    {
+      "title": "Behind The Wall Of Sleep",
+      "duration": "1:06:20"
+    }
+  ],
   "hidden": false
 }

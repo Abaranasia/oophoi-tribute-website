@@ -1,7 +1,28 @@
 ---
-import ComingSoon from "@features/shared/components/ComingSoon.astro";
+import PhotoGallery from "@features/gallery/components/PhotoGallery.astro";
+import { getPhotoGroups } from "@features/gallery/domain/photos";
 import BaseLayout from "@features/shared/layouts/BaseLayout.astro";
+
+const groups = await getPhotoGroups();
+const total = groups.reduce((sum, group) => sum + group.photos.length, 0);
 ---
-<BaseLayout title="Gallery" description="Photos of Gianluigi Gasparetti and his studio are being collected for this gallery.">
-  <ComingSoon title="Gallery" summary="Photos of Gianluigi Gasparetti and his studio are being collected for this gallery." />
+<BaseLayout
+  title="Gallery"
+  description={`${total} photos of Gianluigi Gasparetti (Oöphoi), alone and with Tau Ceti, Kristian Kotarac, Faryus and Klaus Wiese.`}
+>
+  <div class="page-container flex flex-col gap-12 py-16 sm:py-24">
+    <header class="flex max-w-narrow flex-col gap-4">
+      <h1 class="text-5xl sm:text-[56px]">Gallery</h1>
+      <p class="text-[17px] leading-relaxed text-ink-soft">
+        {total} photos of Gianluigi Gasparetti, alone and with friends and collaborators. Select a photo to see it
+        larger.
+      </p>
+    </header>
+
+    <PhotoGallery groups={groups} />
+
+    <p class="max-w-narrow border-t border-hairline pt-8 text-[13px] text-muted">
+      All images are copyrighted by their respective owners. Most of them were found on the internet.
+    </p>
+  </div>
 </BaseLayout>

@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Umbra"
     }
   ],
+  "catalogNo": "umbra 012",
+  "format": "2xCDr, Comp, Ltd, Num",
   "credit": {
     "with": []
   },
@@ -18,5 +20,83 @@
     "versions": 2
   },
   "cover": "../../assets/covers/dust-in-the-wind-the-works-1995-2003.jpg",
+  "tracks": [
+    {
+      "title": "Ancient Ruins",
+      "duration": "5:02"
+    },
+    {
+      "title": "The Chamber Of Eternity",
+      "duration": "4:24"
+    },
+    {
+      "title": "The Goddess Chant / Prophecy",
+      "duration": "12:34"
+    },
+    {
+      "title": "Valles Marineris",
+      "duration": "9:00"
+    },
+    {
+      "title": "Voices In Ether",
+      "duration": "2:31"
+    },
+    {
+      "title": "Ascension",
+      "duration": "8:00"
+    },
+    {
+      "title": "Floating Galaxies",
+      "duration": "7:35"
+    },
+    {
+      "title": "Mah - The Healing Water",
+      "duration": "8:22"
+    },
+    {
+      "title": "On Wings Of Light",
+      "duration": "17:47"
+    },
+    {
+      "title": "Behind The Wall Of Sleep",
+      "duration": "4:09"
+    },
+    {
+      "title": "The Dreaming Lilith",
+      "duration": "8:58"
+    },
+    {
+      "title": "Lord Of The Starfields",
+      "duration": "8:15"
+    },
+    {
+      "title": "Mare Vaporum",
+      "duration": "4:33"
+    },
+    {
+      "title": "Upuaut",
+      "duration": "5:05"
+    },
+    {
+      "title": "The Forest Dreams Of God",
+      "duration": "6:42"
+    },
+    {
+      "title": "Samten Bardo - Contemplation",
+      "duration": "7:52"
+    },
+    {
+      "title": "Nightfallin'",
+      "duration": "2:46"
+    },
+    {
+      "title": "Floating",
+      "duration": "6:28"
+    },
+    {
+      "title": "Aluk - The Sacred Chant",
+      "duration": "15:05"
+    }
+  ],
   "hidden": false
 }

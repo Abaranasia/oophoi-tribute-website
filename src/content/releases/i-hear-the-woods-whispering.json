@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Practising+Nature"
     }
   ],
+  "catalogNo": "PN13054",
+  "format": "CDr, Album",
   "credit": {
     "with": []
   },
@@ -17,5 +19,23 @@
     "id": 4649949
   },
   "cover": "../../assets/covers/i-hear-the-woods-whispering.jpg",
+  "tracks": [
+    {
+      "title": "Netach",
+      "duration": "15:13"
+    },
+    {
+      "title": "Shekhinah",
+      "duration": "7:54"
+    },
+    {
+      "title": "Hod",
+      "duration": "18:00"
+    },
+    {
+      "title": "Daat",
+      "duration": "30:44"
+    }
+  ],
   "hidden": false
 }

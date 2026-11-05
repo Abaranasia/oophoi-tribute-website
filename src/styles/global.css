@@ -81,3 +81,12 @@
 @utility pill-accent {
   @apply min-h-12 border border-accent px-7 text-[15px] text-ink hover:bg-accent hover:text-ground;
 }
+
+/* Long-form text on the biography, label, memorial and about pages. */
+@utility prose-text {
+  @apply flex flex-col gap-5 text-[17px] leading-[1.7] text-ink-soft;
+
+  & blockquote {
+    @apply flex flex-col gap-4 border-l-2 border-accent pl-5 font-display text-xl leading-relaxed text-ink italic;
+  }
+}

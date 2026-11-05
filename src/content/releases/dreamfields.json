@@ -9,6 +9,8 @@
       "discogsUrl": "https://www.discogs.com/label/Nextera"
     }
   ],
+  "catalogNo": "ERA 2067-2",
+  "format": "CD, Album, Ltd",
   "credit": {
     "with": [
       "Paul Vnuk Jr."
@@ -19,5 +21,23 @@
     "id": 3283671
   },
   "cover": "../../assets/covers/dreamfields.jpg",
+  "tracks": [
+    {
+      "title": "North Field: Axis",
+      "duration": "22:41"
+    },
+    {
+      "title": "South Field: Khyber",
+      "duration": "21:52"
+    },
+    {
+      "title": "East Field: Helikum",
+      "duration": "15:16"
+    },
+    {
+      "title": "West Field: Awua",
+      "duration": "9:46"
+    }
+  ],
   "hidden": false
 }

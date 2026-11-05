@@ -15,5 +15,24 @@
     "id": 514357,
     "versions": 2
   },
+  "cover": "../../assets/covers/musica-invisibile.jpg",
+  "tracks": [
+    {
+      "title": "Untitled",
+      "duration": "25:04"
+    },
+    {
+      "title": "Untitled",
+      "duration": "13:43"
+    },
+    {
+      "title": "Untitled",
+      "duration": "15:59"
+    },
+    {
+      "title": "Untitled",
+      "duration": "10:33"
+    }
+  ],
   "hidden": false
 }

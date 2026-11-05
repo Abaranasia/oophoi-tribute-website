@@ -14,5 +14,48 @@
     "kind": "release",
     "id": 1627361
   },
+  "cover": "../../assets/covers/baraka.jpg",
+  "tracks": [
+    {
+      "title": "Part One",
+      "duration": "1:17"
+    },
+    {
+      "title": "Part Two",
+      "duration": "15:01"
+    },
+    {
+      "title": "Part Three",
+      "duration": "3:37"
+    },
+    {
+      "title": "Part Four",
+      "duration": "4:03"
+    },
+    {
+      "title": "Part Five",
+      "duration": "5:15"
+    },
+    {
+      "title": "Part One",
+      "duration": "6:17"
+    },
+    {
+      "title": "Part Two",
+      "duration": "12:17"
+    },
+    {
+      "title": "Part Three",
+      "duration": "1:17"
+    },
+    {
+      "title": "Part Four",
+      "duration": "7:07"
+    },
+    {
+      "title": "Part Five",
+      "duration": "2:07"
+    }
+  ],
   "hidden": false
 }
